@@ -1,0 +1,30 @@
+{
+  "name": "122899-sedona",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Обучающий проект «Седона» от HTML Academy",
+  "author": "Константин Руднев",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/up-htmlacademy/122899-sedona.git"
+  },
+  "bugs": {
+    "url": "https://github.com/up-htmlacademy/122899-sedona/issues"
+  },
+  "homepage": "https://github.com/up-htmlacademy/122899-sedona",
+  "dependencies": {
+    "grunt": "0.4.x",
+    "grunt-contrib-clean": "0.6.x",
+    "grunt-contrib-copy": "0.8.x",
+    "grunt-lintspaces": "0.7.x",
+    "load-grunt-tasks": "3.3.x"
+  },
+  "scripts": {
+    "pregosha": "npm install > /dev/null",
+    "gosha": "grunt gosha",
+    "test": "grunt lintspaces:codestyle"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  }
+}
