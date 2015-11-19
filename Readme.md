@@ -1,7 +1,7 @@
 # Проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Константин Руднев](https://htmlacademy.ru/profile/id122899).
-* Наставник: 'Евгений Сергеев'.
+* Наставник: Евгений Сергеев.
 
 ### Немного о себе
 

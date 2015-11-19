@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+
+
+
+  <div class="review-header">
+    <div class="main-menu">
+      <ul class="main-menu-list">
+        <li class="main-menu-list_item">Информация</li>
+        <li class="main-menu-list_item">Оставить отзыв</li>
+        <li class="main-menu-list_item">Блог шерифа</li>
+        <li class="main-menu-list_item">Гостиницы</li>
+      </ul>
+    </div>
+    <div class="main-logo"><img src="" alt="логотип"></div>
+    <h1 class="review-header_title">Sedona</h1>
+    <h2 class="review-header_review-title">Оставьте свой отзыв</h2>
+    <p class="review-header_review-dics">
+      Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях
+    </p>
+  </div>
+
+
+
+  <div class="form-review-wrap">
+    <form action="" class="form-review">
+
+      <div class="introduce">
+        <h2 class="introduce_title">Представьтесь, пожалуйста:</h2>
+        <input type="text" id="surname" placeholder="Иванов">
+        <label for="surname">Фамилия</label>
+        <input type="text" id="name" placeholder="Петр">
+        <label for="name">Имя</label>
+        <input type="text" id="patronymic" placeholder="Петр">
+        <label for="patronymic">Отчество</label>
+      </div>
+
+      <div class="impression">
+        <h2 class="impression_title">Ваше общее впечатление:</h2>
+        <input type="checkbox" id="positive">
+        <label for="positive">Скорее положительное</label>
+        <input type="checkbox" id="negative">
+        <label for="negative">Скорее отрицательное</label>
+      </div>
+
+      <div class="travel-date">
+        <h2 class="travel-date_title">Дата вашей поездки:</h2>
+        <input type="text" id="coming" placeholder="4 июля 2015 год">
+        <label for="coming">Дата приезда</label>
+        <div class="toggle-controls">
+          <span class="toggle-controls_plus">+</span>
+          <input type="text" id="value" placeholder="14">
+          <span class="toggle-controls_value">дн.</span>
+          <label for="value">Длительность пребывания</label>
+          <span class="toggle-controls_minus">-</span>
+        </div>
+        <input type="text" id="checkout" placeholder="29 июля 2015 год">
+        <label for="checkout">Дата отъезда</label>
+      </div>
+
+      <div class="form-data">
+        <h2 class="form-data_title">Кол-во путешественников:</h2>
+        <div class="toggle-controls">
+          <span class="toggle-controls_plus">+</span>
+          <input type="text" id="value" placeholder="2">
+          <span class="toggle-controls_value" чел.</span>
+          <label for="value">Кол-во путешественников</label>
+          <span class="toggle-controls_minus">-</span>
+        </div>
+        <div class="form-data-item1">
+          <div class="introduce">
+            <h2 class="introduce_title">Представьтесь, пожалуйста:</h2>
+            <input type="text" id="surname" placeholder="Иванов">
+            <label for="surname">Фамилия</label>
+            <input type="text" id="name" placeholder="Петр">
+            <label for="name">Имя</label>
+            <input type="text" id="patronymic" placeholder="Петр">
+            <label for="patronymic">Отчество</label>
+          </div>
+          <div class="form-data-item1_num">
+            <span>№</span>
+            <span>1</span>
+          </div>
+        </div>
+        <div class="form-data-item1">
+          <div class="introduce">
+            <h2 class="introduce_title">Представьтесь, пожалуйста:</h2>
+            <input type="text" id="surname" placeholder="Иванов">
+            <label for="surname">Фамилия</label>
+            <input type="text" id="name" placeholder="Петр">
+            <label for="name">Имя</label>
+            <input type="text" id="patronymic" placeholder="Петр">
+            <label for="patronymic">Отчество</label>
+          </div>
+          <div class="form-data-item1_num">
+            <span>№</span>
+            <span>2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="download-img">
+        <h2 class="download-img_title">Загрузите фотографии</h2>
+        <input type="file">
+        <div class="download-img_item"><img src="" alt="Фото"></div>
+        <div class="download-img_item"><img src="" alt="Фото"></div>
+        <div class="download-img_item"><img src="" alt="Фото"></div>
+      </div>
+      
+      <button class="form-review_send-btn">Отправить</button>
+    </form>
+  </div>
+</body>
+
+</html>
