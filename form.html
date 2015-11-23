@@ -7,114 +7,120 @@
 </head>
 
 <body>
+  <div class="main-header">
 
+    <div class="logo"></div>
 
-
-  <div class="review-header">
     <div class="main-menu">
-      <ul class="main-menu-list">
-        <li class="main-menu-list_item">Информация</li>
-        <li class="main-menu-list_item">Оставить отзыв</li>
-        <li class="main-menu-list_item">Блог шерифа</li>
-        <li class="main-menu-list_item">Гостиницы</li>
+      <span class="main-menu__close"></span>
+      <ul class="main-menu__list">
+        <li class="main-menu__item">Информация</li>
+        <li class="main-menu__item">Оставить отзыв</li>
+        <li class="main-menu__item">Блог шерифа</li>
+        <li class="main-menu__item">Гостиницы</li>
       </ul>
     </div>
-    <div class="main-logo"><img src="" alt="логотип"></div>
-    <h1 class="review-header_title">Sedona</h1>
-    <h2 class="review-header_review-title">Оставьте свой отзыв</h2>
-    <p class="review-header_review-dics">
-      Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях
-    </p>
+
+    <div class="main-header-section">
+      <h2 class="main-header-section__title">Sedona</h2>
+    </div>
+
+    <div class="title-section">
+      <h2 class="title-section__title">
+        Оставьте свой отзыв
+      </h2>
+      <h3 class="title-section__item">
+        Помогите нашим отелям стать лучше!
+        Оставьте отзыв о них, а так же о посещенных  Вами достопримечательностяхы
+      </h3>
+    </div>
+
   </div>
 
 
 
-  <div class="form-review-wrap">
-    <form action="" class="form-review">
+  <div class="form-section">
+    <form acrion="">
 
-      <div class="introduce">
-        <h2 class="introduce_title">Представьтесь, пожалуйста:</h2>
-        <input type="text" id="surname" placeholder="Иванов">
-        <label for="surname">Фамилия</label>
-        <input type="text" id="name" placeholder="Петр">
-        <label for="name">Имя</label>
-        <input type="text" id="patronymic" placeholder="Петр">
-        <label for="patronymic">Отчество</label>
-      </div>
+      <fieldset>
+        <legend>Представьтесь, пожалуйста:</legend>
+        <label>Фамилия</label>
+        <input type="text" placeholder="Иванов">
+        <label>Имя</label>
+        <input type="text" placeholder="Петр">
+        <label>Отчество</label>
+        <input type="text" placeholder="Петр">
+      </fieldset>
 
-      <div class="impression">
-        <h2 class="impression_title">Ваше общее впечатление:</h2>
-        <input type="checkbox" id="positive">
+      <fieldset>
+        <legend>Ваше общее впечатление:</legend>
+        <input type="checkbox" id="positiv">
         <label for="positive">Скорее положительное</label>
         <input type="checkbox" id="negative">
         <label for="negative">Скорее отрицательное</label>
-      </div>
+      </fieldset>
 
-      <div class="travel-date">
-        <h2 class="travel-date_title">Дата вашей поездки:</h2>
-        <input type="text" id="coming" placeholder="4 июля 2015 год">
-        <label for="coming">Дата приезда</label>
-        <div class="toggle-controls">
-          <span class="toggle-controls_plus">+</span>
-          <input type="text" id="value" placeholder="14">
-          <span class="toggle-controls_value">дн.</span>
-          <label for="value">Длительность пребывания</label>
-          <span class="toggle-controls_minus">-</span>
+      <fieldset>
+        <legend>Дата вашей поездки:</legend>
+        <label>Дата приезда</label>
+        <input type="text" placeholder="4 июля 2015 год">
+        <label>Длительность пребывания</label>
+        <div class="form-controls">
+          <span class="form-controls__minus"></span>
+          <span class="form-controls__plus"></span>
+          <input type="text" placeholder="14">
+          <span class="form-controls__data">дн.</span>
         </div>
-        <input type="text" id="checkout" placeholder="29 июля 2015 год">
-        <label for="checkout">Дата отъезда</label>
-      </div>
+        <input type="text" placeholder="29 июля 2015 год">
+        <label>Дата отъезда</label>
+      </fieldset>
 
-      <div class="form-data">
-        <h2 class="form-data_title">Кол-во путешественников:</h2>
-        <div class="toggle-controls">
-          <span class="toggle-controls_plus">+</span>
-          <input type="text" id="value" placeholder="2">
-          <span class="toggle-controls_value" чел.</span>
-          <label for="value">Кол-во путешественников</label>
-          <span class="toggle-controls_minus">-</span>
+      <fieldset>
+        <legend>Кол-во путешественников:</legend>
+        <div class="form-controls">
+          <span class="form-controls__minus"></span>
+          <span class="form-controls__plus"></span>
+          <input type="text" placeholder="2">
+          <span class="form-controls__data">чел.</span>
         </div>
-        <div class="form-data-item1">
-          <div class="introduce">
-            <h2 class="introduce_title">Представьтесь, пожалуйста:</h2>
-            <input type="text" id="surname" placeholder="Иванов">
-            <label for="surname">Фамилия</label>
-            <input type="text" id="name" placeholder="Петр">
-            <label for="name">Имя</label>
-            <input type="text" id="patronymic" placeholder="Петр">
-            <label for="patronymic">Отчество</label>
-          </div>
-          <div class="form-data-item1_num">
-            <span>№</span>
-            <span>1</span>
-          </div>
+      </fieldset>
+      <fieldset>
+        <div class="form-data">
+          <span class="form-data__num">№</span>
+          <span class="form-data__count">1</span>
         </div>
-        <div class="form-data-item1">
-          <div class="introduce">
-            <h2 class="introduce_title">Представьтесь, пожалуйста:</h2>
-            <input type="text" id="surname" placeholder="Иванов">
-            <label for="surname">Фамилия</label>
-            <input type="text" id="name" placeholder="Петр">
-            <label for="name">Имя</label>
-            <input type="text" id="patronymic" placeholder="Петр">
-            <label for="patronymic">Отчество</label>
-          </div>
-          <div class="form-data-item1_num">
-            <span>№</span>
-            <span>2</span>
-          </div>
-        </div>
-      </div>
+        <input type="text" placeholder="Иванов">
+        <label>Фамилия</label>
+        <input type="text" placeholder="Петр">
+        <label for="name">Имя</label>
+        <input type="text" placeholder="Петр">
+        <label>Отчество</label>
+      </fieldset>
 
-      <div class="download-img">
-        <h2 class="download-img_title">Загрузите фотографии</h2>
+      <fieldset>
+        <div class="form-data">
+          <span class="form-data__num">№</span>
+          <span class="form-data__count">1</span>
+        </div>
+        <label>Фамилия</label>
+        <input type="text" placeholder="Иванов">
+        <label for="name">Имя</label>
+        <input type="text" placeholder="Петр">
+        <label>Отчество</label>
+        <input type="text" placeholder="Александрович">
+      </fieldset>
+
+      <fieldset>
+        <legend class="download-img-section__title">Загрузите фотографии</legend>
         <input type="file">
-        <div class="download-img_item"><img src="" alt="Фото"></div>
-        <div class="download-img_item"><img src="" alt="Фото"></div>
-        <div class="download-img_item"><img src="" alt="Фото"></div>
-      </div>
-      
-      <button class="form-review_send-btn">Отправить</button>
+        <div class="download-img-list">
+          <div class="download-img-list__item"><img src="" alt="Фото"></div>
+          <div class="download-img-list__item"><img src="" alt="Фото"></div>
+          <div class="download-img-list__item"><img src="" alt="Фото"></div>
+        </div>
+      </fieldset>
+
+      <button class="form-btn-sent">Отправить</button>
     </form>
   </div>
 </body>
