@@ -7,56 +7,46 @@
 </head>
 
 <body>
-  <div class="main-header">
-
+  <header class="main-header">
     <div class="logo"></div>
-
     <div class="main-menu">
       <span class="main-menu__close"></span>
       <ul class="main-menu__list">
-        <li class="main-menu__item">Информация</li>
-        <li class="main-menu__item">Оставить отзыв</li>
-        <li class="main-menu__item">Блог шерифа</li>
-        <li class="main-menu__item">Гостиницы</li>
+        <li><a class="main-menu__item" href="#">Информация</a></li>
+        <li><a class="main-menu__item" href="#">Оставить отзыв</a></li>
+        <li><a class="main-menu__item" href="#">Блог шерифа</a></li>
+        <li><a class="main-menu__item" href="#">Гостиницы</a></li>
       </ul>
     </div>
-
     <div class="main-header-section">
-      <h2 class="-main-header-section__title">Sedona</h2>
-      <span class="main-header-section__slogan">Because the Grand Canyon sucks!</span>
+      <p class="main-header-section__slogan">Because the Grand Canyon sucks!</p>
     </div>
-
-    <div class="main-header-title__wrap">
-      <h2 class="main-header__title">
+  </header>
+  <main class="page-content">
+    <div class="title-section">
+      <h1 class="title-section__title">
         Седона-небольшой городок в аризоне, заслуживающий большего
-      </h2>
-      <h3 class="main-header-title__item">
-        Рассмотрим 5 причин, по которым С	едона круче, чем гранд каньон!
-      </h3>
+      </h1>
+      <p class="title-section__item">
+        Рассмотрим 5 причин, по которым С едона круче, чем гранд каньон!
+      </p>
     </div>
-
-  </div>
-
-
-
-  <main>
     <div class="features">
       <div class="features-item">
-        <h2 class="features__title">Настоящий городок</h2>
-        <span class="features__num">-№1-</span>
-        <h3 class="features__desc">
-				Седона не атракцион для туристов, там теяет своя жизнь!
-			</h3>
-        <div class="features__img"><img src="" alt="Фото города"></div>
-
+        <h2 class="features-item__title">Настоящий городок</h2>
+        <span class="features-item__num">-№1-</span>
+        <p class="features-item__desc">
+          Седона не атракцион для туристов, там теяет своя жизнь!
+        </p>
+        <div class="features__img">
+          <img src="" alt="Фото города">
+        </div>
         <div class="features-list">
-
           <div class="features-list__item">
-            <p class="features1-list__desc">
+            <p class="features-list__desc">
               Рекомендуем пожить в настоящем мотеле, все как в кино!
             </p>
           </div>
-
           <div class="features-list__item">
             <p class="features-list__desc">
               Всегда заказывайте фирменный гамбурегр, вы не разочаруетесь!
@@ -67,83 +57,77 @@
               Не только китайского, но и местного производства!
             </p>
           </div>
-
         </div>
       </div>
-
       <div class="features-item">
         <h2 class="features-item__title">Там есть мост дьявола</h2>
         <span class="features-item__num">-№2-</span>
-        <h3 class="features-item__desc">
-            Да, по нему пожно пройти! Если конечно вы осмелитесь
-          </h3>
-        <div class="features-item__img"><img src="" alt="Фото моста"></div>
-
+        <p class="features-item__desc">
+          Да, по нему пожно пройти! Если конечно вы осмелитесь
+        </p>
+        <div class="features-item__img">
+          <img src="" alt="Фото моста">
+        </div>
       </div>
-
       <div class="features-item">
         <h2 class="features-item__title">Небольшая площадь</h2>
         <span class="features-item__num">-№3-</span>
-        <h3 class="features-item__desc">
+        <p class="features-item__desc">
           Все достопримечательности находятся очень близко
-        </h3>
+        </p>
       </div>
-
       <div class="features-item">
         <h2 class="features-item__title">Красивая дорога</h2>
         <span class="features-item__num">-№4-</span>
-        <h3 class="features-item__desc">
+        <p class="features-item__desc">
           Ехать в седону из лас-вегаса совсем не скучно!
-        </h3>
+        </p>
       </div>
-
       <div class="features-item">
         <h2 class="features-item__title">Красивая дорога</h2>
         <span class="features-item__num">-№4-</span>
-        <h3 class="features-item__desc">Ехать в седону из лас-вегаса совсем не скучно!</h3>
+        <p class="features-item__desc">
+          Ехать в седону из лас-вегаса совсем не скучно!
+        </p>
       </div>
-
       <div class="feature-item">
         <h2 class="features-item__title">Мало туристов</h2>
         <span class="features-item__num">-№5-</span>
-        <h3 class="features-item__desc">
+        <p class="features-item__desc">
           Большинство едет в гранд-каньон и толпится там
-        </h3>
+        </p>
       </div>
-
     </div>
-
     <div class="search">
       <h2 class="search__title">Заинтересовались?</h2>
-      <h3 class="search__">
-				Укажите предролагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне
-			</h3>
-      <a class="search__btn" href="#">Найти гостиницу</a>
-      <div class="search__img">
+      <p class="search__desc">
+        Укажите предролагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне
+      </p>
+      <div class="button">
+        <a class="button__search" href="#">Найти гостиницу</a>
+      </div>
+    </div>
+    <div class="map">
+      <div class="map__img">
         <img src="" alt="Карта отелей">
       </div>
     </div>
-
-
-
-    <div class="social-nav">
-      <span class="social-nav__hashtag">#Visitsedona</span>
+    <footer>
       <div class="social-nav">
-        <ul class="social-nav__list">
-          <li class="social-nav__item"><a href="#">TW</a></li>
-          <li class="social-nav__item"><a href="#">FB</a></li>
-          <li class="social-nav__item"><a href="#">YT</a></li>
-        </ul>
+        <span class="social-nav__hashtag">#Visitsedona</span>
+        <div class="social-nav">
+          <ul class="social-nav__list">
+            <li class="social-nav__item"><a href="#">TW</a></li>
+            <li class="social-nav__item"><a href="#">FB</a></li>
+            <li class="social-nav__item"><a href="#">YT</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-
-
-
-    <div class="copyright">
-      Разработано
-      <a class="copyright__link" href="#">htmlacademy</a>
-    </div>
-
+      <div class="copyright">
+        Разработано
+        <a class="copyright__link" href="#">htmlacademy</a>
+      </div>
+    </footer>
   </main>
 </body>
 
