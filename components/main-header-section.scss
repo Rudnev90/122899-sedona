@@ -1,0 +1,79 @@
+.main-header-section {
+  // Блок в шапке
+  position: relative;
+  background-image: url(../img/header-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  padding-top: 47px;
+  padding-bottom: 49px;
+  margin: 0 auto;
+    &:before {
+      // Левый элемент нижнего бордера
+      content: "";
+      position: absolute;
+      left: -1px;
+      bottom: -1px;
+      background-image: linear-gradient( 8deg, #ffffff 47%, transparent 50%);
+      height: 26px;
+      width: 56%;
+    }
+
+    &:after {
+      // Правый элемент нижнего бордера
+      content: "";
+      position: absolute;
+      right: -1px;
+      bottom: -1px;
+      background-image: linear-gradient( -8deg, #ffffff 47%, transparent 50%);
+      height: 26px;
+      width: 56%;
+    }
+  &__item {
+    // Картинка с надписью Welcome
+    background-image: url(../img/header-item.png);
+    display: block;
+    width: 196px;
+    height: 66px;
+    margin: 0 auto;
+  }
+  &__title {
+    // Картинка с надписью Sedona
+    background-image: url(../img/header-title.png);
+    display: block;
+    width: 280px;
+    height: 48px;
+    margin: 61px auto;
+    margin-bottom: 0;
+  }
+  &__title--form {
+    background: url(../img/form-header-title.png);
+    display: block;
+    width: 174px;
+    height: 30px;
+    margin: 0 auto;
+  }
+  &__slogan {
+    // Картинка с надписью слогана(Because .....)
+    background-image: url(../img/header-slogan.png);
+    width: 197px;
+    height: 54px;
+    margin: 69px auto;
+    margin-bottom: 0;
+  }
+}
+
+.main-header-section--form {
+  background-image: url(../img/header-background-form.jpg);
+  background-position: 0 -56px;
+  padding-bottom: 86px;
+  z-index: -1;
+}
+
+.main-header-section--form:before {
+  height: 33px;
+}
+
+.main-header-section--form:after {
+  height: 33px;
+}

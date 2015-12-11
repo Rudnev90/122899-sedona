@@ -1,0 +1,56 @@
+.title-section {
+  // Блок с заголовком
+  position: relative;
+  text-align: center;
+  padding: 42px 10% 49px; //32px
+  &:before {
+    // Левый элемент нижнего бордера
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-image: linear-gradient( 5deg, #81b3d2 47%, transparent 50%);
+    height: 14.5%;
+    width: 56%;
+  }
+  &:after {
+    // Правый элемент нижнего бордера
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    background-image: linear-gradient( -5deg, #81b3d2 47%, transparent 50%);
+    height: 14.5%;
+    width: 56%;
+  }
+  &--form {
+    padding-top: 76px;
+  }
+  &--form:before {
+    display: none;
+  }
+  &--form:after {
+    content: " ";
+    position: absolute;
+    border-bottom: 1px solid #d6d6d6;
+    width: 100%;
+    background-image: none;
+  }
+  &__title {
+    // Заголовок
+    font-size: $mainFontSize;
+    line-height: $mainLineHeight;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &__title--form {
+    margin-top: 0;
+  }
+  &__item {
+    // текст
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 35px;
+  }
+}

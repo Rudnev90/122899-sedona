@@ -1,0 +1,21 @@
+$mainColor: #81b3d2; // Основной цвет
+$fontFamily: 'PT Sans',
+'Arial',
+sans-serif; // Основной шрифт
+$mainFontSize: 18px; // Основной размер шрифта
+$secondFontSize: 21px; // Второй размер шрифта на странице
+$thirdFontSize: 14px; // Третий шрифт
+$boldWeight: 700; // Жирность шрифта
+$maxWidth: 760px; // Максимальная ширина
+$minWidth: 760px;
+$mainLineHeight: 1.5; // Основная васота
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: $maxWidth;
+  font-family: $fontFamily;
+  font-size: $mainFontSize;
+  margin: 0 auto;
+}

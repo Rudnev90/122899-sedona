@@ -1,0 +1,32 @@
+.item-section {
+  padding: 41px 9% 43px; //32px
+  &__title {
+    // Заголовок блока features-item
+    font-size: $secondFontSize;
+    line-height: $mainLineHeight;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &__num {
+    // Номер блока features-item
+    font-size: $thirdFontSize;
+    line-height: 21px;
+    display: block;
+    text-align: center;
+    margin: 14px 0 0;
+  }
+  &__desc {
+    // Описание блока features-item
+    text-align: center;
+    margin: 18px 0 0;
+    font-size: $thirdFontSize;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+}
+
+.item-section--blue-bg {
+  // Фон блока преимуществ
+  background: $mainColor;
+}

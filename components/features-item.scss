@@ -1,0 +1,30 @@
+.features-item {
+  position: relative;
+  // Блок features-itemы
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.features-item:nth-child(n+3) {
+  // Фон всех блоков начиная с 3-го
+  background: #eeeeee;
+}
+
+.features-item:nth-child(n+3):after {
+  // Нижний бордер
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #d6d6d6;
+  bottom: 0;
+  left: 20px;
+  width: 87.5%;
+}
+
+.features-item:nth-child(5):after {
+  // Отмена бордера у последнего элемента
+  position: absolute;
+  content: "";
+  border-bottom: none;
+}

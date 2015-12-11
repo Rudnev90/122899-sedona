@@ -1,0 +1,18 @@
+.button {
+  //Блок с кнопкой
+  padding: 42px 18px 49px;
+  &__search {
+    //Кнопка "Найти гостиницу"
+    display: block;
+    font-size: $secondFontSize;
+    line-height: $mainLineHeight;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+    background: $mainColor;
+    padding: 17px 45px 14px;
+    margin: 0 auto;
+    max-width: 280px;
+  }
+}
