@@ -1,0 +1,22 @@
+.group-fields {
+  position: relative;
+  max-width: $minWidth;
+  border: none;
+  padding: 0;
+  margin-top: 48px;
+  &__title {
+    @include title_style($padding: 0 0 0);
+  }
+}
+
+.group-fields:after {
+  @include border_bottom();
+}
+
+.group-fields--no-border:after {
+  @include border_bottom($display: none);
+}
+
+.group-fields--indent {
+  margin-top: 0;
+}

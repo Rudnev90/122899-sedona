@@ -1,0 +1,29 @@
+.main-menu-bar {
+  // Блок с кнопкой вызова меню
+  position: relative;
+  height: 56px;
+  &__link {
+    // Ссылка кнопки вызова меню
+    position: absolute;
+    background: url(../img/main-menu-bar-icon.png);
+    width: 23px;
+    height: 22px;
+    top: 17px;
+    right: 20px;
+  }
+  .logo-link {
+    // ссылка лого
+    display: block;
+    width: 138px;
+    heigth: 70px;
+    margin: 0 auto;
+    .logo {
+      // Лого
+      display: block;
+      margin: 0 auto;
+      max-width: 138px;
+      position: relative;
+      z-index: 125;
+    }
+  }
+}

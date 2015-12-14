@@ -1,0 +1,63 @@
+.social-nav {
+  padding: 0 70px;
+  margin-top: 39px;
+  text-align: center;
+  //Блок с соц. сетями
+  // padding: 41px 84px 0;
+  &__hashtag {
+    font-size: $secondFontSize;
+    line-height: $mainLineHeight;
+    text-transform: uppercase;
+    font-weight: $boldWeight;
+    text-align: center;
+  }
+  &__list {
+    margin: 0;
+    margin-top: 39px;
+    padding: 0;
+    width: auto;
+    list-style: none;
+    text-align: center;
+  }
+  &__link {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
+    width: 46px;
+    height: 48px;
+    background-color: $mainColor;
+    color: transparent;
+  }
+  &__item {
+    display: inline-block;
+    padding: 0;
+  }
+  &__item:first-child &__link:after {
+    position: absolute;
+    content: "";
+    background: url(../img/tw-icon.png) no-repeat;
+    width: 18px;
+    height: 14px;
+    top: 16px;
+    right: 14px;
+  }
+  &__item:nth-child(2) &__link:after {
+    position: absolute;
+    content: "";
+    background: url(../img/fb-icon.png) no-repeat;
+    width: 8px;
+    height: 18px;
+    top: 13px;
+    right: 18px;
+  }
+  &__item:last-child &__link:after {
+    position: absolute;
+    content: "";
+    background: url(../img/yt-icon.png) no-repeat;
+    width: 20px;
+    height: 14px;
+    top: 17px;
+    right: 13px;
+  }
+}

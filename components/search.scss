@@ -1,0 +1,19 @@
+.search {
+  //Блок поиска гостиницы
+  margin-top: 30px;
+  &__title {
+    text-align: center;
+    font-size: $secondFontSize;
+    font-weight: $boldWeight;
+    line-height: $mainLineHeight;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &__desc {
+    text-align: center;
+    font-size: $thirdFontSize;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 27px 30px 0;
+  }
+}

@@ -1,0 +1,73 @@
+@media(min-width:320px) and (max-width: 768px) {
+  .main-menu {
+    // Главное меню
+    display: none;
+    &--show {
+      display: block;
+    }
+    &__list {
+      // Список пунктов главного меню
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    &__item {
+      display: flex;
+      // Пункт меню
+      text-align: center;
+      text-decoration: none;
+    }
+    &__link {
+      // Ссылки главного меню
+      width: 100%;
+      text-decoration: none;
+      font-size: $mainFontSize;
+      font-weight: $boldWeight;
+      color: #ffffff;
+      line-height: $mainLineHeight;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 14px 0;
+      background: $mainColor;
+      border-bottom: 1px solid #678fa8;
+      border-top: 1px solid #9ac2db;
+    }
+    &__item:first-child .main-menu__close {
+      // Кнопка закрытия главного меню
+      position: absolute;
+      content: "";
+      background: url(../img/main-menu-close-btn-icon.png);
+      width: 23px;
+      height: 22px;
+      top: 16px;
+      right: 20px;
+      z-index: 6.25%;
+    }
+    &__item:first-child {
+      // Первый пункт меню
+      position: relative;
+      z-index: 200;
+    }
+    &__item:last-child &__link {
+      //Отменяем бордер у последнего пункта меню
+      border-bottom: none;
+    }
+    &__item:last-child {
+      // Послендний пункт меню
+      position: relative;
+    }
+    &__item:last-child:after {
+      // Тень у последнего пукта меню
+      position: absolute;
+      content: "";
+      box-shadow: inset 0 -5px 10px -4px rgba(0, 0, 0, 0.5);
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 57px;
+      z-index: 110;
+    }
+  }
+}

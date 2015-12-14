@@ -2,121 +2,218 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./components/normalize.scss">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-
-
-
-  <div class="review-header">
+  <header class="main-header">
     <div class="main-menu">
-      <ul class="main-menu-list">
-        <li class="main-menu-list_item">Информация</li>
-        <li class="main-menu-list_item">Оставить отзыв</li>
-        <li class="main-menu-list_item">Блог шерифа</li>
-        <li class="main-menu-list_item">Гостиницы</li>
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a class="main-menu__link" href="# ">Информация</a>
+          <span class="main-menu__close"></span>
+        </li>
+        <li class="main-menu__item"><a class="main-menu__link" href="form.html">Оставить отзыв</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Блог шерифа</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Гостиницы</a></li>
       </ul>
     </div>
-    <div class="main-logo"><img src="" alt="логотип"></div>
-    <h1 class="review-header_title">Sedona</h1>
-    <h2 class="review-header_review-title">Оставьте свой отзыв</h2>
-    <p class="review-header_review-dics">
-      Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях
-    </p>
-  </div>
-
-
-
-  <div class="form-review-wrap">
+    <div class="main-menu-bar">
+      <a class="main-menu-bar__link" href="#"></a>
+      <a class="logo-link" href="index.html">
+        <img class="logo" src="./img/logo.png" widht="138" height="70" />
+      </a>
+    </div>
+    <div class="main-header-section main-header-section--form">
+      <div class="main-header-section__title main-header-section__title--form"></div>
+    </div>
+  </header>
+  <main class="page-content">
+    <div class="title-section title-section--form">
+      <h1 class="title-section__title title-section__title--form">
+        Оставьте свой отзыв
+      </h1>
+      <p class="title-section__item title-section__item--form">
+        Помоготе нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях.
+      </p>
+    </div>
     <form action="" class="form-review">
-
-      <div class="introduce">
-        <h2 class="introduce_title">Представьтесь, пожалуйста:</h2>
-        <input type="text" id="surname" placeholder="Иванов">
-        <label for="surname">Фамилия</label>
-        <input type="text" id="name" placeholder="Петр">
-        <label for="name">Имя</label>
-        <input type="text" id="patronymic" placeholder="Петр">
-        <label for="patronymic">Отчество</label>
-      </div>
-
-      <div class="impression">
-        <h2 class="impression_title">Ваше общее впечатление:</h2>
-        <input type="checkbox" id="positive">
-        <label for="positive">Скорее положительное</label>
-        <input type="checkbox" id="negative">
-        <label for="negative">Скорее отрицательное</label>
-      </div>
-
-      <div class="travel-date">
-        <h2 class="travel-date_title">Дата вашей поездки:</h2>
-        <input type="text" id="coming" placeholder="4 июля 2015 год">
-        <label for="coming">Дата приезда</label>
-        <div class="toggle-controls">
-          <span class="toggle-controls_plus">+</span>
-          <input type="text" id="value" placeholder="14">
-          <span class="toggle-controls_value">дн.</span>
-          <label for="value">Длительность пребывания</label>
-          <span class="toggle-controls_minus">-</span>
+      <div class="group-fields">
+        <h2 class="group-fields__title title--white">Представьтесь, пожалуйста:</h2>
+        <div class="group-fields__wrap">
+          <label class="form-review__label" for="surname">Фамилия:</label>
+          <input class="form-review__input" type="text" id="surname" value="Иванов">
         </div>
-        <input type="text" id="checkout" placeholder="29 июля 2015 год">
-        <label for="checkout">Дата отъезда</label>
-      </div>
-
-      <div class="form-data">
-        <h2 class="form-data_title">Кол-во путешественников:</h2>
-        <div class="toggle-controls">
-          <span class="toggle-controls_plus">+</span>
-          <input type="text" id="value" placeholder="2">
-          <span class="toggle-controls_value" чел.</span>
-          <label for="value">Кол-во путешественников</label>
-          <span class="toggle-controls_minus">-</span>
+        <div class="group-fields__wrap">
+          <label class="form-review__label" for="name">Имя:</label>
+          <input class="form-review__input" type="text" id="name" value="Петр">
         </div>
-        <div class="form-data-item1">
-          <div class="introduce">
-            <h2 class="introduce_title">Представьтесь, пожалуйста:</h2>
-            <input type="text" id="surname" placeholder="Иванов">
-            <label for="surname">Фамилия</label>
-            <input type="text" id="name" placeholder="Петр">
-            <label for="name">Имя</label>
-            <input type="text" id="patronymic" placeholder="Петр">
-            <label for="patronymic">Отчество</label>
-          </div>
-          <div class="form-data-item1_num">
-            <span>№</span>
-            <span>1</span>
-          </div>
-        </div>
-        <div class="form-data-item1">
-          <div class="introduce">
-            <h2 class="introduce_title">Представьтесь, пожалуйста:</h2>
-            <input type="text" id="surname" placeholder="Иванов">
-            <label for="surname">Фамилия</label>
-            <input type="text" id="name" placeholder="Петр">
-            <label for="name">Имя</label>
-            <input type="text" id="patronymic" placeholder="Петр">
-            <label for="patronymic">Отчество</label>
-          </div>
-          <div class="form-data-item1_num">
-            <span>№</span>
-            <span>2</span>
-          </div>
+        <div class="group-fields__wrap">
+          <label class="form-review__label" for="patronymic">Отчество:</label>
+          <input class="form-review__input" type="text" id="patronymic" value="Александрович">
         </div>
       </div>
-
-      <div class="download-img">
-        <h2 class="download-img_title">Загрузите фотографии</h2>
-        <input type="file">
-        <div class="download-img_item"><img src="" alt="Фото"></div>
-        <div class="download-img_item"><img src="" alt="Фото"></div>
-        <div class="download-img_item"><img src="" alt="Фото"></div>
+      <div class="group-fields group--radio">
+        <h2 class="group-fields__title">Ваше общее впечатление:</h2>
+        <div class="group-fields__wrap-radio">
+          <input class="form-review__input-radio" name="vote" type="radio" id="positive" checked>
+          <label class="form-review__label-radio" for="positive">Скорее положительное</label>
+        </div>
+        <div class="group-fields__wrap-radio">
+          <input class="form-review__input-radio" name="vote" type="radio" id="negative">
+          <label class="form-review__label-radio" for="negative">Скорее отрицательное</label>
+        </div>
       </div>
-      
-      <button class="form-review_send-btn">Отправить</button>
+      <div class="group-fields">
+        <h2 class="group-fields__title">Дата вашей поездки:</h2>
+        <div class="group-fields__wrap">
+          <label class="form-review__label" for="coming">Дата приезда:</label>
+          <input class="form-review__input" type="datetime" id="coming" value="4 июля 2015 год">
+        </div>
+        <div class="group-fields__wrap wrap--data">
+          <label class="form-review__label label--data" for="data">Длительность пребывание:</label>
+          <button type="button" class="form-review__minus"></button>
+          <input class="form-review__input input--small" type="text" id="data" value="14">
+          <span class="form-review__data">дн.</span>
+          <button type="button" class="form-review__plus" /></button>
+        </div>
+        <div class="group-fields__wrap">
+          <label class="form-review__label" for="checkout">Дата отъезда:</label>
+          <input class="form-review__input" type="text" id="checkout" value="29 июля 2015 год">
+        </div>
+      </div>
+      <div class="group-fields">
+        <h2 class="group-fields__title">Кол-во путешественников:</h2>
+        <div class="group-fields__wrap wrap--data">
+          <label class="form-review__label label--data" for="data">Количество путешественников</label>
+          <button type="button" class="form-review__minus"></button>
+          <input class="form-review__input input--small" type="text" id="data" value="2">
+          <span class="form-review__data">чел.</span>
+          <button type="button" class="form-review__plus" /></button>
+        </div>
+      </div>
+      <div class="group-fields fields--card no--border">
+        <div class="group-fields__num">
+          <span class="group-fields__symbol">№</span>
+          <span class="group-fields__numeric">1</span>
+        </div>
+        <div class="group-fields__wrap feilds-wrap--wrap">
+          <div class="group-fields__wrap">
+            <label class="form-review__label" for="surname-card">Фамилия:</label>
+            <input class="form-review__input" type="text" id="surname-card" value="Иванов">
+          </div>
+          <div class="group-fields__wrap">
+            <label class="form-review__label" for="name-card">Имя:</label>
+            <input class="form-review__input" type="text" id="name-card" value="Петр">
+          </div>
+          <div class="group-fields__wrap">
+            <label class="form-review__label" for="patronymic-card">Отчество:</label>
+            <input class="form-review__input" type="text" id="patronymic-card" value="Петр">
+          </div>
+        </div>
+      </div>
+      <div class="group-fields fields--card no--border">
+        <div class="group-fields__num">
+          <span class="group-fields__symbol">№</span>
+          <span class="group-fields__numeric">2</span>
+        </div>
+        <div class="group-fields__wrap feilds-wrap--wrap">
+          <div class="group-fields__wrap">
+            <label class="form-review__label" for="surname-card">Фамилия:</label>
+            <input class="form-review__input" type="text" id="surname-card" value="Иванов">
+          </div>
+          <div class="group-fields__wrap">
+            <label class="form-review__label" for="name-card">Имя:</label>
+            <input class="form-review__input" type="text" id="name-card" value="Петр">
+          </div>
+          <div class="group-fields__wrap">
+            <label class="form-review__label" for="patronymic-card">Отчество:</label>
+            <input class="form-review__input" type="text" id="patronymic-card" value="Петр">
+          </div>
+        </div>
+      </div>
+      <div class="group-fields group--checkbox">
+        <h2 class="group-fields__title">Посещенные достопримечательности:</h2>
+        <div class="group-fields__wrap-checkbox">
+          <input class="form-review__input-checkbox" type="checkbox" id="evil-bridge" checked>
+          <label class="form-review__label-checkbox" for="evil-bridge">Мост дьявола</label>
+        </div>
+        <div class="group-fields__wrap-checkbox">
+          <input class="form-review__input-checkbox" type="checkbox" id="slide-park">
+          <label class="form-review__label-checkbox" for="slide-park">Слайд-парк</label>
+        </div>
+        <div class="group-fields__wrap-checkbox">
+          <input class="form-review__input-checkbox" type="checkbox" id="bell-rock" checked>
+          <label class="form-review__label-checkbox" for="bell-rock">Гора-колокол</label>
+        </div>
+        <div class="group-fields__wrap-checkbox">
+          <input class="form-review__input-checkbox" type="checkbox" id="red-rocks" checked>
+          <label class="form-review__label-checkbox" for="red-rocks">Красные скалы</label>
+        </div>
+      </div>
+      <div class="download-img img--pos">
+        <h2 class="download-img__title">Загрузите фотографии</h2>
+        <input class="form-review__input-file" type="file" id="download-img" required multiple>
+        <label class="form-review__label-file" for="download-img">Выбрать фотографии</label>
+        <div class="download-img__item-wrap">
+          <div class="download-img__item">
+            <img src="" alt="Фото" width="70" height="70">
+            <a class="download-img__item-del" href="#" title="Удалить изображение"></a>
+          </div>
+          <div class="download-img__item">
+            <img src="" alt="Фото" width="70" height="70">
+            <a class="download-img__item-del" href="#" title="Удалить изображение"></a>
+          </div>
+          <div class="download-img__item">
+            <img src="" alt="Фото" width="70" height="70">
+            <a class="download-img__item-del" href="#" title="Удалить изображение"></a>
+          </div>
+          <div class="download-img__item">
+            <img src="" alt="Фото" width="70" height="70">
+            <a class="download-img__item-del" href="#" title="Удалить изображение"></a>
+          </div>
+          <div class="download-img__item">
+            <img src="" alt="Фото" width="70" height="70">
+            <a class="download-img__item-del" href="#" title="Удалить изображение"></a>
+          </div>
+          <div class="download-img__item">
+            <img src="" alt="Фото" width="70" height="70">
+            <a class="download-img__item-del" href="#" title="Удалить изображение"></a>
+          </div>
+          <div class="download-img__item">
+            <img src="" alt="Фото" width="70" height="70">
+            <a class="download-img__item-del" href="#" title="Удалить изображение"></a>
+          </div>
+        </div>
+      </div>
+      <div class="button button--send-review">
+        <a class="button__search" href="#">Отправить отзыв</a>
+      </div>
     </form>
-  </div>
+  </main>
+  <footer>
+    <div class="social-nav">
+      <span class="social-nav__hashtag">#Visitsedona</span>
+      <div class="social-nav-block">
+        <ul class="social-nav__list">
+          <li class="social-nav__item"><a class="social-nav__link" href="#">TW</a></li>
+          <li class="social-nav__item"><a class="social-nav__link" href="#">FB</a></li>
+          <li class="social-nav__item"><a class="social-nav__link" href="#">YT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="copyright__developed">Разработано</div>
+      <a class="copyright__link" href="#">
+        <img class="copyright__img" src="img/copyright-img.svg" alt="HTMLAcademy">
+      </a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
