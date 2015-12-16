@@ -22,6 +22,7 @@
       background-color: #f2f2f2;
       padding: 17px 6.56% 17px;
       margin-top: 11px;
+      outline: none;
     }
     &__label {
       @include title_section_item;
@@ -63,6 +64,7 @@
       background-color: #f2f2f2;
       padding: 17px 6.56% 17px;
       margin-top: 11px;
+      outline: none;
     }
     &__label {
       @include title_section_item;
@@ -85,5 +87,63 @@
     width: 14.5%;
     top: 37px;
     right: 60px;
+  }
+}
+@media(min-width:1200px) {
+  .group-fields-about {
+    position: relative;
+    padding: 22px 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__title {
+      width: 100%;
+      @include title_style;
+      color: #000000;
+      font-size: 21px;
+    }
+    &__wrap {
+      width: 27.1%;
+      margin-top: 21px;
+      margin-left: 60px;
+      flex-grow: 1;
+    }
+    &__wrap:nth-child(2) {
+      width: 27.1%;
+      margin-top: 21px;
+      margin-left: 0;
+    }
+    &__input {
+      width: 100%;
+      font-size: $mainFontSize;
+      font-weight: $boldWeight;
+      border: none;
+      background-color: #f2f2f2;
+      padding: 17px 6.56% 17px;
+      margin-top: 11px;
+      outline: none;
+    }
+    &__label {
+      @include title_section_item;
+      width: 93%;
+      margin: 0 0 0 6.56%;
+    }
+  }
+  .group-fields-about:before {
+    content: '';
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    width: 22.9%;
+    top: 37px;
+    left: 120px;
+  }
+  .group-fields-about:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    width: 22.9%;
+    top: 37px;
+    right: 120px;
   }
 }

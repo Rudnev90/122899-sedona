@@ -81,11 +81,11 @@
       text-transform: uppercase;
       margin: 0;
     }
-    &__title--form {
-      margin-top: 0;
-    }
     &__item {
       @include title_section_item;
     }
+  }
+  .title-section__title--form {
+    font-size: 30px;
   }
 }
