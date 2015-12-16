@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="./components/normalize.scss">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> <script src="js/my-map.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/my-map.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -18,16 +18,14 @@
         <li class="main-menu__item"><a class="main-menu__link" href="# ">Информация</a>
           <span class="main-menu__close"></span>
         </li>
-        <li class="main-menu__item"><a class="main-menu__link" href="form.html">Оставить отзыв</a></li>
+        <li class="main-menu__item main-manu__item--margin"><a class="main-menu__link" href="form.html">Оставить отзыв</a></li>
         <li class="main-menu__item"><a class="main-menu__link" href="#">Блог шерифа</a></li>
         <li class="main-menu__item"><a class="main-menu__link" href="#">Гостиницы</a></li>
       </ul>
-    </div>
-    <div class="main-menu-bar">
-      <a class="main-menu-bar__link" href="#"></a>
-      <a class="logo-link" href="index.html">
-        <img class="logo" src="./img/logo.png" widht="138" height="70" />
+      <a class="main-menu__logo-link" href="index.html">
+        <img class="main-menu__logo" src="./img/logo.png" widht="138" height="70" />
       </a>
+      <a class="main-menu__open-link" href="#"></a>
     </div>
     <div class="main-header-section">
       <div class="main-header-section__item"></div>
@@ -45,15 +43,15 @@
       </p>
     </div>
     <div class="features">
-      <div class="features-item">
-        <div class="item-section item-section--blue-bg">
-          <h2 class="item-section__title">Настоящий городок</h2>
+      <div class="features-item features-item--color">
+        <div class="item-section item-section--blue-bg ">
+          <h2 class="item-section__title item-section__title--desk">Настоящий городок</h2>
           <span class="item-section__num">&mdash; №1 &mdash;</span>
           <p class="item-section__desc">
-            Седона не атракцион для туристов,там течет своя жизнь!
+            Седона не атракцион для туристов, там течет своя жизнь!
           </p>
         </div>
-        <img class="features-item__img" src="img/features-item1.jpg" alt="Фото города" width="320" height="256">
+      <img class="features-item__img" src="img/features-item1-x320.jpg" alt="Фото моста" width="320" height="256">
         <div class="features-list features-list--bg">
           <div class="features-list__item features-list__item-home">
             <p class="features-list__title">Жилье</p>
@@ -64,7 +62,7 @@
           <div class="features-list__item features-list__item-food">
             <p class="features-list__title">Еда</p>
             <p class="features-list__desc">
-              Всегда заказывайте фирменный гамбурегр, вы не разочаруетесь!
+              Всегда заказывайте фирменный гамбургер, вы не разочаруетесь!
             </p>
           </div>
           <div class="features-list__item features-list__item-souvenirs">
@@ -75,39 +73,39 @@
           </div>
         </div>
       </div>
-      <div class="features-item">
+      <div class="features-item features-item--color features-item--reverse">
         <div class="item-section item-section--blue-bg">
-          <h2 class="item-section__title">Там есть мост дьявола</h2>
+          <h2 class="item-section__title item-section__title--desk">Там есть мост дьявола</h2>
           <span class="item-section__num">&mdash; №2 &mdash;</span>
           <p class="item-section__desc">
             Да, по нему пожно пройти! Если конечно вы осмелитесь
           </p>
         </div>
-        <img class="features-item__img" src="img/features-item2.png" alt="Фото моста" width="320" height="256">
+        <img class="features-item__img" src="img/features-item2-x320.png" alt="Фото моста" width="320" height="256">
       </div>
-      <div class="features-item">
-        <div class="item-section">
-          <h2 class="item-section__title">Небольшая площадь</h2>
+      <div class="features-item features-item--bg features-item--n-3">
+        <div class="item-section item-section--n-3">
+          <h2 class="item-section__title item-section__title--n-3">Небольшая площадь</h2>
           <span class="item-section__num">&mdash; №3 &mdash;</span>
-          <p class="item-section__desc">
+          <p class="item-section__desc item-section__desc--n-3">
             Все достопримечательности находятся очень близко
           </p>
         </div>
       </div>
-      <div class="features-item">
-        <div class="item-section">
-          <h2 class="item-section__title">Красивая дорога</h2>
+      <div class="features-item features-item--bg features-item--n-3">
+        <div class="item-section item-section--n-3">
+          <h2 class="item-section__title item-section__title--n-3">Красивая дорога</h2>
           <span class="item-section__num">&mdash; №4 &mdash;</span>
-          <p class="item-section__desc">
+          <p class="item-section__desc item-section__desc--n-3">
             Ехать в седону из лас-вегаса совсем не скучно!
           </p>
         </div>
       </div>
-      <div class="features-item">
-        <div class="item-section">
-          <h2 class="item-section__title">Мало туристов</h2>
+      <div class="features-item features-item--bg features-item--no-border features-item--n-3">
+        <div class="item-section item-section--n-3">
+          <h2 class="item-section__title item-section__title--n-3">Мало туристов</h2>
           <span class="item-section__num">&mdash; №5 &mdash;</span>
-          <p class="item-section__desc">
+          <p class="item-section__desc item-section__desc--n-3">
             Большинство едет в гранд-каньон и толпится там
           </p>
         </div>
@@ -126,21 +124,23 @@
       <div id="map"></div>
     </div>
     <footer>
-      <div class="social-nav">
-        <span class="social-nav__hashtag">#Visitsedona</span>
-        <div class="social-nav-block">
-          <ul class="social-nav__list">
-            <li class="social-nav__item"><a class="social-nav__link" href="#">TW</a></li>
-            <li class="social-nav__item"><a class="social-nav__link" href="#">FB</a></li>
-            <li class="social-nav__item"><a class="social-nav__link" href="#">YT</a></li>
-          </ul>
+      <div class="footer-wrap">
+        <div class="social-nav">
+          <span class="social-nav__hashtag">#Visitsedona</span>
+          <div class="social-nav-block">
+            <ul class="social-nav__list">
+              <li class="social-nav__item"><a class="social-nav__link" href="#">TW</a></li>
+              <li class="social-nav__item"><a class="social-nav__link" href="#">FB</a></li>
+              <li class="social-nav__item"><a class="social-nav__link" href="#">YT</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="copyright">
-        <div class="copyright__developed">Разработано</div>
-        <a class="copyright__link" href="#">
-          <img class="copyright__img" src="img/copyright-img.svg" alt="HTMLAcademy">
-        </a>
+        <div class="copyright">
+          <div class="copyright__developed">Разработано</div>
+          <a class="copyright__link" href="#">
+            <img class="copyright__img" src="img/copyright-img.svg" alt="HTMLAcademy">
+          </a>
+        </div>
       </div>
     </footer>
   </main>

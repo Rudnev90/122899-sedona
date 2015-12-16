@@ -1,0 +1,44 @@
+$mainColor: #81b3d2; // Основной цвет
+$fontFamily: 'PT Sans', 'Arial', sans-serif; // Основной шрифт
+$mainFontSize: 18px; // Основной размер шрифта
+$secondFontSize: 21px; // Второй размер шрифта на странице
+$thirdFontSize: 14px; // Третий шрифт
+$fourthFontSize: 30px;
+$boldWeight: 700; // Жирность шрифта
+$maxWidthTablet: 760px; // Максимальная ширина
+$maxWidthDesktop: 1200px;
+$minWidth: 760px;
+$mainLineHeight: 1.5; // Основная васота
+@media(min-width:320px) and (max-width: 767px) {
+  body {
+    max-width: $maxWidthTablet;
+    font-family: $fontFamily;
+    font-size: $mainFontSize;
+    margin: 0 auto;
+  }
+  * {
+    box-sizing: border-box;
+  }
+}
+@media(min-width:767px) and (max-width: 1200px) {
+  body {
+    max-width: $maxWidthDesktop;
+    font-family: $fontFamily;
+    font-size: $mainFontSize;
+    margin: 0 auto;
+  }
+  * {
+    box-sizing: border-box;
+  }
+}
+@media(min-width:1200px) {
+  body {
+    max-width: $maxWidthDesktop;
+    font-family: $fontFamily;
+    font-size: $mainFontSize;
+    margin: 0 auto;
+  }
+  * {
+    box-sizing: border-box;
+  }
+}

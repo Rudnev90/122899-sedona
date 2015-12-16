@@ -1,0 +1,109 @@
+@media(min-width:320px) and (max-width: 766px) {
+  .group-fields-radio {
+    border-top: 1px solid #e5e5e5;
+    padding: 22px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__title {
+      @include title_style;
+      width: 100%;
+      color: #000000;
+    }
+    &__wrap {
+      position: relative;
+      margin-top: 51px;
+      padding-left: 74px;
+      margin-right: 20px;
+    }
+    &__radio[type="radio"] {
+      display: none;
+    }
+    &__radio[type="radio"]+label {
+      font-size: 14px;
+      text-transform: uppercase;
+      width: 100%;
+      text-transform: none;
+      font-weight: $boldWeight;
+      font-size: $mainFontSize;
+    }
+    &__radio[type="radio"]+label:before {
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      border: 17px solid #f2f2f2;
+      background-color: #f2f2f2;
+      border-radius: 50%;
+      top: -16px;
+      left: 0;
+    }
+    &__radio[type="radio"]:checked+label:before {
+      background-color: #000;
+    }
+  }
+}
+@media(min-width:766px) and (max-width: 1200px) {
+  .group-fields-radio {
+    position: relative;
+    padding: 22px 58px 44px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__title {
+      @include title_style;
+      width: 100%;
+      color: #000000;
+      font-size: 21px;
+    }
+    &__wrap {
+      position: relative;
+      margin-top: 51px;
+      padding-left: 74px;
+      margin-right: 20px;
+    }
+    &__radio[type="radio"] {
+      display: none;
+    }
+    &__radio[type="radio"]+label {
+      font-size: 14px;
+      text-transform: uppercase;
+      width: 100%;
+      text-transform: none;
+      font-weight: $boldWeight;
+      font-size: $mainFontSize;
+    }
+    &__radio[type="radio"]+label:before {
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      border: 17px solid #f2f2f2;
+      background-color: #f2f2f2;
+      border-radius: 50%;
+      top: -16px;
+      left: 0;
+    }
+    &__radio[type="radio"]:checked+label:before {
+      background-color: #000;
+    }
+  }
+  .group-fields-radio:before {
+    content: '';
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    width: 13.5%;
+    top: 37px;
+    left: 60px;
+  }
+  .group-fields-radio:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    width: 14.5%;
+    top: 37px;
+    right: 60px;
+  }
+}
