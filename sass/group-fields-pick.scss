@@ -127,3 +127,77 @@
     right: 60px;
   }
 }
+@media(min-width:1200px) {
+  .group-fields-pick {
+    position: relative;
+    padding: 22px 120px 37px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__title {
+      @include title_style;
+      color: #000000;
+      width: 100%;
+      padding: 0 280px;
+      font-size: 21px;
+    }
+    &__wrap {
+      width: 50%;
+      display: flex;
+    }
+    &__input[type="checkbox"] {
+      display: none;
+    }
+    &__input[type="checkbox"]+label {
+      position: relative;
+      font-size: 14px;
+      text-transform: uppercase;
+      width: 100%;
+      text-transform: none;
+      font-weight: $boldWeight;
+      font-size: $mainFontSize;
+      margin-top: 50px;
+      display: block;
+      padding-left: 71px;
+    }
+    &__input[type="checkbox"]+label:before {
+      content: '';
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      top: -17px;
+      left: 0;
+    }
+    &__input[type="checkbox"]:checked+label:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 18px;
+      width: 18px;
+      height: 8px;
+      border: 5px solid #000;
+      border-top-style: none;
+      border-right-style: none;
+      transform: rotate(-45deg);
+    }
+  }
+  .group-fields-pick:before {
+    content: '';
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    width: 22.9%;
+    top: 37px;
+    left: 120px;
+  }
+  .group-fields-pick:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    width: 22.9%;
+    top: 37px;
+    right: 120px;
+  }
+}
