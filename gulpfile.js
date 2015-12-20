@@ -11,6 +11,7 @@ var copy = require('copy');
 var jsmin = require('gulp-jsmin');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
+var minifyCss = require('gulp-minify-css');
 
 gulp.task("css", function() {
   gulp.src("source/sass/style.{sass,scss}")
@@ -23,6 +24,8 @@ gulp.task("css", function() {
     ]))
     .pipe(rename("style.css"))
     .pipe(gulp.dest("build/css"))
+  return gulp.src("build/css/*.css")
+    .pipe(minifyCss())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
 });

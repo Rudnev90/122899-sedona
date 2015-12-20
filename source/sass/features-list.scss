@@ -30,11 +30,11 @@
       //Иконка пункта "Жилье"
       content: " ";
       position: absolute;
+      background-image: url(../img/icon-house.svg) no-repeat;
       width: 37px;
       height: 37px;
       left: 6%;
       top: -13px;
-      background: url(../img/home-icon.png) no-repeat;
     }
     &__item-food:before {
       //Иконка пункта "Еда"
