@@ -5,7 +5,6 @@ var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-var minify = require("gulp-minify-css");
 var rename = require("gulp-rename");
 var copyDir = require('copy-dir');
 var copy = require('copy');
@@ -22,7 +21,6 @@ gulp.task("css", function() {
     ]))
     .pipe(rename("style.css"))
     .pipe(gulp.dest("css"))
-    .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("css"))
 });
