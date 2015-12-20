@@ -29,12 +29,14 @@ gulp.task("css", function() {
 
 gulp.task("js", function() {
   gulp.src('source/js/*.js')
-  .pipe(gulp.dest("build/js"))
+    .pipe(gulp.dest("build/js"))
     .pipe(jsmin())
     .pipe(rename({
       suffix: '.min'
     }))
     .pipe(gulp.dest('build/js/'));
+  return gulp.src('source/js/vendor/*.js')
+    .pipe(gulp.dest('build/js/vendor/'));
 });
 
 gulp.task("html", function() {
@@ -44,15 +46,17 @@ gulp.task("html", function() {
 
 gulp.task("img", function() {
   gulp.src('source/img/*')
-  .pipe(imagemin({
-    progressive: true,
-    svgoPlugins: [{removeViewBox: false}],
-    use: [pngquant()]
-  }))
-  .pipe(gulp.dest('build/img'));
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{
+        removeViewBox: false
+      }],
+      use: [pngquant()]
+    }))
+    .pipe(gulp.dest('build/img'));
 });
 
-gulp.task('watch', function(){
+gulp.task('watch', function() {
   gulp.watch("build/css/*.css", ["css"])
   gulp.watch("build/js/*.js", ["js"])
   gulp.watch("build/img/", ["img"])
@@ -61,6 +65,6 @@ gulp.task('watch', function(){
 // =====================================================
 // Start task
 // =====================================================
-gulp.task('start', ['css','js', 'html', 'img','watch']);
+gulp.task('start', ['css', 'js', 'html', 'img', 'watch']);
 // Оставьте эту строку в самом конце файла
 require("./.gosha");
