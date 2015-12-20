@@ -17,11 +17,11 @@
       padding-left: 21.87%;
     }
     &__item:nth-child(n+2) {
-      margin-top: 38px;
+      margin-top: 29px;
     }
     &__desc {
       //Описание пункта списка
-      margin: 21px 0 0;
+      margin: 18px 0 0;
       font-size: $thirdFontSize;
       text-transform: uppercase;
       line-height: 21px;
@@ -62,7 +62,7 @@
   .features-list {
     display: flex;
     flex-direction: row;
-    padding: 177px 0 63px;
+    padding: 156px 0 63px;
     color: #000000;
     //Вложенный список в блок features
     &__title {

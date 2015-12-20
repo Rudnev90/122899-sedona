@@ -79,10 +79,17 @@
     &__logo-link {
       position: relative;
       display: block;
-      width: 138px;
+      width: 67px;
       height: 56px;
       margin: 0 auto;
       z-index: 10;
+    }
+    &__logo-sedona-wrap {
+      position: absolute;
+      top: 0;
+       left: 50%;
+       margin-left: -68px;
+       z-index: -1;
     }
   }
 }
@@ -96,7 +103,7 @@
       justify-content: space-between;
       list-style: none;
       margin: 0;
-      padding: 19px 0 22px;
+      padding: 15px 0 18px;
     }
     &--show {
       display: flex;
@@ -126,12 +133,18 @@
     &__logo-link {
       position: absolute;
       top: 0;
-      left: 42.01%;
-      display: block;
-      width: 138px;
+      left: 50%;
+      width: 67px;
       height: 56px;
-      margin: 0 auto;
+      margin-left: -33px;
       z-index: 10;
+    }
+    &__logo-sedona-wrap {
+      position: absolute;
+      top: 0;
+       left: 50%;
+       margin-left: -68px;
+       z-index: -1;
     }
   }
   .main-manu__item--margin {
@@ -178,12 +191,18 @@
     &__logo-link {
       position: absolute;
       top: 0;
-      left: 46.01%;
-      display: block;
-      width: 138px;
+      left: 50%;
+      width: 67px;
       height: 56px;
-      margin: 0 auto;
+      margin-left: -33px;
       z-index: 10;
+    }
+    &__logo-sedona-wrap {
+      position: absolute;
+      top: 0;
+       left: 50%;
+       margin-left: -68px;
+       z-index: -1;
     }
   }
   .main-manu__item--margin {

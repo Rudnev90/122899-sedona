@@ -1,7 +1,7 @@
 @media(min-width:320px) and (max-width: 766px) {
   .button {
     //Блок с кнопкой
-    padding: 42px 18px 49px;
+    padding: 35px 0 49px;
     &__search {
       //Кнопка "Найти гостиницу"
       display: block;
@@ -13,7 +13,7 @@
       color: #ffffff;
       border: none;
       background: $mainColor;
-      padding: 17px 45px 14px;
+      padding: 15px 45px 12px;
       margin: 0 auto;
       max-width: 280px;
     }
@@ -25,7 +25,7 @@
 @media(min-width:766px) and (max-width: 1200px) {
   .button {
     //Блок с кнопкой
-    padding: 42px 18px 49px;
+    padding: 35px 18px 49px;
     &__search {
       //Кнопка "Найти гостиницу"
       display: block;
@@ -37,9 +37,9 @@
       color: #ffffff;
       border: none;
       background: $mainColor;
-      padding: 17px 45px 14px;
+      padding: 15px 45px 12px;
       margin: 0 auto;
-      max-width: 458px;
+      width: 458px;
     }
   }
   .button--send-review {
@@ -49,7 +49,7 @@
 @media(min-width:1200px) {
   .button {
     //Блок с кнопкой
-    padding: 42px 18px 49px;
+    padding: 35px 18px 49px;
     &__search {
       //Кнопка "Найти гостиницу"
       display: block;
@@ -61,7 +61,7 @@
       color: #ffffff;
       border: none;
       background: $mainColor;
-      padding: 17px 45px 14px;
+      padding: 15px 45px 12px;
       margin: 0 auto;
       max-width: 458px;
     }

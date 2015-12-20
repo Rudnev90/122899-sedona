@@ -5,12 +5,10 @@
     flex-direction: column;
     // Блок features-itemы
     &__img {
-      background-image: url(../img/features-item1-x320.jpg);
       background-repeat: no-repeat;
-      background-size: 100%;
       width: 100%;
       height: 256px;
-      margin: 0 auto;
+      overflow: hidden;
     }
   }
   .features-item--bg {
@@ -35,6 +33,14 @@
   .features-item--color {
     color: #ffffff;
   }
+  .features-item--img-town {
+    width: 100%;
+    height: 256px;
+  }
+  .features-item--img-bridge {
+    width: 100%;
+    height: 256px;
+  }
 }
 @media(min-width:766px) and (max-width: 1200px) {
   .features-item {
@@ -45,13 +51,11 @@
     width: 100%;
     // Блок features-itemы
     &__img {
-      background-image: url(../img/features-item1-x320.jpg);
       background-repeat: no-repeat;
-      background-size: 100%;
-      flex-grow: 1;
-      width: 512px;
+      width: 66.66%;
       height: 256px;
-      margin: 0 auto;
+      overflow: hidden;
+      font-size: 0;
     }
   }
   .features-item--reverse {
@@ -66,6 +70,12 @@
   }
   .features-item--n-3 {
     width: 33.3%;
+  }
+  .features-item--img-town {
+    height: 256px;
+  }
+  .features-item--img-bridge {
+    height: 256px;
   }
 }
 @media(min-width:1200px) {
@@ -98,5 +108,11 @@
   }
   .features-item--n-3 {
     width: 33.33%;
+  }
+  .features-item--img-town {
+    height: 256px;
+  }
+  .features-item--img-bridge {
+    height: 256px;
   }
 }

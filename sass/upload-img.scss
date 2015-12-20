@@ -1,7 +1,7 @@
 @media(min-width:320px) and (max-width: 766px) {
-  .download-img {
-    border-top: 1px solid #e5e5e5;
-    padding: 22px 20px 0;
+  .upload-img {
+    position: relative;
+    padding: 22px 0 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -24,7 +24,7 @@
       color: #ffffff;
       background: #f2f2f2;
       border: none;
-      padding: 17px 26px 14px;
+      padding: 15px 25px 12px;
       margin: 0 auto;
       max-width: 280px;
     }
@@ -85,10 +85,28 @@
       transform: rotate(-45deg);
       z-index: 150;
     }
+    &__img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .upload-img:before {
+    content: " ";
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .upload-img__label-tab {
+    display: inline;
+  }
+  .upload-img__label-desk {
+    display: none;
   }
 }
-@media(min-width:766px) and (max-width: 1200px) {
-  .download-img {
+@media(min-width:766px) and (max-width: 1198px) {
+  .upload-img {
     position: relative;
     padding: 22px 20px 0;
     display: flex;
@@ -176,8 +194,12 @@
       transform: rotate(-45deg);
       z-index: 150;
     }
+    &__img {
+      width: 140px;
+      height: 140px;
+    }
   }
-  .download-img:before {
+  .upload-img:before {
     content: '';
     position: absolute;
     border: 1px solid #e5e5e5;
@@ -185,7 +207,7 @@
     top: 37px;
     left: 60px;
   }
-  .download-img:after {
+  .upload-img:after {
     content: '';
     position: absolute;
     border: 1px solid #e5e5e5;
@@ -193,11 +215,17 @@
     top: 37px;
     right: 60px;
   }
+  .upload-img__label-tab {
+    display: inline;
+  }
+  .upload-img__label-desk {
+    display: none;
+  }
 }
 @media(min-width:1200px) {
-  .download-img {
+  .upload-img {
     position: relative;
-    padding: 22px 120px 0;
+    padding: 22px 0 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -283,8 +311,12 @@
       transform: rotate(-45deg);
       z-index: 150;
     }
+    &__img {
+      width: 140px;
+      height: 140px;
+    }
   }
-  .download-img:before {
+  .upload-img:before {
     content: '';
     position: absolute;
     border: 1px solid #e5e5e5;
@@ -292,12 +324,18 @@
     top: 37px;
     left: 120px;
   }
-  .download-img:after {
+  .upload-img:after {
     content: '';
     position: absolute;
     border: 1px solid #e5e5e5;
     width: 22.9%;
     top: 37px;
     right: 120px;
+  }
+  .upload-img__label-tab {
+    display: none;
+  }
+  .upload-img__label-desk {
+    display: inline;
   }
 }

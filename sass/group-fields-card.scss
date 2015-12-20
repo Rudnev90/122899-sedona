@@ -2,7 +2,7 @@
   .group-fields-card {
     position: relative;
     border: none;
-    padding: 22px 20px;
+    padding: 22px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -14,7 +14,7 @@
       margin-right: 6px;
     }
     &__symbol {
-      margin-bottom: 10px;
+      margin-bottom: 7px;
       text-align: center;
     }
     &__numeric {
@@ -47,7 +47,7 @@
       font-weight: $boldWeight;
       border: none;
       background-color: #f2f2f2;
-      padding: 17px 6.56% 17px;
+      padding: 17px 6.56%;
       outline: none;
     }
   }
@@ -56,7 +56,7 @@
   .group-fields-card {
     position: relative;
     border: none;
-    padding: 22px 58px;
+    padding: 22px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -83,7 +83,7 @@
       flex-direction: row;
       justify-content: space-between;
       margin-top: 0;
-      width: 89%;
+      width: 87%;
       flex-grow: 1;
     }
     &__wrap {
@@ -107,7 +107,7 @@
       font-weight: $boldWeight;
       border: none;
       background-color: #f2f2f2;
-      padding: 17px 6.56% 17px;
+      padding: 17px 6.56%;
       outline: none;
     }
   }
@@ -159,7 +159,7 @@
     &__wrap:nth-child(2) {
       width: 21.9%;
       flex-grow: 1;
-        margin-right: 61px;
+      margin-right: 61px;
     }
     &__wrap:last-child {
       margin-right: 0;
@@ -176,7 +176,7 @@
       font-weight: $boldWeight;
       border: none;
       background-color: #f2f2f2;
-      padding: 17px 6.56% 17px;
+      padding: 17px 6.56%;
       outline: none;
     }
   }

@@ -1,6 +1,7 @@
 @media(min-width:320px) and (max-width: 766px) {
   .item-section {
-    padding: 41px 9% 43px; //32px
+    position: relative;
+    padding: 26px 9% 37px; //32px
     width: 100%;
     &__title {
       // Заголовок блока features-item
@@ -8,7 +9,7 @@
       line-height: $mainLineHeight;
       text-align: center;
       text-transform: uppercase;
-      margin: 0;
+      margin: 56px 0 0;
     }
     &__num {
       // Номер блока features-item
@@ -16,12 +17,12 @@
       line-height: 21px;
       display: block;
       text-align: center;
-      margin: 14px 0 0;
+      margin: 10px 0 0;
     }
     &__desc {
       // Описание блока features-item
       text-align: center;
-      margin: 18px 0 0;
+      margin: 8px 0 0;
       font-size: $thirdFontSize;
       line-height: 21px;
       text-transform: uppercase;
@@ -30,6 +31,38 @@
   .item-section--blue-bg {
     // Фон блока преимуществ
     background: $mainColor;
+  }
+  .item-section:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/header-border-x320-features-item.png);
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 37px;
+  }
+  .item-section--no-triangle:after {
+    position: absolute;
+    content: " ";
+    display: none;
+  }
+  .item-section__title-no-margin {
+    margin-top: 0;
+  }
+  .item-section__title-margin {
+    margin-top: 40px;
+  }
+  .item-section__title-margin-n-3 {
+    margin-top: 14px;
+  }
+}
+@media(min-width:322px) and (max-width: 766px) {
+  .item-section:after {
+    display: none;
+  }
+  .item-section-title-1__margin {
+    margin-top: 14px;
   }
 }
 @media(min-width:766px) and (max-width: 1200px) {

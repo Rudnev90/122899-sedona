@@ -1,7 +1,7 @@
 @media(min-width:320px) and (max-width: 766px) {
   .search {
     //Блок поиска гостиницы
-    margin-top: 30px;
+    margin-top: 25px;
     &__title {
       text-align: center;
       font-size: $secondFontSize;
@@ -15,14 +15,14 @@
       font-size: $thirdFontSize;
       line-height: 24px;
       text-transform: uppercase;
-      margin: 27px 30px 0;
+      margin: 20px 30px 0;
     }
   }
 }
 @media(min-width:766px) and (max-width: 1200px) {
   .search {
     //Блок поиска гостиницы
-    margin-top: 30px;
+    margin-top: 45px;
     &__title {
       text-align: center;
       font-size: $fourthFontSize;
@@ -44,7 +44,7 @@
 @media(min-width:1200px) {
   .search {
     //Блок поиска гостиницы
-    margin-top: 30px;
+    margin-top: 45px;
     &__title {
       text-align: center;
       font-size: $fourthFontSize;

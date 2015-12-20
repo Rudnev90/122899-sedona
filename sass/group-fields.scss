@@ -1,0 +1,281 @@
+@media(min-width:320px) and (max-width: 766px) {
+  .group-fields {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    &__title {
+      @include title_style;
+      color: #000000;
+      width: 100%;
+    }
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      margin-top: 18px;
+    }
+    &__input {
+      width: 100%;
+      font-size: $mainFontSize;
+      font-weight: $boldWeight;
+      border: none;
+      background-color: #f2f2f2;
+      padding: 18px 6.56% 17px;
+      margin-top: 11px;
+      outline: none;
+    }
+    &__label {
+      @include title_section_item;
+      width: 93%;
+      margin: 0 0 0 6.56%;
+    }
+  }
+  .group-fields--ferst-group {
+    margin-top: 28px;
+  }
+  .group-fields-card__num {
+    display: flex;
+    flex-direction: column;
+    width: 61px;
+    margin-right: 6px;
+    margin-top: 18px;
+  }
+  .group-fields-card__symbol {
+    margin-bottom: 7px;
+    text-align: center;
+  }
+  .group-fields-card__numeric {
+    width: 61px;
+    height: 58px;
+    background-color: #f2f2f2;
+    padding: 17px 25px 18px;
+    text-align: center;
+  }
+  .wrap--fields {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    flex-grow: 1;
+    width: 75%;
+  }
+  .group-fields--flex-dir {
+    flex-direction: row;
+  }
+  .fields-wrap--no-border {
+    border-top: none;
+  }
+  .group-fields:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #e5e5e5;
+    width: 100%;
+  }
+}
+@media(min-width:766px) and (max-width: 1198px) {
+  .group-fields {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__title {
+      @include title_style;
+      color: #000000;
+      width: 100%;
+      font-size: 21px;
+    }
+    &__wrap {
+      width: 27.1%;
+      margin-top: 18px;
+      flex-grow: 1;
+    }
+    &__input {
+      width: 100%;
+      font-size: $mainFontSize;
+      font-weight: $boldWeight;
+      border: none;
+      background-color: #f2f2f2;
+      padding: 18px 6.56% 17px;
+      margin-top: 11px;
+      outline: none;
+    }
+    &__label {
+      @include title_section_item;
+      width: 93%;
+      margin: 0 0 0 6.56%;
+    }
+  }
+  .group-fields:before {
+    content: '';
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    width: 19.5%;
+    top: 29px;
+    left: 3px;
+  }
+  .group-fields:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    width: 19.5%;
+    top: 29px;
+    right: 3px;
+  }
+  .group-fields-card__num {
+    display: flex;
+    flex-direction: column;
+    width: 61px;
+    margin-right: 6px;
+    margin-top: 22px;
+  }
+  .group-fields-card__symbol {
+    margin-bottom: 7px;
+    text-align: center;
+  }
+  .group-fields-card__numeric {
+    width: 61px;
+    height: 58px;
+    background-color: #f2f2f2;
+    padding: 17px 25px 18px;
+    text-align: center;
+  }
+  .wrap--fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+    width: 87%;
+    flex-grow: 1;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .fields-wrap--margin-long {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  .fields-wrap--margin-short {
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+  .fields-wrap--no-border:after {
+    display: none;
+  }
+  .fields-wrap--no-border:before {
+    display: none;
+  }
+}
+@media(min-width:1198px) {
+  .group-fields {
+    padding: 22px 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__title {
+      @include title_style;
+      color: #000000;
+      width: 100%;
+      font-size: 21px;
+    }
+    &__wrap {
+      width: 27.1%;
+      margin-top: 21px;
+      flex-grow: 1;
+    }
+    &__wrap:nth-child(1) {
+      width: 19.7%;
+    }
+    &__input {
+      width: 100%;
+      font-size: $mainFontSize;
+      font-weight: $boldWeight;
+      border: none;
+      background-color: #f2f2f2;
+      padding: 18px 6.56% 17px;
+      margin-top: 11px;
+      outline: none;
+    }
+    &__label {
+      @include title_section_item;
+      width: 93%;
+      margin: 0 0 0 6.56%;
+    }
+  }
+  .group-fields:before {
+    content: '';
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    width: 13.5%;
+    top: 37px;
+    left: 60px;
+  }
+  .group-fields:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    width: 14.5%;
+    top: 37px;
+    right: 60px;
+  }
+  .group-fields-card__num {
+    display: flex;
+    flex-direction: column;
+    width: 61px;
+    margin-right: 6px;
+    margin-top: 22px;
+  }
+  .group-fields-card__symbol {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .group-fields-card__numeric {
+    width: 61px;
+    height: 58px;
+    background-color: #f2f2f2;
+    padding: 17px 25px 18px;
+    text-align: center;
+  }
+  .wrap--fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+    width: 87%;
+    flex-grow: 1;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .fields-wrap--margin-long {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  .fields-wrap--no-border:after {
+    display: none;
+  }
+  .fields-wrap--no-border:before {
+    display: none;
+  }
+  .group-fields:before {
+    content: '';
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    width: 28.5%;
+    top: 29px;
+    left: 3px;
+  }
+  .group-fields:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    width: 28.5%;
+    top: 29px;
+    right: 3px;
+  }
+}

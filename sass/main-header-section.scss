@@ -2,13 +2,12 @@
   .main-header-section {
     // Блок в шапке
     position: relative;
-    background-image: url(../img/header-background-x320.jpg);
+    background-image: url(../img/photo-background@1x.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: 51% 24%;
     width: 100%;
     padding-top: 47px;
     padding-bottom: 49px;
-    margin: 0 auto;
     &:before {
       position: absolute;
       display: block;
@@ -22,174 +21,268 @@
       background-position: center;
     }
     &__item {
-      // Картинка с надписью Welcome
-      background-image: url(../img/header-item-x320.png);
-      display: block;
+      // Блок с надписью Welcome
       width: 196px;
-      height: 66px;
+      height: 61px;
       margin: 0 auto;
     }
+    &__text-welcome {
+      // Текст с надписью Welcome
+      fill: #81b3d2;
+      width: 144px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 8px;
+    }
+    &__text-tothegeorge {
+      // Текст под надписью Welcome
+      fill: #766357;
+      width: 196px;
+      height: auto;
+    }
     &__title {
-      // Картинка с надписью Sedona
-      background-image: url(../img/header-title-x320.png);
+      // Блок с надписью Sedona
       display: block;
       width: 280px;
       height: 48px;
       margin: 61px auto 0;
     }
+    &__text-sedona {
+      // Картинка с надписью Sedona
+      fill: #ffffff;
+      width: 280px;
+      height: auto;
+    }
     &__slogan {
-      // Картинка с надписью слогана(Because .....)
-      background-image: url(../img/header-slogan-x320.png);
+      // Блок с надписью слогана(Because .....)
       width: 197px;
       height: 54px;
       margin: 69px auto 0;
     }
-  }
-  .main-header-section__title--form {
-    background: url(../img/form-header-title-x320.png);
-    display: block;
-    width: 174px;
-    height: 30px;
-    margin: 0 auto;
+    &__text-because {
+      // Картинка с надписью слогана(Because .....)
+      fill: #ffffff;
+      width: 197px;
+      height: auto;
+    }
   }
   .main-header-section--form {
     //Картинка хедера формы
-    background-image: url(../img/header-background-form-x320.jpg);
-    background-position: 0 -56px;
-    padding-bottom: 80px;
-    z-index: -1;
+    background-image: url(../img/photo-background@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: 51% 100%;
+    background-size: 100%;
+    width: 100%;
+    padding-bottom: 64px;
   }
-  // .main-header-section--form:before {
-  //   // Нижний бордер формы
-  //   height: 38px;
-  // }
+  .main-header-section__title--form {
+    display: block;
+    width: 176px;
+    height: 48px;
+    margin: 0 auto;
+  }
+  .main-header-section__text-sedona-form {
+    // Картинка с надписью Sedona
+    fill: #ffffff;
+    width: 176px;
+    height: auto;
+  }
 }
-
+@media(min-width:322px) and (max-width: 766px) {
+  .main-header-section:before {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 37px;
+    background-image: url(../img/header-border-x768.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
 @media(min-width:766px) and (max-width: 1200px) {
   .main-header-section {
     // Блок в шапке
     position: relative;
-    background-image: url(../img/header-background-x320.jpg);
+    background-image: url(../img/photo-background@1x.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: 51% 28%;
     width: 100%;
-    padding-top: 47px;
-    padding-bottom: 49px;
+    padding: 82px 49px;
     margin: 0 auto;
     &:before {
       position: absolute;
       display: block;
       content: "";
-      bottom: -1px;
+      bottom: -2px;
       left: 0;
       width: 100%;
-      height: 37px;
-      background-image: url(../img/header-border-x768.png);
+      height: 60px;
+      background-image: url(../img/header-border-x1200.png);
       background-repeat: no-repeat;
       background-position: center;
     }
     &__item {
-      // Картинка с надписью Welcome
-      background-image: url(../img/header-item-x320.png);
-      display: block;
+      // Блок с надписью Welcome
       width: 196px;
-      height: 66px;
       margin: 0 auto;
     }
-    &__title {
-      // Картинка с надписью Sedona
-      background-image: url(../img/header-title-x320.png);
+    &__text-welcome {
+      // Текст с надписью Welcome
+      fill: #81b3d2;
+      width: 190px;
+      height: auto;
       display: block;
-      width: 280px;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 8px;
+    }
+    &__text-tothegeorge {
+      // Текст под надписью Welcome
+      fill: #766357;
+      width: 196px;
+      height: auto;
+    }
+    &__title {
+      // Блок с надписью Sedona
+      display: block;
+      width: 457px;
       height: 48px;
       margin: 61px auto 0;
     }
-    &__title--form {
-      background: url(../img/form-header-title-x320.png);
-      display: block;
-      width: 174px;
-      height: 30px;
-      margin: 0 auto;
+    &__text-sedona {
+      // Картинка с надписью Sedona
+      fill: #ffffff;
+      width: 457px;
+      height: auto;
     }
     &__slogan {
-      // Картинка с надписью слогана(Because .....)
-      background-image: url(../img/header-slogan-x320.png);
-      width: 197px;
-      height: 54px;
+      // Блок с надписью слогана(Because .....)
+      width: 297px;
       margin: 69px auto 0;
     }
-    .main-header-section__title--form {
-      background: url(../img/form-header-title-x320.png);
-      display: block;
-      width: 174px;
-      height: 30px;
-      margin: 0 auto;
+    &__text-because {
+      // Картинка с надписью слогана(Because .....)
+      fill: #ffffff;
+      width: 297px;
+      height: auto;
     }
-    .main-header-section--form {
-      //Картинка хедера формы
-      background-image: url(../img/header-background-form-x320.jpg);
-      background-position: 0 -56px;
-      padding-bottom: 86px;
-      z-index: -1;
-    }
-    .main-header-section--form:before {
-      // Нижний бордер формы
-      height: 48px;
-    }
+  }
+  .main-header-section--form {
+    //Картинка хедера формы
+    background-image: url(../img/photo-background@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: 51% 100%;
+    background-size: 100%;
+    width: 100%;
+    padding-bottom: 140px;
+    padding-top: 100px;
+  }
+  .main-header-section__title--form {
+    display: block;
+    width: 457px;
+    height: 48px;
+    margin: 0 auto;
+  }
+  .main-header-section__text-sedona-form {
+    // Картинка с надписью Sedona
+    fill: #ffffff;
+    width: 457px;
+    height: auto;
   }
 }
 @media(min-width:1200px) {
   .main-header-section {
     // Блок в шапке
     position: relative;
-    background-image: url(../img/header-background-x320.jpg);
+    background-image: url(../img/photo-background@1x.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: 51% 28%;
     width: 100%;
-    padding-top: 47px;
-    padding-bottom: 49px;
+    padding: 82px 49px;
     margin: 0 auto;
     &:before {
       position: absolute;
       display: block;
       content: "";
-      bottom: -1px;
+      bottom: -2px;
       left: 0;
       width: 100%;
-      height: 37px;
-      background-image: url(../img/header-border-x768.png);
+      height: 60px;
+      background-image: url(../img/header-border-x1200.png);
       background-repeat: no-repeat;
       background-position: center;
     }
     &__item {
-      // Картинка с надписью Welcome
-      background-image: url(../img/header-item-x320.png);
-      display: block;
+      // Блок с надписью Welcome
       width: 196px;
-      height: 66px;
       margin: 0 auto;
     }
-    &__title {
-      // Картинка с надписью Sedona
-      background-image: url(../img/header-title-x320.png);
+    &__text-welcome {
+      // Текст с надписью Welcome
+      fill: #81b3d2;
+      width: 190px;
+      height: auto;
       display: block;
-      width: 280px;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 8px;
+    }
+    &__text-tothegeorge {
+      // Текст под надписью Welcome
+      fill: #766357;
+      width: 196px;
+      height: auto;
+    }
+    &__title {
+      // Блок с надписью Sedona
+      display: block;
+      width: 457px;
       height: 48px;
       margin: 61px auto 0;
     }
-    &__title--form {
-      background: url(../img/form-header-title-x320.png);
-      display: block;
-      width: 174px;
-      height: 30px;
-      margin: 0 auto;
+    &__text-sedona {
+      // Картинка с надписью Sedona
+      fill: #ffffff;
+      width: 457px;
+      height: auto;
     }
     &__slogan {
-      // Картинка с надписью слогана(Because .....)
-      background-image: url(../img/header-slogan-x320.png);
-      width: 197px;
-      height: 54px;
+      // Блок с надписью слогана(Because .....)
+      width: 297px;
       margin: 69px auto 0;
     }
+    &__text-because {
+      // Картинка с надписью слогана(Because .....)
+      fill: #ffffff;
+      width: 297px;
+      height: auto;
+    }
+  }
+  .main-header-section--form {
+    //Картинка хедера формы
+    background-image: url(../img/photo-background@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: 51% 63%;
+    background-size: 100%;
+    width: 100%;
+    padding-bottom: 140px;
+    padding-top: 100px;
+  }
+  .main-header-section__title--form {
+    display: block;
+    width: 457px;
+    height: 48px;
+    margin: 0 auto;
+  }
+  .main-header-section__text-sedona-form {
+    // Картинка с надписью Sedona
+    fill: #ffffff;
+    width: 457px;
+    height: auto;
   }
 }

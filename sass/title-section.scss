@@ -3,7 +3,7 @@
     // Блок с заголовком
     position: relative;
     text-align: center;
-    padding: 42px 10% 49px; //32px
+    padding: 42px 10% 0;
     &__title {
       // Заголовок
       font-size: $mainFontSize;
@@ -13,20 +13,28 @@
     }
     &__item {
       // текст
-      font-size: 14px;
+      font-size: $thirdFontSize;
+      line-height: 26px;
       text-transform: uppercase;
-      margin: 35px 0 0;
+      margin: 25px 0 0;
     }
   }
   .title-section--form {
-    padding-top: 76px;
-    padding-bottom: 21px;
+    padding: 76px 25px 10px;
   }
   .title-section--form:before {
     display: none;
   }
   .title-section--form:after {
     display: none;
+  }
+}
+@media(min-width:322px) and (max-width: 766px) {
+  .title-section {
+    // Блок с заголовком
+    position: relative;
+    text-align: center;
+    padding: 42px 10% 26px;
   }
 }
 @media(min-width:766px) and (max-width: 1200px) {
@@ -36,7 +44,7 @@
     padding: 42px 10% 49px; //32px
     &--form {
       padding-top: 76px;
-      padding-bottom: 21px;
+      padding-bottom: 45px;
     }
     &--form:before {
       display: none;
@@ -57,6 +65,9 @@
   }
   .title-section__title--form {
     font-size: 30px;
+  }
+  .title-section__item--form {
+    margin-top: 25px;
   }
 }
 @media(min-width:1200px) {
