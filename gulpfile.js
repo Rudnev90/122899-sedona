@@ -57,7 +57,7 @@ gulp.task("img", function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch("build/css/*.css", ["css"])
+  gulp.watch("source/sass/style.{sass,scss}", ["css"])
   gulp.watch("build/js/*.js", ["js"])
   gulp.watch("build/img/", ["img"])
 })

@@ -17,3 +17,10 @@
     flex-wrap: wrap;
   }
 }
+@media(min-width: 1200px) {
+  .wrapper {
+    padding: 0 20px;
+    // Враппер боди
+    box-shadow: 0 0 20px -5px #000000, 0 0 0 35px #f2f2f2;
+  }
+}
