@@ -25,3 +25,27 @@
   width: 93%;
   margin: 0 0 0 6.56%;
 }
+@mixin border_mobile {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  right: -20px;
+  border: 1px solid #e5e5e5;
+}
+@mixin border_tab_and_desk_before($top: 29px, $width: 19.5%, $left: 3px) {
+  content: '';
+  position: absolute;
+  border: 1px solid #e5e5e5;
+  width: $width;
+  top: $top;
+  left: $left;
+}
+@mixin border_tab_and_desk_after($top: 29px, $width: 19.5%, $left: 3px) {
+  content: '';
+  position: absolute;
+  border: 1px solid #e5e5e5;
+  width: $width;
+  top: $top;
+  right: $left;
+}

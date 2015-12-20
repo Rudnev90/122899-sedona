@@ -66,13 +66,17 @@
   .fields-wrap--no-border {
     border-top: none;
   }
-  .group-fields:after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 1px solid #e5e5e5;
-    width: 100%;
+  .group-fields:before {
+    @include border_mobile;
+  }
+  .group-fields-title--margin {
+    margin-top: 21px;
+  }
+  .fields-wrap--no-border:after {
+    display: none;
+  }
+  .fields-wrap--no-border:before {
+    display: none;
   }
 }
 @media(min-width:766px) and (max-width: 1198px) {
@@ -112,21 +116,12 @@
     }
   }
   .group-fields:before {
-    content: '';
-    position: absolute;
-    border: 1px solid #e5e5e5;
-    width: 19.5%;
-    top: 29px;
-    left: 3px;
+    @include border_tab_and_desk_before;
   }
   .group-fields:after {
-    content: '';
-    position: absolute;
-    border: 1px solid #e5e5e5;
-    width: 19.5%;
-    top: 29px;
-    right: 3px;
+    @include border_tab_and_desk_after;
   }
+
   .group-fields-card__num {
     display: flex;
     flex-direction: column;
@@ -208,22 +203,6 @@
       margin: 0 0 0 6.56%;
     }
   }
-  .group-fields:before {
-    content: '';
-    position: absolute;
-    border: 1px solid #e5e5e5;
-    width: 13.5%;
-    top: 37px;
-    left: 60px;
-  }
-  .group-fields:after {
-    content: '';
-    position: absolute;
-    border: 1px solid #e5e5e5;
-    width: 14.5%;
-    top: 37px;
-    right: 60px;
-  }
   .group-fields-card__num {
     display: flex;
     flex-direction: column;
@@ -263,19 +242,9 @@
     display: none;
   }
   .group-fields:before {
-    content: '';
-    position: absolute;
-    border: 1px solid #e5e5e5;
-    width: 28.5%;
-    top: 29px;
-    left: 3px;
+    @include border_tab_and_desk_before(35px,28.9%, 0);
   }
   .group-fields:after {
-    content: '';
-    position: absolute;
-    border: 1px solid #e5e5e5;
-    width: 28.5%;
-    top: 29px;
-    right: 3px;
+    @include border_tab_and_desk_after(35px,28.9%, 0);
   }
 }

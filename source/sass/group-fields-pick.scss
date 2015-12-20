@@ -87,12 +87,7 @@
     padding-left: 0;
   }
   .group-fields-pick::before {
-    content: " ";
-    position: absolute;
-    border: 1px solid #e5e5e5;
-    top: 0;
-    left: 0;
-    width: 100%;
+    @include border_mobile;
   }
 }
 @media(min-width:766px) and (max-width: 1200px) {
@@ -186,24 +181,20 @@
     margin-top: 0;
     padding-left: 0;
   }
+  .group-fields-pick:before {
+    @include border_tab_and_desk_before(35px);
+  }
+  .group-fields-pick:after {
+    @include border_tab_and_desk_after(35px);
+  }
   .fields-pick--flex-jfy {
     justify-content: center;
   }
-  .group-fields-pick:before {
-    content: '';
-    position: absolute;
-    border: 1px solid #e5e5e5;
-    width: 19.5%;
-    top: 29px;
-    left: 3px;
+  .fields-pick--flex-jfy:after {
+    @include border_tab_and_desk_after(50px);
   }
-  .group-fields-pick:after {
-    content: '';
-    position: absolute;
-    border: 1px solid #e5e5e5;
-    width: 19.5%;
-    top: 29px;
-    right: 3px;
+  .fields-pick--flex-jfy:before {
+    @include border_tab_and_desk_before(50px);
   }
 }
 @media(min-width:1198px) {
@@ -303,21 +294,11 @@
     justify-content: center;
     padding: 22px 0 44px;
   }
-  .group-fields-pick:before {
-    content: '';
-    position: absolute;
-    border: 1px solid #e5e5e5;
-    width: 28.5%;
-    top: 29px;
-    left: 3px;
+  .fields-pick--flex-jfy:after {
+    @include border_tab_and_desk_after(50px, 28.9%, 0);
   }
-  .group-fields-pick:after {
-    content: '';
-    position: absolute;
-    border: 1px solid #e5e5e5;
-    width: 28.5%;
-    top: 29px;
-    right: 3px;
+  .fields-pick--flex-jfy:before {
+    @include border_tab_and_desk_before(50px, 28.9%, 0);
   }
   .fields-pick-title--desk {
     padding: 0 275px;

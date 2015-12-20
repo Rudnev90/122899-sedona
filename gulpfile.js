@@ -8,10 +8,12 @@ var autoprefixer = require("autoprefixer");
 var rename = require("gulp-rename");
 var copyDir = require('copy-dir');
 var copy = require('copy');
-
+var jsmin = require('gulp-jsmin');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
 gulp.task("css", function() {
-  return gulp.src("sass/style.{sass,scss}")
+  gulp.src("source/sass/style.{sass,scss}")
     .pipe(plumber())
     .pipe(sass()).on('error', sass.logError)
     .pipe(postcss([
@@ -20,17 +22,45 @@ gulp.task("css", function() {
       })
     ]))
     .pipe(rename("style.css"))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
 });
+
+gulp.task("js", function() {
+  gulp.src('source/js/*.js')
+  .pipe(gulp.dest("build/js"))
+    .pipe(jsmin())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('build/js/'));
+});
+
+gulp.task("html", function() {
+  gulp.src('source/*.html')
+    .pipe(gulp.dest('build/'));
+});
+
+gulp.task("img", function() {
+  gulp.src('source/img/*')
+  .pipe(imagemin({
+    progressive: true,
+    svgoPlugins: [{removeViewBox: false}],
+    use: [pngquant()]
+  }))
+  .pipe(gulp.dest('build/img'));
+});
+
+gulp.task('watch', function(){
+  gulp.watch("build/css/*.css", ["css"])
+  gulp.watch("build/js/*.js", ["js"])
+  gulp.watch("build/img/", ["img"])
+})
 
 // =====================================================
 // Start task
 // =====================================================
-gulp.task("start", ["css"], function() {
-  gulp.watch("sass/**/*.{sass,scss}", ["css"]);
-});
-
+gulp.task('start', ['css','js', 'html', 'img','watch']);
 // Оставьте эту строку в самом конце файла
 require("./.gosha");
