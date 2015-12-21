@@ -30,31 +30,34 @@
       //Иконка пункта "Жилье"
       content: " ";
       position: absolute;
-      background-image: url(../img/icon-house.svg) no-repeat;
+      background: url(../img/icon-house.svg) no-repeat;
+      background-size: 100%;
       width: 37px;
       height: 37px;
-      left: 6%;
+      left: 5%;
       top: -13px;
     }
     &__item-food:before {
       //Иконка пункта "Еда"
       content: " ";
       position: absolute;
+      background: url(../img/icon-burger.svg) no-repeat;
+      background-size: 100%;
       width: 37px;
       height: 37px;
-      left: 6%;
+      left: 5%;
       top: -9px;
-      background: url(../img/food-icon.png) no-repeat;
     }
     &__item-souvenirs:before {
       //Иконка пункта "Сувениры"
       content: " ";
       position: absolute;
+      background: url(../img/icon-gift.svg) no-repeat;
+      background-size: 100%;
       width: 37px;
-      height: 37px;
-      left: 6.8%;
+      height: 45px;
+      left: 5%;
       top: -15px;
-      background: url(../img/souvenirs-icon.png) no-repeat;
     }
   }
 }
@@ -90,32 +93,38 @@
       //Иконка пункта "Жилье"
       content: " ";
       position: absolute;
-      width: 37px;
-      height: 37px;
-      left: 43%;
-      top: -83px;
-      background: url(../img/home-icon.png) no-repeat;
+      background: url(../img/icon-house.svg) no-repeat;
+      background-size: 100%;
+      width: 75px;
+      height: 75px;
+      left: 35%;
+      top: -98px;
     }
     &__item-food:before {
       //Иконка пункта "Еда"
       content: " ";
       position: absolute;
-      width: 37px;
-      height: 37px;
-      left: 43%;
-      top: -83px;
-      background: url(../img/food-icon.png) no-repeat;
+      background: url(../img/icon-burger.svg) no-repeat;
+      background-size: 100%;
+      width: 75px;
+      height: 75px;
+      left: 35%;
+      top: -95px;
     }
     &__item-souvenirs:before {
       //Иконка пункта "Сувениры"
       content: " ";
       position: absolute;
-      width: 37px;
-      height: 37px;
-      left: 43%;
-      top: -83px;
-      background: url(../img/souvenirs-icon.png) no-repeat;
+      background: url(../img/icon-gift.svg) no-repeat;
+      background-size: 82%;
+      width: 75px;
+      height: 75px;
+      left: 41%;
+      top: -102px;
     }
+  }
+  .feature-list--padding {
+    padding-left: 10px;
   }
 }
 @media(min-width:1200px) {
@@ -150,31 +159,34 @@
       //Иконка пункта "Жилье"
       content: " ";
       position: absolute;
-      width: 37px;
-      height: 37px;
-      left: 43%;
-      top: -83px;
-      background: url(../img/home-icon.png) no-repeat;
+      background: url(../img/icon-house.svg) no-repeat;
+      background-size: 100%;
+      width: 75px;
+      height: 75px;
+      left: 40.3%;
+      top: -98px;
     }
     &__item-food:before {
       //Иконка пункта "Еда"
       content: " ";
       position: absolute;
-      width: 37px;
-      height: 37px;
-      left: 43%;
-      top: -83px;
-      background: url(../img/food-icon.png) no-repeat;
+      background: url(../img/icon-burger.svg) no-repeat;
+      background-size: 100%;
+      width: 75px;
+      height: 75px;
+      left: 40%;
+      top: -95px;
     }
     &__item-souvenirs:before {
       //Иконка пункта "Сувениры"
       content: " ";
       position: absolute;
-      width: 37px;
-      height: 37px;
-      left: 43%;
-      top: -83px;
-      background: url(../img/souvenirs-icon.png) no-repeat;
+      background: url(../img/icon-gift.svg) no-repeat;
+      background-size: 82%;
+      width: 75px;
+      height: 75px;
+      left: 42%;
+      top: -102px;
     }
   }
 }

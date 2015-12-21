@@ -70,7 +70,6 @@ function delTraveler() {
 
     input.addEventListener("change", function() {
       if (typeof(Number(input.value)) != 'number' || Number(input.value) > 50) {
-        console.log(parseInt(input.value));
         input.value = dataTravelerInput;
         return;
       }
@@ -91,7 +90,6 @@ function delTraveler() {
         input.value = dataTravelerInput;
         return;
       }
-
       console.log(dataTravelerInput);
     })
 

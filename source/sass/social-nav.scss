@@ -1,7 +1,6 @@
 @media(min-width:320px) and (max-width: 766px) {
   .social-nav {
     padding: 0 70px;
-    margin-top: 33px;
     text-align: center;
     //Блок с соц. сетями
     // padding: 41px 84px 0;
@@ -11,9 +10,10 @@
       text-transform: uppercase;
       font-weight: $boldWeight;
       text-align: center;
+      align-self: center;
     }
     &__list {
-      margin: 39px 0 0;
+      margin: 32px 0 0;
       padding: 0;
       width: auto;
       list-style: none;
@@ -69,6 +69,7 @@
     align-items: center;
     flex-grow: 1;
     justify-content: center;
+    padding-left: 11px;
     //Блок с соц. сетями
     // padding: 41px 84px 0;
     &__hashtag {
@@ -78,6 +79,8 @@
       font-weight: $boldWeight;
       text-align: center;
       flex-grow: 1;
+      align-self: center;
+      padding-left: 14px;
     }
     &__list {
       margin: 0;
@@ -137,6 +140,7 @@
     align-items: center;
     flex-grow: 1;
     justify-content: center;
+    padding-left: 18px;
     //Блок с соц. сетями
     // padding: 41px 84px 0;
     &__hashtag {
@@ -146,6 +150,8 @@
       font-weight: $boldWeight;
       text-align: center;
       flex-grow: 1;
+      align-self: center;
+      padding-left: 20px;
     }
     &__list {
       margin: 0;

@@ -24,7 +24,6 @@ gulp.task("css", function() {
     ]))
     .pipe(rename("style.css"))
     .pipe(gulp.dest("build/css"))
-  return gulp.src("build/css/*.css")
     .pipe(minifyCss())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
