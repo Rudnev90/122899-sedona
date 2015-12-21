@@ -33,6 +33,13 @@
       border-bottom: 1px solid #678fa8;
       border-top: 1px solid #9ac2db;
     }
+    &__link:hover {
+      background: #669ec0;
+    }
+    &__link:active {
+      color: #94b9d2;
+      background: #5496bd;
+    }
     &__item:first-child .main-menu__close {
       // Кнопка закрытия главного меню
       position: absolute;
@@ -127,6 +134,15 @@
       margin: 0;
       padding: 14px 0;
     }
+    &__link:hover {
+      color: #81b3d2;
+    }
+    &__link:active {
+      color: #827167;
+    }
+    &__link:focus {
+      color: #cacaca  ;
+    }
     &__item:last-child &__link {
       //Отменяем бордер у последнего пункта меню
       border-bottom: none;
@@ -186,6 +202,15 @@
       text-transform: uppercase;
       margin: 0;
       padding: 14px 0;
+    }
+    &__link:hover {
+      color: #81b3d2;
+    }
+    &__link:active {
+      color: #827167;
+    }
+    &__link:focus {
+      color: #cacaca  ;
     }
     &__item:last-child &__link {
       //Отменяем бордер у последнего пункта меню

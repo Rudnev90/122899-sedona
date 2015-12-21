@@ -42,6 +42,17 @@
     &__input[type="radio"]:checked+label:before {
       background-color: #000;
     }
+    &__input[type="radio"]:hover+label:before {
+      border: 17px solid #e5e5e5;
+    }
+    &__input[type="radio"]:active+label:before {
+      border: 17px solid #e5e5e5;
+      background-color: #d5d5d5;
+    }
+    &__input[type="radio"]:checked+label:before {
+      border: 17px solid #f2f2f2;
+      background-color: #333333;
+    }
     &__input[type="checkbox"] {
       display: none;
     }
@@ -68,6 +79,24 @@
       top: -17px;
       left: 0;
     }
+    &__input[type="checkbox"]:hover+label:before {
+      background-color: #e5e5e5;
+    }
+    &__input[type="checkbox"]:active+label:before {
+      background-color: #d5d5d5;
+    }
+    &__input[type="checkbox"]:active+label:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 18px;
+      width: 18px;
+      height: 8px;
+      border: 5px solid #a4a4a4;
+      border-top-style: none;
+      border-right-style: none;
+      transform: rotate(-45deg);
+    }
     &__input[type="checkbox"]:checked+label:after {
       position: absolute;
       content: "";
@@ -75,10 +104,13 @@
       left: 18px;
       width: 18px;
       height: 8px;
-      border: 5px solid #000;
+      border: 5px solid #333333;
       border-top-style: none;
       border-right-style: none;
       transform: rotate(-45deg);
+    }
+    &__input[type="checkbox"]:checked+label:before {
+      background-color: #f2f2f2;
     }
   }
   .pick--checkbox {
@@ -137,6 +169,17 @@
     &__input[type="radio"]:checked+label:before {
       background-color: #000;
     }
+    &__input[type="radio"]:hover+label:before {
+      border: 17px solid #e5e5e5;
+    }
+    &__input[type="radio"]:active+label:before {
+      border: 17px solid #e5e5e5;
+      background-color: #d5d5d5;
+    }
+    &__input[type="radio"]:checked+label:before {
+      border: 17px solid #f2f2f2;
+      background-color: #333333;
+    }
     &__input[type="checkbox"] {
       display: none;
     }
@@ -163,6 +206,24 @@
       top: -17px;
       left: 0;
     }
+    &__input[type="checkbox"]:hover+label:before {
+      background-color: #e5e5e5;
+    }
+    &__input[type="checkbox"]:active+label:before {
+      background-color: #d5d5d5;
+    }
+    &__input[type="checkbox"]:active+label:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 18px;
+      width: 18px;
+      height: 8px;
+      border: 5px solid #a4a4a4;
+      border-top-style: none;
+      border-right-style: none;
+      transform: rotate(-45deg);
+    }
     &__input[type="checkbox"]:checked+label:after {
       position: absolute;
       content: "";
@@ -170,10 +231,13 @@
       left: 18px;
       width: 18px;
       height: 8px;
-      border: 5px solid #000;
+      border: 5px solid #333333;
       border-top-style: none;
       border-right-style: none;
       transform: rotate(-45deg);
+    }
+    &__input[type="checkbox"]:checked+label:before {
+      background-color: #f2f2f2;
     }
   }
   .pick--checkbox {
@@ -243,8 +307,16 @@
       top: -16px;
       left: 0;
     }
+    &__input[type="radio"]:hover+label:before {
+      border: 17px solid #e5e5e5;
+    }
+    &__input[type="radio"]:active+label:before {
+      border: 17px solid #e5e5e5;
+      background-color: #d5d5d5;
+    }
     &__input[type="radio"]:checked+label:before {
-      background-color: #000;
+      border: 17px solid #f2f2f2;
+      background-color: #333333;
     }
     &__input[type="checkbox"] {
       display: none;
@@ -272,6 +344,24 @@
       top: -17px;
       left: 0;
     }
+    &__input[type="checkbox"]:hover+label:before {
+      background-color: #e5e5e5;
+    }
+    &__input[type="checkbox"]:active+label:before {
+      background-color: #d5d5d5;
+    }
+    &__input[type="checkbox"]:active+label:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 18px;
+      width: 18px;
+      height: 8px;
+      border: 5px solid #a4a4a4;
+      border-top-style: none;
+      border-right-style: none;
+      transform: rotate(-45deg);
+    }
     &__input[type="checkbox"]:checked+label:after {
       position: absolute;
       content: "";
@@ -279,10 +369,13 @@
       left: 18px;
       width: 18px;
       height: 8px;
-      border: 5px solid #000;
+      border: 5px solid #333333;
       border-top-style: none;
       border-right-style: none;
       transform: rotate(-45deg);
+    }
+    &__input[type="checkbox"]:checked+label:before {
+      background-color: #f2f2f2;
     }
   }
   .pick--checkbox {

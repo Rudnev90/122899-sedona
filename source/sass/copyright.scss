@@ -12,12 +12,14 @@
       text-transform: uppercase;
     }
     &__link {
-      display: block;
-      background: url(../img/htmlacademy.svg);
-      background-size: 113%;
-      background-repeat: no-repeat;
       width: 38px;
       height: 40px;
+    }
+    &__link-img:hover {
+        fill: #81b3d2;
+    }
+    &__link-img:active {
+        fill: #b2b2b2;
     }
   }
   .copyright-display {
@@ -39,14 +41,15 @@
       text-transform: uppercase;
     }
     &__link {
-      display: block;
-      background: url(../img/htmlacademy.svg);
-      background-size: 113%;
-      background-repeat: no-repeat;
       width: 38px;
       height: 40px;
     }
-    &__img {}
+    &__link-img:hover {
+        fill: #81b3d2;
+    }
+    &__link-img:active {
+        fill: #b2b2b2;
+    }
   }
 }
 @media(min-width:1200px) {
@@ -65,13 +68,14 @@
       padding-right: 5px;
     }
     &__link {
-      display: block;
-      background: url(../img/htmlacademy.svg);
-      background-size: 113%;
-      background-repeat: no-repeat;
       width: 38px;
       height: 40px;
     }
-    &__img {}
+    &__link-img:hover {
+        fill: #81b3d2;
+    }
+    &__link-img:active {
+        fill: #b2b2b2;
+    }
   }
 }

@@ -23,43 +23,38 @@
       position: relative;
       text-decoration: none;
       display: block;
-      padding: 20px;
-      width: 46px;
-      height: 48px;
+      height: 46px;
+      width: 48px;
+      padding: 16px 14px;
       background-color: $mainColor;
       color: transparent;
+    }
+    &__link-tw {
+      display: block;
+    }
+    &__link-fb {
+      display: block;
+    }
+    &__link-yt {
+      display: block;
+    }
+    &__link:hover {
+      background: #669ec0;
+    }
+    &__link:active {
+      .social-nav__link-tw,
+      .social-nav__link-fb,
+      .social-nav__link-yt {
+        fill: #88b6d1;
+      }
     }
     &__item {
       display: inline-block;
       padding: 0;
     }
-    &__item:first-child &__link:after {
-      position: absolute;
-      content: "";
-      background: url(../img/tw-icon.png) no-repeat;
-      width: 18px;
-      height: 14px;
-      top: 16px;
-      right: 14px;
-    }
-    &__item:nth-child(2) &__link:after {
-      position: absolute;
-      content: "";
-      background: url(../img/fb-icon.png) no-repeat;
-      width: 8px;
-      height: 18px;
-      top: 13px;
-      right: 18px;
-    }
-    &__item:last-child &__link:after {
-      position: absolute;
-      content: "";
-      background: url(../img/yt-icon.png) no-repeat;
-      width: 20px;
-      height: 14px;
-      top: 17px;
-      right: 13px;
-    }
+  }
+  .social-nav-link--padding {
+    padding: 14px 19px;
   }
 }
 @media(min-width:766px) and (max-width: 1200px) {
@@ -94,43 +89,38 @@
       position: relative;
       text-decoration: none;
       display: block;
-      padding: 20px;
-      width: 46px;
-      height: 48px;
+      height: 46px;
+      width: 48px;
+      padding: 16px 14px;
       background-color: $mainColor;
       color: transparent;
+    }
+    &__link-tw {
+      display: block;
+    }
+    &__link-fb {
+      display: block;
+    }
+    &__link-yt {
+      display: block;
+    }
+    &__link:hover {
+      background: #669ec0;
+    }
+    &__link:active {
+      .social-nav__link-tw,
+      .social-nav__link-fb,
+      .social-nav__link-yt {
+        fill: #88b6d1;
+      }
     }
     &__item {
       display: inline-block;
       padding: 0;
     }
-    &__item:first-child &__link:after {
-      position: absolute;
-      content: "";
-      background: url(../img/tw-icon.png) no-repeat;
-      width: 18px;
-      height: 14px;
-      top: 16px;
-      right: 14px;
-    }
-    &__item:nth-child(2) &__link:after {
-      position: absolute;
-      content: "";
-      background: url(../img/fb-icon.png) no-repeat;
-      width: 8px;
-      height: 18px;
-      top: 13px;
-      right: 18px;
-    }
-    &__item:last-child &__link:after {
-      position: absolute;
-      content: "";
-      background: url(../img/yt-icon.png) no-repeat;
-      width: 20px;
-      height: 14px;
-      top: 17px;
-      right: 13px;
-    }
+  }
+  .social-nav-link--padding {
+    padding: 14px 19px;
   }
 }
 @media(min-width:1200px) {
@@ -165,42 +155,37 @@
       position: relative;
       text-decoration: none;
       display: block;
-      padding: 20px;
-      width: 46px;
-      height: 48px;
+      height: 46px;
+      width: 48px;
+      padding: 16px 14px;
       background-color: $mainColor;
       color: transparent;
+    }
+    &__link-tw {
+      display: block;
+    }
+    &__link-fb {
+      display: block;
+    }
+    &__link-yt {
+      display: block;
+    }
+    &__link:hover {
+      background: #669ec0;
+    }
+    &__link:active {
+      .social-nav__link-tw,
+      .social-nav__link-fb,
+      .social-nav__link-yt {
+        fill: #88b6d1;
+      }
     }
     &__item {
       display: inline-block;
       padding: 0;
     }
-    &__item:first-child &__link:after {
-      position: absolute;
-      content: "";
-      background: url(../img/tw-icon.png) no-repeat;
-      width: 18px;
-      height: 14px;
-      top: 16px;
-      right: 14px;
-    }
-    &__item:nth-child(2) &__link:after {
-      position: absolute;
-      content: "";
-      background: url(../img/fb-icon.png) no-repeat;
-      width: 8px;
-      height: 18px;
-      top: 13px;
-      right: 18px;
-    }
-    &__item:last-child &__link:after {
-      position: absolute;
-      content: "";
-      background: url(../img/yt-icon.png) no-repeat;
-      width: 20px;
-      height: 14px;
-      top: 17px;
-      right: 13px;
-    }
+  }
+  .social-nav-link--padding {
+    padding: 14px 19px;
   }
 }

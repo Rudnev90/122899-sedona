@@ -17,6 +17,15 @@
       margin: 0 auto;
       max-width: 280px;
     }
+    &__search:hover {
+      background:#669ec0;
+      outline: none;
+    }
+    &__search:focus {
+      color: #94b9d2;
+      background:#5496bd;
+      outline: none;
+    }
   }
   .button--send-review {
     padding-bottom: 80px;
@@ -41,6 +50,15 @@
       margin: 0 auto;
       width: 458px;
     }
+    &__search:hover {
+      background:#669ec0;
+      outline: none;
+    }
+    &__search:focus {
+      color: #94b9d2;
+      background:#5496bd;
+      outline: none;
+    }
   }
   .button--send-review {
     padding-bottom: 80px;
@@ -63,7 +81,16 @@
       background: $mainColor;
       padding: 15px 45px 12px;
       margin: 0 auto;
-      max-width: 458px;
+      width: 458px;
+    }
+    &__search:hover {
+      background:#669ec0;
+      outline: none;
+    }
+    &__search:focus {
+      color: #94b9d2;
+      background:#5496bd;
+      outline: none;
     }
   }
   .button--send-review {
