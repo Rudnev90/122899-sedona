@@ -1,0 +1,102 @@
+@media(min-width:320px) and (max-width: 766px) {
+  .button {
+    //Блок с кнопкой
+    position: relative;
+    padding: 35px 0 49px;
+    &__search {
+      //Кнопка "Найти гостиницу"
+      display: block;
+      font-size: $secondFontSize;
+      line-height: $mainLineHeight;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      color: #ffffff;
+      border: none;
+      background: $mainColor;
+      padding: 15px 45px 12px;
+      margin: 0 auto;
+      max-width: 280px;
+    }
+    &__search:hover {
+      background:#669ec0;
+      outline: none;
+    }
+    &__search:focus {
+      color: #94b9d2;
+      background:#5496bd;
+      outline: none;
+    }
+  }
+  .button--send-review {
+    padding-bottom: 80px;
+  }
+}
+@media(min-width:766px) and (max-width: 1200px) {
+  .button {
+    //Блок с кнопкой
+    position: relative;
+    padding: 35px 18px 49px;
+    &__search {
+      //Кнопка "Найти гостиницу"
+      display: block;
+      font-size: $secondFontSize;
+      line-height: $mainLineHeight;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      color: #ffffff;
+      border: none;
+      background: $mainColor;
+      padding: 15px 45px 12px;
+      margin: 0 auto;
+      width: 458px;
+    }
+    &__search:hover {
+      background:#669ec0;
+      outline: none;
+    }
+    &__search:focus {
+      color: #94b9d2;
+      background:#5496bd;
+      outline: none;
+    }
+  }
+  .button--send-review {
+    padding-bottom: 80px;
+  }
+}
+@media(min-width:1200px) {
+  .button {
+    //Блок с кнопкой
+    position: relative;
+    padding: 35px 18px 49px;
+    &__search {
+      //Кнопка "Найти гостиницу"
+      display: block;
+      font-size: $secondFontSize;
+      line-height: $mainLineHeight;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      color: #ffffff;
+      border: none;
+      background: $mainColor;
+      padding: 15px 45px 12px;
+      margin: 0 auto;
+      width: 458px;
+    }
+    &__search:hover {
+      background:#669ec0;
+      outline: none;
+    }
+    &__search:focus {
+      color: #94b9d2;
+      background:#5496bd;
+      outline: none;
+    }
+  }
+  .button--send-review {
+    padding-bottom: 80px;
+  }
+}

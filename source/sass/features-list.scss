@@ -1,0 +1,192 @@
+@media(min-width:320px) and (max-width: 766px) {
+  .features-list {
+    //Вложенный список в блок features
+    padding-top: 42px;
+    padding-right: 12%;
+    padding-bottom: 32px;
+    color: #000000;
+    &__title {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: $mainFontSize;
+      font-weight: $boldWeight;
+    }
+    &__item {
+      //Пункт списка
+      position: relative;
+      padding-left: 21.87%;
+    }
+    &__item:nth-child(n+2) {
+      margin-top: 29px;
+    }
+    &__desc {
+      //Описание пункта списка
+      margin: 18px 0 0;
+      font-size: $thirdFontSize;
+      text-transform: uppercase;
+      line-height: 21px;
+    }
+    &__item-home:before {
+      //Иконка пункта "Жилье"
+      content: " ";
+      position: absolute;
+      background: url(../img/icon-house.svg) no-repeat;
+      background-size: 100%;
+      width: 37px;
+      height: 37px;
+      left: 5%;
+      top: -13px;
+    }
+    &__item-food:before {
+      //Иконка пункта "Еда"
+      content: " ";
+      position: absolute;
+      background: url(../img/icon-burger.svg) no-repeat;
+      background-size: 100%;
+      width: 37px;
+      height: 37px;
+      left: 5%;
+      top: -9px;
+    }
+    &__item-souvenirs:before {
+      //Иконка пункта "Сувениры"
+      content: " ";
+      position: absolute;
+      background: url(../img/icon-gift.svg) no-repeat;
+      background-size: 100%;
+      width: 37px;
+      height: 45px;
+      left: 5%;
+      top: -15px;
+    }
+  }
+}
+@media(min-width:766px) and (max-width: 1200px) {
+  .features-list {
+    display: flex;
+    flex-direction: row;
+    padding: 156px 0 63px;
+    color: #000000;
+    //Вложенный список в блок features
+    &__title {
+      margin: 0;
+      font-size: $secondFontSize;
+      text-transform: uppercase;
+      font-weight: $boldWeight;
+      text-align: center;
+    }
+    &__item {
+      //Пункт списка
+      padding: 0 35px;
+      position: relative;
+      text-align: center;
+      width: 33.3%;
+    }
+    &__desc {
+      //Описание пункта списка
+      margin: 21px 0 0;
+      font-size: $thirdFontSize;
+      text-transform: uppercase;
+      line-height: 21px;
+    }
+    &__item-home:before {
+      //Иконка пункта "Жилье"
+      content: " ";
+      position: absolute;
+      background: url(../img/icon-house.svg) no-repeat;
+      background-size: 100%;
+      width: 75px;
+      height: 75px;
+      left: 35%;
+      top: -98px;
+    }
+    &__item-food:before {
+      //Иконка пункта "Еда"
+      content: " ";
+      position: absolute;
+      background: url(../img/icon-burger.svg) no-repeat;
+      background-size: 100%;
+      width: 75px;
+      height: 75px;
+      left: 35%;
+      top: -95px;
+    }
+    &__item-souvenirs:before {
+      //Иконка пункта "Сувениры"
+      content: " ";
+      position: absolute;
+      background: url(../img/icon-gift.svg) no-repeat;
+      background-size: 82%;
+      width: 75px;
+      height: 75px;
+      left: 41%;
+      top: -102px;
+    }
+  }
+  .feature-list--padding {
+    padding-left: 10px;
+  }
+}
+@media(min-width:1200px) {
+  .features-list {
+    display: flex;
+    flex-direction: row;
+    padding: 177px 0 63px;
+    color: #000000;
+    //Вложенный список в блок features
+    &__title {
+      margin: 0;
+      font-size: $secondFontSize;
+      text-transform: uppercase;
+      font-weight: $boldWeight;
+      text-align: center;
+    }
+    &__item {
+      //Пункт списка
+      padding: 0 35px;
+      position: relative;
+      text-align: center;
+      width: 33.3%;
+    }
+    &__desc {
+      //Описание пункта списка
+      margin: 21px 0 0;
+      font-size: $thirdFontSize;
+      text-transform: uppercase;
+      line-height: 21px;
+    }
+    &__item-home:before {
+      //Иконка пункта "Жилье"
+      content: " ";
+      position: absolute;
+      background: url(../img/icon-house.svg) no-repeat;
+      background-size: 100%;
+      width: 75px;
+      height: 75px;
+      left: 40.3%;
+      top: -98px;
+    }
+    &__item-food:before {
+      //Иконка пункта "Еда"
+      content: " ";
+      position: absolute;
+      background: url(../img/icon-burger.svg) no-repeat;
+      background-size: 100%;
+      width: 75px;
+      height: 75px;
+      left: 40%;
+      top: -95px;
+    }
+    &__item-souvenirs:before {
+      //Иконка пункта "Сувениры"
+      content: " ";
+      position: absolute;
+      background: url(../img/icon-gift.svg) no-repeat;
+      background-size: 82%;
+      width: 75px;
+      height: 75px;
+      left: 42%;
+      top: -102px;
+    }
+  }
+}

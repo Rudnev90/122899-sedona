@@ -1,0 +1,51 @@
+@mixin group_fields_border {
+  content: " ";
+  position: absolute;
+  border-bottom: 1px solid #d6d6d6;
+  width: 100%;
+  background-image: none;
+  top: 0;
+  left: 0;
+}
+@mixin title_style {
+  font-size: $mainFontSize;
+  line-height: $mainLineHeight;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  color: #ffffff;
+}
+@mixin title_section_item {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 35px 0 0;
+}
+@mixin label_style {
+  @include title_section_item;
+  width: 93%;
+  margin: 0 0 0 6.56%;
+}
+@mixin border_mobile {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  right: -20px;
+  border: 1px solid #e5e5e5;
+}
+@mixin border_tab_and_desk_before($top: 29px, $width: 19.5%, $left: 3px) {
+  content: '';
+  position: absolute;
+  border: 1px solid #e5e5e5;
+  width: $width;
+  top: $top;
+  left: $left;
+}
+@mixin border_tab_and_desk_after($top: 29px, $width: 19.5%, $left: 3px) {
+  content: '';
+  position: absolute;
+  border: 1px solid #e5e5e5;
+  width: $width;
+  top: $top;
+  right: $left;
+}

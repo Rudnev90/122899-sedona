@@ -2,7 +2,7 @@
   "name": "122899-sedona",
   "version": "0.1.0",
   "private": true,
-  "description": "Обучающий проект «Седона» от HTML Academy",
+  "description": "Обучающий проект «sedona» от HTML Academy",
   "author": "Константин Руднев",
   "repository": {
     "type": "git",
@@ -13,16 +13,28 @@
   },
   "homepage": "https://github.com/up-htmlacademy/122899-sedona",
   "dependencies": {
-    "grunt": "0.4.x",
-    "grunt-contrib-clean": "0.6.x",
-    "grunt-contrib-copy": "0.8.x",
-    "grunt-lintspaces": "0.7.x",
-    "load-grunt-tasks": "3.3.x"
+    "autoprefixer": "6.1.x",
+    "copy": "^0.1.3",
+    "copy-dir": "0.0.8",
+    "eclint": "1.1.x",
+    "fs-extra": "0.26.x",
+    "gulp": "3.9.x",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-plumber": "1.0.x",
+    "gulp-postcss": "6.0.x",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "2.1.x",
+    "imagemin-pngquant": "^4.2.0",
+    "moment": "^2.10.6",
+    "mustache": "^2.2.1"
   },
   "scripts": {
     "pregosha": "npm install > /dev/null",
-    "gosha": "grunt gosha",
-    "test": "grunt lintspaces:codestyle"
+    "gosha": "gulp gosha",
+    "test": "gulp lint",
+    "start": "gulp start"
   },
   "engines": {
     "node": "^5.0.0"
