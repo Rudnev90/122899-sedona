@@ -1,0 +1,25 @@
+@media(min-width:320px) and (max-width: 766px) {
+  .features {
+    // Блок с преимуществами
+  }
+}
+@media(min-width: 766px) and (max-width: 1200px) {
+  .features {
+    // Блок с преимуществами
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media(min-width: 1200px) {
+  .features {
+    // Блок с преимуществами
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media(min-width: 1200px) {
+  .wrapper {
+    // Враппер боди
+    box-shadow: 0 0 20px -5px #000000, 0 0 0 3500px #f2f2f2;
+  }
+}

@@ -1,0 +1,15 @@
+@media(min-width:320px) and (max-width: 766px) {
+  .form-review {
+    padding: 0 20px;
+  }
+}
+@media(min-width:766px) and (max-width: 1198px) {
+  .form-review {
+    padding: 0 60px;
+  }
+}
+@media(min-width:1198px) {
+  .form-review {
+    padding: 0 120px;
+  }
+}
