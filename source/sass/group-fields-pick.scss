@@ -42,10 +42,10 @@
     &__input[type="radio"]:checked+label:before {
       background-color: #000;
     }
-    &__input[type="radio"]:hover+label:before {
+    &__input[type="radio"]+label:hover:before {
       border: 17px solid #e5e5e5;
     }
-    &__input[type="radio"]:active+label:before {
+    &__input[type="radio"]+label:active:before {
       border: 17px solid #e5e5e5;
       background-color: #d5d5d5;
     }
@@ -79,24 +79,6 @@
       top: -17px;
       left: 0;
     }
-    &__input[type="checkbox"]:hover+label:before {
-      background-color: #e5e5e5;
-    }
-    &__input[type="checkbox"]:active+label:before {
-      background-color: #d5d5d5;
-    }
-    &__input[type="checkbox"]:active+label:after {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 18px;
-      width: 18px;
-      height: 8px;
-      border: 5px solid #a4a4a4;
-      border-top-style: none;
-      border-right-style: none;
-      transform: rotate(-45deg);
-    }
     &__input[type="checkbox"]:checked+label:after {
       position: absolute;
       content: "";
@@ -111,6 +93,24 @@
     }
     &__input[type="checkbox"]:checked+label:before {
       background-color: #f2f2f2;
+    }
+    &__input[type="checkbox"]+label:hover:before {
+      background-color: #e5e5e5;
+    }
+    &__input[type="checkbox"]+label:active:before {
+      background-color: #d5d5d5;
+    }
+    &__input[type="checkbox"]+label:active:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 18px;
+      width: 18px;
+      height: 8px;
+      border: 5px solid #a4a4a4;
+      border-top-style: none;
+      border-right-style: none;
+      transform: rotate(-45deg);
     }
   }
   .pick--checkbox {
@@ -169,10 +169,10 @@
     &__input[type="radio"]:checked+label:before {
       background-color: #000;
     }
-    &__input[type="radio"]:hover+label:before {
+    &__input[type="radio"]+label:hover:before {
       border: 17px solid #e5e5e5;
     }
-    &__input[type="radio"]:active+label:before {
+    &__input[type="radio"]+label:active:before {
       border: 17px solid #e5e5e5;
       background-color: #d5d5d5;
     }
@@ -206,13 +206,13 @@
       top: -17px;
       left: 0;
     }
-    &__input[type="checkbox"]:hover+label:before {
+    &__input[type="checkbox"]+label:hover:before {
       background-color: #e5e5e5;
     }
-    &__input[type="checkbox"]:active+label:before {
+    &__input[type="checkbox"]+label:active:before {
       background-color: #d5d5d5;
     }
-    &__input[type="checkbox"]:active+label:after {
+    &__input[type="checkbox"]+label:active:after {
       position: absolute;
       content: "";
       top: 0;

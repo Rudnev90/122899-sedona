@@ -1,6 +1,7 @@
 @media(min-width:320px) and (max-width: 766px) {
   .button {
     //Блок с кнопкой
+    position: relative;
     padding: 35px 0 49px;
     &__search {
       //Кнопка "Найти гостиницу"
@@ -34,6 +35,7 @@
 @media(min-width:766px) and (max-width: 1200px) {
   .button {
     //Блок с кнопкой
+    position: relative;
     padding: 35px 18px 49px;
     &__search {
       //Кнопка "Найти гостиницу"
@@ -67,6 +69,7 @@
 @media(min-width:1200px) {
   .button {
     //Блок с кнопкой
+    position: relative;
     padding: 35px 18px 49px;
     &__search {
       //Кнопка "Найти гостиницу"
