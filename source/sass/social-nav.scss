@@ -1,0 +1,191 @@
+@media(min-width:320px) and (max-width: 766px) {
+  .social-nav {
+    padding: 0 70px;
+    text-align: center;
+    //Блок с соц. сетями
+    // padding: 41px 84px 0;
+    &__hashtag {
+      font-size: $secondFontSize;
+      line-height: $mainLineHeight;
+      text-transform: uppercase;
+      font-weight: $boldWeight;
+      text-align: center;
+      align-self: center;
+    }
+    &__list {
+      margin: 32px 0 0;
+      padding: 0;
+      width: auto;
+      list-style: none;
+      text-align: center;
+    }
+    &__link {
+      position: relative;
+      text-decoration: none;
+      display: block;
+      height: 46px;
+      width: 48px;
+      padding: 16px 14px;
+      background-color: $mainColor;
+      color: transparent;
+    }
+    &__link-tw {
+      display: block;
+    }
+    &__link-fb {
+      display: block;
+    }
+    &__link-yt {
+      display: block;
+    }
+    &__link:hover {
+      background: #669ec0;
+    }
+    &__link:active {
+      .social-nav__link-tw,
+      .social-nav__link-fb,
+      .social-nav__link-yt {
+        fill: #88b6d1;
+      }
+    }
+    &__item {
+      display: inline-block;
+      padding: 0;
+    }
+  }
+  .social-nav-link--padding {
+    padding: 14px 19px;
+  }
+}
+@media(min-width:766px) and (max-width: 1200px) {
+  .social-nav {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    padding-left: 11px;
+    //Блок с соц. сетями
+    // padding: 41px 84px 0;
+    &__hashtag {
+      font-size: $secondFontSize;
+      line-height: $mainLineHeight;
+      text-transform: uppercase;
+      font-weight: $boldWeight;
+      text-align: center;
+      flex-grow: 1;
+      align-self: center;
+      padding-left: 14px;
+    }
+    &__list {
+      margin: 0;
+      padding: 0;
+      width: auto;
+      list-style: none;
+      text-align: center;
+      flex-grow: 1;
+    }
+    &__link {
+      position: relative;
+      text-decoration: none;
+      display: block;
+      height: 46px;
+      width: 48px;
+      padding: 16px 14px;
+      background-color: $mainColor;
+      color: transparent;
+    }
+    &__link-tw {
+      display: block;
+    }
+    &__link-fb {
+      display: block;
+    }
+    &__link-yt {
+      display: block;
+    }
+    &__link:hover {
+      background: #669ec0;
+    }
+    &__link:active {
+      .social-nav__link-tw,
+      .social-nav__link-fb,
+      .social-nav__link-yt {
+        fill: #88b6d1;
+      }
+    }
+    &__item {
+      display: inline-block;
+      padding: 0;
+    }
+  }
+  .social-nav-link--padding {
+    padding: 14px 19px;
+  }
+}
+@media(min-width:1200px) {
+  .social-nav {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    padding-left: 18px;
+    //Блок с соц. сетями
+    // padding: 41px 84px 0;
+    &__hashtag {
+      font-size: $secondFontSize;
+      line-height: $mainLineHeight;
+      text-transform: uppercase;
+      font-weight: $boldWeight;
+      text-align: center;
+      flex-grow: 1;
+      align-self: center;
+      padding-left: 20px;
+    }
+    &__list {
+      margin: 0;
+      padding: 0;
+      width: auto;
+      list-style: none;
+      text-align: center;
+      flex-grow: 1;
+    }
+    &__link {
+      position: relative;
+      text-decoration: none;
+      display: block;
+      height: 46px;
+      width: 48px;
+      padding: 16px 14px;
+      background-color: $mainColor;
+      color: transparent;
+    }
+    &__link-tw {
+      display: block;
+    }
+    &__link-fb {
+      display: block;
+    }
+    &__link-yt {
+      display: block;
+    }
+    &__link:hover {
+      background: #669ec0;
+    }
+    &__link:active {
+      .social-nav__link-tw,
+      .social-nav__link-fb,
+      .social-nav__link-yt {
+        fill: #88b6d1;
+      }
+    }
+    &__item {
+      display: inline-block;
+      padding: 0;
+    }
+  }
+  .social-nav-link--padding {
+    padding: 14px 19px;
+  }
+}

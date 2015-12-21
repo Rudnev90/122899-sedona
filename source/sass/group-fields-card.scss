@@ -1,0 +1,183 @@
+@media(min-width:320px) and (max-width: 766px) {
+  .group-fields-card {
+    position: relative;
+    border: none;
+    padding: 22px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    &__num {
+      display: flex;
+      flex-direction: column;
+      width: 61px;
+      margin-right: 6px;
+    }
+    &__symbol {
+      margin-bottom: 7px;
+      text-align: center;
+    }
+    &__numeric {
+      width: 61px;
+      height: 58px;
+      background-color: #f2f2f2;
+      padding: 17px 25px 18px;
+      text-align: center;
+    }
+    &__wrap-fields {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0;
+      flex-grow: 1;
+      width: 75%;
+    }
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      margin-top: 21px;
+    }
+    &__label {
+      @include title_section_item;
+      width: 93%;
+      margin: 0 0 11px 6.56%;
+    }
+    &__input {
+      width: 100%;
+      font-size: $mainFontSize;
+      font-weight: $boldWeight;
+      border: none;
+      background-color: #f2f2f2;
+      padding: 17px 6.56%;
+      outline: none;
+    }
+  }
+}
+@media(min-width:766px) and (max-width: 1200px) {
+  .group-fields-card {
+    position: relative;
+    border: none;
+    padding: 22px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    &__num {
+      display: flex;
+      flex-direction: column;
+      width: 61px;
+      margin-right: 6px;
+    }
+    &__symbol {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    &__numeric {
+      width: 61px;
+      height: 58px;
+      background-color: #f2f2f2;
+      padding: 17px 25px 18px;
+      text-align: center;
+    }
+    &__wrap-fields {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 0;
+      width: 87%;
+      flex-grow: 1;
+    }
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      margin-top: 21px;
+      margin-right: 6px;
+      flex-grow: 1;
+    }
+    &__wrap:last-child {
+      margin-right: 0;
+    }
+    &__label {
+      @include title_section_item;
+      width: 93%;
+      margin: 0 0 11px 6.56%;
+    }
+    &__input {
+      width: 100%;
+      font-size: $mainFontSize;
+      font-weight: $boldWeight;
+      border: none;
+      background-color: #f2f2f2;
+      padding: 17px 6.56%;
+      outline: none;
+    }
+  }
+}
+@media(min-width:1200px) {
+  .group-fields-card {
+    position: relative;
+    border: none;
+    padding: 22px 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    &__num {
+      display: flex;
+      flex-direction: column;
+      width: 61px;
+      margin-right: 6px;
+    }
+    &__symbol {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    &__numeric {
+      width: 61px;
+      height: 58px;
+      background-color: #f2f2f2;
+      padding: 17px 25px 18px;
+      text-align: center;
+    }
+    &__wrap-fields {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 0;
+      width: 89%;
+      flex-grow: 1;
+    }
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      margin-top: 21px;
+      margin-right: 6px;
+    }
+    &__wrap:nth-child(1) {
+      width: 23.8%;
+      margin-right: 61px;
+    }
+    &__wrap:nth-child(2) {
+      width: 21.9%;
+      flex-grow: 1;
+      margin-right: 61px;
+    }
+    &__wrap:last-child {
+      margin-right: 0;
+      flex-grow: 1;
+    }
+    &__label {
+      @include title_section_item;
+      width: 93%;
+      margin: 0 0 11px 6.56%;
+    }
+    &__input {
+      width: 100%;
+      font-size: $mainFontSize;
+      font-weight: $boldWeight;
+      border: none;
+      background-color: #f2f2f2;
+      padding: 17px 6.56%;
+      outline: none;
+    }
+  }
+}
