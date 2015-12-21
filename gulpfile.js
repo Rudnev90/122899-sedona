@@ -59,9 +59,9 @@ gulp.task("img", function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch("source/sass/style.{sass,scss}", ["css"])
-  gulp.watch("build/js/*.js", ["js"])
-  gulp.watch("build/img/", ["img"])
+  gulp.watch("source/sass/style.{sass,scss}/**/*", ["css"])
+  gulp.watch("source/js/*.js", ["js"])
+  gulp.watch("source/img/", ["img"])
 })
 
 // =====================================================
