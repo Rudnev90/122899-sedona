@@ -1,6 +1,7 @@
 @media(min-width:320px) and (max-width: 766px) {
   .main-menu {
     // Главное меню
+    background-color: #ffffff;
     position: relative;
     &__list {
       // Список пунктов главного меню
@@ -108,6 +109,7 @@
 @media(min-width:766px) and (max-width:1200px){
   .main-menu {
     // Главное меню
+    background-color: #ffffff;
     &__list {
       // Список пунктов главного меню
       display: flex;
@@ -177,6 +179,7 @@
 @media(min-width:1200px) {
   .main-menu {
     // Главное меню
+    background-color: #ffffff;
     &__list {
       // Список пунктов главного меню
       display: flex;
