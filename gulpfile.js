@@ -12,8 +12,6 @@ var jsmin = require('gulp-jsmin');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var minifyCss = require('gulp-minify-css');
-var cleanDest = require('gulp-clean-dest');
-var react = require('gulp-react');
 var concat = require('gulp-concat');
 
 gulp.task("css", function() {
