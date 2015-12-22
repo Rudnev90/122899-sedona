@@ -5,8 +5,7 @@
 // Управдение контролами
 // ===============================================
 
-(function()
-
+(function(){
   var dataTravelerInput = 0;
   var card;
   var areaTraveler = document.querySelector(".traveler-group");
