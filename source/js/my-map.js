@@ -1,4 +1,4 @@
-window.load = function() {
+(function(){
   ymaps.ready(init);
   var myMap,
     myPlacemark;
@@ -26,4 +26,4 @@ window.load = function() {
     //    console.log(coords);
     //  });
   }
-}
+})();

@@ -1,3 +1,4 @@
+(function(){
 // =================================================================
 // Главное меню
 // =================================================================
@@ -14,3 +15,4 @@ mainMenuCloseBtn.item("").addEventListener("click", function(event) {
   event.preventDefault();
   mainMenu.item("").classList.remove("main-menu--show");
 });
+})();
