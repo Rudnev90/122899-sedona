@@ -1,25 +1,6 @@
-var mainMenu = document.getElementsByClassName('main-menu__list');
-var mainMenuOpenBtn = document.getElementsByClassName('main-menu__open-link');
-var mainMenuCloseBtn = document.getElementsByClassName('main-menu__close');
-
-mainMenuOpenBtn.item('').addEventListener("click", function(event) {
-  event.preventDefault();
-  mainMenu.item('').classList.add("main-menu--show");
-});
-
-mainMenuCloseBtn.item('').addEventListener("click", function(event) {
-  event.preventDefault();
-  mainMenu.item('').classList.remove("main-menu--show");
-});
-
-// var incomingDate = document.querySelectorAll("#coming");
-// var dates = document.querySelectorAll("#data");
-// console.log(incomingDate[0].value);
-// console.log(dates[0].value);
-// incomingDate[0].addEventListener("change", function() {
-//   console.log(incomingDate[0].value + dates[0].value);
-// })
-
+// ===============================================
+// Добавление карточки путешественника
+// ===============================================
 var dataTravelerInput = 0;
 var card;
 var areaTraveler = document.querySelector(".traveler-group");
@@ -37,6 +18,9 @@ function addTraveler() {
   card = areaTraveler;
 };
 
+// ===============================================
+// Удаление карточки путешественника
+// ===============================================
 function delTraveler() {
   if (!card.childNodes[1]) {
     return;
@@ -47,7 +31,9 @@ function delTraveler() {
     i = 0;
   }
 }
-
+// ===============================================
+// Управдение контролами
+// ===============================================
 
 (function() {
   var elementsTraveler = document.querySelectorAll(".fields-controls--traveler");
@@ -55,7 +41,6 @@ function delTraveler() {
   for (var i = 0; i < elementsTraveler.length; i++) {
     initNumberField(elementsTraveler[i]);
   }
-
   function initNumberField(parent) {
     var input = parent.querySelector("input");
     var minus = parent.querySelector(".group-fields-controls__minus");
@@ -103,16 +88,19 @@ function delTraveler() {
         input.value = value + 1;
         addTraveler();
       } else {
+        if (input.value <= 0) {
+          input.value = 0;
+          return;
+        }
         delTraveler();
         input.value = value - 1;
-        if (input.value < 0) {
-          input.value = 0;
-        }
       }
-    }
+    };
   }
 })();
-
+// ===============================================
+// Добавление превью и отправка формы
+// ===============================================
 (function() {
   var form = document.querySelector(".form-review");
 

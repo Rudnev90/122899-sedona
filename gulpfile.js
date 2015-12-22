@@ -12,6 +12,9 @@ var jsmin = require('gulp-jsmin');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var minifyCss = require('gulp-minify-css');
+var cleanDest = require('gulp-clean-dest');
+var react = require('gulp-react');
+var concat = require('gulp-concat');
 
 gulp.task("css", function() {
   gulp.src("source/sass/style.{sass,scss}")
@@ -30,13 +33,15 @@ gulp.task("css", function() {
 });
 
 gulp.task("js", function() {
-  gulp.src('source/js/*.js')
-    .pipe(gulp.dest("build/js"))
+  gulp.src('source/js/**/*.js')
+  .pipe(gulp.dest("build/js/"))
+  .pipe(concat('script.js'))
+    .pipe(gulp.dest('build/js/'))
     .pipe(jsmin())
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('build/js/'));
+    .pipe(gulp.dest('build/js/'))
   return gulp.src('source/js/vendor/*.js')
     .pipe(gulp.dest('build/js/vendor/'));
 });
@@ -55,18 +60,12 @@ gulp.task("img", function() {
       }],
       use: [pngquant()]
     }))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img/'));
 });
-
-gulp.task('watch', function() {
-  gulp.watch("source/sass/style.{sass,scss}/**/*", ["css"])
-  gulp.watch("source/js/*.js", ["js"])
-  gulp.watch("source/img/", ["img"])
-})
 
 // =====================================================
 // Start task
 // =====================================================
-gulp.task('start', ['css', 'js', 'html', 'img', 'watch']);
+gulp.task('build', ['css', 'js', 'html', 'img']);
 // Оставьте эту строку в самом конце файла
 require("./.gosha");

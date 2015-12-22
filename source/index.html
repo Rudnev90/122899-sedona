@@ -7,17 +7,16 @@
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-  <script src="js/my-map.min.js"></script>
+  <script type="text/javascript" src="js/my-map.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <div class="wrapper">
     <header class="main-header">
       <div class="main-menu">
+        <a class="main-menu__close"></a>
         <ul class="main-menu__list">
           <li class="main-menu__item"><a class="main-menu__link" href="# ">Информация</a>
-            <span class="main-menu__close"></span>
           </li>
           <li class="main-menu__item main-menu__item--margin"><a class="main-menu__link" href="form.html">Оставить отзыв</a></li>
           <li class="main-menu__item"><a class="main-menu__link" href="#">Блог шерифа</a></li>
@@ -43,6 +42,7 @@
         <div class="main-header-section__slogan">
           <img class="main-header-section__text-because" src="img/text-becausecanyon.svg" alt="because" width="294" height="79">
         </div>
+      </div>
     </header>
     <main class="page-content">
       <div class="title-section">
@@ -56,7 +56,7 @@
       <div class="features">
         <div class="features-item features-item--color">
           <div class="item-section item-section--blue-bg item-section--border-triangle">
-            <h2 class="item-section__title item-section__title--desk item-section-title-1__margin">Настоящий городок</h2>
+            <h2 class="item-section__title item-section__title--margin">Настоящий городок</h2>
             <span class="item-section__num">&mdash; №1 &mdash;</span>
             <p class="item-section__desc">
               Седона не атракцион для туристов, там течет своя жизнь!
@@ -87,7 +87,7 @@
         </div>
         <div class="features-item features-item--color features-item--reverse">
           <div class="item-section item-section--blue-bg item-section--no-triangle">
-            <h2 class="item-section__title item-section__title-margin-n-3 item-section__title--desk">Там есть мост дьявола</h2>
+            <h2 class="item-section__title item-section__title-margin">Там есть мост дьявола</h2>
             <span class="item-section__num">&mdash; №2 &mdash;</span>
             <p class="item-section__desc">
               Да, по нему пожно пройти! Если конечно вы осмелитесь
@@ -97,28 +97,28 @@
           </div>
         </div>
         <div class="features-item features-item--bg features-item--n-3">
-          <div class="item-section item-section--n-3 item-section--no-triangle">
-            <h2 class="item-section__title item-section__title--n-3 item-section__title-no-margin">Небольшая площадь</h2>
+          <div class="item-section item-section--second-width item-section--no-triangle">
+            <h2 class="item-section__title item-section__title--padding item-section__title-no-margin item-section__title--padding-tablet">Небольшая площадь</h2>
             <span class="item-section__num">&mdash; №3 &mdash;</span>
-            <p class="item-section__desc item-section__desc--n-3">
-              Все достопримечательности находятся очень близко
+            <p class="item-section__desc item-section__desc--padding">
+              Все достопримеча<span class="item-section__desc--indent">-<br/></span>тельности находятся очень близко
             </p>
           </div>
         </div>
         <div class="features-item features-item--bg features-item--n-3">
-          <div class="item-section item-section--n-3 item-section--no-triangle">
-            <h2 class="item-section__title item-section__title--n-3 item-section__title-no-margin">Красивая дорога</h2>
+          <div class="item-section item-section--second-width item-section--no-triangle">
+            <h2 class="item-section__title item-section__title--padding item-section__title-no-margin item-section__title--padding-tablet">Красивая дорога</h2>
             <span class="item-section__num">&mdash; №4 &mdash;</span>
-            <p class="item-section__desc item-section__desc--n-3">
+            <p class="item-section__desc item-section__desc--padding">
               Ехать в седону из лас-вегаса совсем не скучно!
             </p>
           </div>
         </div>
-        <div class="features-item features-item--bg features-item--no-border features-item--n-3">
-          <div class="item-section item-section--n-3 item-section--no-triangle">
-            <h2 class="item-section__title item-section__title--n-3 item-section__title-no-margin">Мало туристов</h2>
+        <div class="features-item features-item--bg features-item--n-3 features-item--no-border">
+          <div class="item-section item-section--second-width item-section--no-triangle">
+            <h2 class="item-section__title item-section__title--padding item-section__title-no-margin item-section__title--padding-tablet">Мало туристов</h2>
             <span class="item-section__num">&mdash; №5 &mdash;</span>
-            <p class="item-section__desc item-section__desc--n-3">
+            <p class="item-section__desc item-section__desc--padding">
               Большинство едет в гранд-каньон и толпится там
             </p>
           </div>
@@ -140,7 +140,7 @@
         <div class="footer-wrap">
           <span class="social-nav__hashtag">#Visitsedona</span>
           <div class="social-nav">
-            <div class="social-nav-block">
+            <div class="social-nav__block">
               <ul class="social-nav__list">
                 <li class="social-nav__item">
                   <a class="social-nav__link" href="#">
@@ -193,8 +193,7 @@
         </div>
       </footer>
     </main>
-    <script src="js/script.js"></script>
-    </div>
+    <script src="js/script-menu.js"></script>
 </body>
 
 </html>

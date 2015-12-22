@@ -9,10 +9,10 @@ function init() {
   });
 
   myPlacemark = new ymaps.Placemark([34.86, -111.80], {
-    hintContent: 'Седона'
+    hintContent: "Седона"
   }, {
-    iconLayout: 'default#image',
-    iconImageHref: 'img/my-placemark-map.png',
+    iconLayout: "default#image",
+    iconImageHref: "img/my-placemark-map.png",
     iconImageSize: [27, 27],
     iconImageOffset: [-15, -8]
   });

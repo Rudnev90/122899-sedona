@@ -6,6 +6,7 @@
     margin-top: 21px;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
     &__title {
       @include title_style;
       width: 100%;
@@ -128,12 +129,6 @@
   .fields-controls--margin {
     margin-bottom: 21px;
     margin-top: 0;
-  }
-  .group-fields-controls:before{
-    @include border_mobile;
-  }
-  .fields-controls--border-none:before {
-    display: none;
   }
 }
 @media(min-width:766px) and (max-width: 1198px) {
@@ -280,6 +275,15 @@
     flex-grow: 0;
     width: 100%;
   }
+  .group-fields-controls--width-tab {
+    width: 36.1%;
+  }
+  .group-fields-controls__minus-margin {
+    margin-left: 28px;
+  }
+  .group-fields-controls__plus-margin {
+    margin-right: 28px;
+  }
   .group-fields-controls:before {
     @include border_tab_and_desk_before(14px);
   }
@@ -287,10 +291,10 @@
     @include border_tab_and_desk_after(14px);
   }
   .group-fields-controls--border-none:after {
-    display: none;
+    border-top: none;
   }
   .group-fields-controls--border-none:before {
-    display: none;
+    border-top: none;
   }
 }
 @media (min-width: 1198px) {
@@ -317,6 +321,7 @@
       background-color: #f2f2f2;
       padding: 17px 7.87% 16px;
       margin: 0;
+      margin-left: 6px;
       flex-grow: 1;
       border: none;
       outline: none;
@@ -376,6 +381,7 @@
       background-color: #f2f2f2;
       max-width: 61px;
       height: 58px;
+      margin-left: 6px;
       flex-grow: 2;
       width: 61px;
     }
@@ -425,10 +431,10 @@
     flex-direction: column;
     align-items: center;
   }
-  .group-fields-controls__label-mob {
+  .group-fields-controls__label-tab {
     display: none;
   }
-  .group-fields-controls__label-tab {
+  .group-fields-controls__label-mob {
     display: inline;
   }
   .group-fields-controls--tab {
@@ -441,15 +447,15 @@
     width: 29.1%;
   }
   .group-fields-controls:before {
-    @include border_tab_and_desk_before(15px,28.9%, 0);
+    @include border_tab_and_desk_before(14px, 28.5%);
   }
   .group-fields-controls:after {
-    @include border_tab_and_desk_after(15px,28.9%, 0);
+    @include border_tab_and_desk_after(14px, 28.5%);
   }
   .group-fields-controls--border-none:after {
-    display: none;
+    border-top: none;
   }
   .group-fields-controls--border-none:before {
-    display: none;
+    border-top: none;
   }
 }

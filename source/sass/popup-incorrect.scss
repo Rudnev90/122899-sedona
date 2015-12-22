@@ -1,17 +1,18 @@
 @media(min-width:320px) and (max-width: 766px) {
   .popup-incorrect {
     display: flex;
+    position: fixed;
     display: none;
-    position: absolute;
-    top: -125px;
-    right: -20px;
-    left: -20px;
+    top:  150px;
     flex-direction: column;
     align-items: center;
     height: 280px;
+    width: 320px;
     background-color: #ffffff;
     padding: 46px 48px 0;
     box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+    left: 50%;
+    margin-left: -160px;
     &__title {
       @include title_style;
       color: #000000;
@@ -48,23 +49,75 @@
 @media(min-width:766px) and (max-width: 1198px) {
   .popup-incorrect {
     display: flex;
+    position: fixed;
     display: none;
-    position: absolute;
-    top: -125px;
-    right: -20px;
-    left: -20px;
+    top: 100px;
     flex-direction: column;
     align-items: center;
-    height: 280px;
+    height: 350px;
+    width: 400px;
     background-color: #ffffff;
     padding: 46px 48px 0;
     box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+    left: 50%;
+    margin-left: -200px;
     &__title {
       @include title_style;
       color: #000000;
       font-weight: $boldWeight;
       text-align: center;
+      font-size: 30px;
+    }
+    &__desc {
+      font-size: $thirdFontSize;
+      line-height: 26px;
+      text-transform: uppercase;
+      margin: 25px 0 0;
+      text-align: center;
+    }
+    &__btn-wrap {
+      width: 320px;
+      margin-top: 30px;
+    }
+    &__btn {
+      display: block;
       font-size: $secondFontSize;
+      line-height: $mainLineHeight;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      color: #ffffff;
+      border: none;
+      background: $mainColor;
+      padding: 15px 45px 12px;
+      margin: 0 auto;
+      width: 180px;
+    }
+  }
+}
+@media(min-width:1198px) {
+  .popup-incorrect {
+    display: flex;
+    position: fixed;
+    display: none;
+    top: 160px;
+    right: -20px;
+    left: -20px;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 350px;
+    background-color: #ffffff;
+    padding: 46px 48px 0;
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+    left: 50%;
+    margin-left: -200px;
+    &__title {
+      @include title_style;
+      color: #000000;
+      font-weight: $boldWeight;
+      text-align: center;
+      font-size: 30px;
     }
     &__desc {
       font-size: $thirdFontSize;

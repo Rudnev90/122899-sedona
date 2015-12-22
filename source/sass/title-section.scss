@@ -4,6 +4,7 @@
     position: relative;
     text-align: center;
     padding: 42px 10% 0;
+    background-color: #ffffff;
     &__title {
       // Заголовок
       font-size: $mainFontSize;
@@ -94,6 +95,7 @@
     }
     &__item {
       @include title_section_item;
+      padding: 0 40px;
     }
   }
   .title-section__title--form {

@@ -51,17 +51,17 @@
     margin-top: 0;
   }
   .item-section__title-margin {
-    margin-top: 40px;
-  }
-  .item-section__title-margin-n-3 {
     margin-top: 14px;
+  }
+  .item-section__desc--indent {
+    display: none;
   }
 }
 @media(min-width:322px) and (max-width: 766px) {
   .item-section:after {
     display: none;
   }
-  .item-section-title-1__margin {
+  .item-section__title--margin {
     margin-top: 14px;
   }
 }
@@ -76,6 +76,7 @@
       text-align: center;
       text-transform: uppercase;
       margin: 0;
+      padding: 0 8px;
     }
     &__num {
       // Номер блока features-item
@@ -98,14 +99,17 @@
     // Фон блока преимуществ
     background: $mainColor;
   }
-  .item-section--n-3 {
+  .item-section--second-width {
     width: 100%;
   }
-  .item-section__title--n-3 {
-    padding: 0 40px;
-  }
-  .item-section__desc--n-3 {
+  .item-section__desc--padding{
     padding: 0 27px;
+  }
+  .item-section__title--padding-tablet {
+    padding: 0 50px;
+  }
+  .item-section__desc--indent {
+    display: inline;
   }
 }
 @media(min-width:1200px) {
@@ -119,6 +123,7 @@
       text-align: center;
       text-transform: uppercase;
       margin: 0;
+      padding: 0 26px;
     }
     &__num {
       // Номер блока features-item
@@ -141,16 +146,16 @@
     // Фон блока преимуществ
     background: $mainColor;
   }
-  .item-section--n-3 {
+  .item-section--second-width {
     width: 100%;
   }
-  .item-section__title--n-3 {
+  .item-section__title--padding {
     padding: 0 100px;
   }
-  .item-section__desc--n-3 {
+  .item-section__desc--padding {
     padding: 0 27px;
   }
-  .item-section__title--desk {
-    padding: 0 26px;
+  .item-section__desc--indent {
+    display: none;
   }
 }

@@ -1,7 +1,7 @@
 @media(min-width:320px) and (max-width: 766px) {
   .group-fields-pick {
     position: relative;
-    padding: 22px 0 44px;
+    padding: 22px 0 38px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -60,7 +60,7 @@
       position: relative;
       font-size: 14px;
       text-transform: uppercase;
-      width: 100%;
+      width: 320px;
       text-transform: none;
       font-weight: $boldWeight;
       font-size: $mainFontSize;
@@ -118,7 +118,7 @@
     margin-top: 0;
     padding-left: 0;
   }
-  .group-fields-pick::before {
+  .group-fields-pick:before {
     @include border_mobile;
   }
 }
@@ -129,7 +129,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 26px;
     &__title {
       @include title_style;
@@ -142,7 +142,7 @@
       position: relative;
       margin-top: 51px;
       padding-left: 74px;
-      margin-right: 20px;
+      width: 260px;
     }
     &__input[type="radio"] {
       display: none;
@@ -187,7 +187,7 @@
       position: relative;
       font-size: 14px;
       text-transform: uppercase;
-      width: 100%;
+      width: 230px;
       text-transform: none;
       font-weight: $boldWeight;
       font-size: $mainFontSize;
@@ -240,31 +240,23 @@
       background-color: #f2f2f2;
     }
   }
-  .pick--checkbox {
-    width: 280px;
-    margin-top: 0;
-    padding-left: 0;
-  }
   .group-fields-pick:before {
     @include border_tab_and_desk_before(35px);
   }
   .group-fields-pick:after {
     @include border_tab_and_desk_after(35px);
   }
-  .fields-pick--flex-jfy {
-    justify-content: center;
+  .group-fields-pick__label-margin {
+    margin-left: 30px;
   }
-  .fields-pick--flex-jfy:after {
-    @include border_tab_and_desk_after(50px);
-  }
-  .fields-pick--flex-jfy:before {
-    @include border_tab_and_desk_before(50px);
+  .group-fields-pick__radio--flex {
+    justify-content: space-between;
   }
 }
 @media(min-width:1198px) {
   .group-fields-pick {
     position: relative;
-    padding: 22px 120px 44px;
+    padding: 22px 0 44px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -276,6 +268,7 @@
       color: #000000;
       padding: 0 200px;
       font-size: 21px;
+      padding: 0 275px;
     }
     &__wrap {
       position: relative;
@@ -283,7 +276,9 @@
       padding-left: 74px;
       display: flex;
       flex-direction: row;
-      flex-grow: 1;
+      margin-right: 28px;
+      width: 285px;
+      margin-left: 55px
     }
     &__input[type="radio"] {
       display: none;
@@ -291,7 +286,6 @@
     &__input[type="radio"]+label {
       font-size: 14px;
       text-transform: uppercase;
-      width: 100%;
       text-transform: none;
       font-weight: $boldWeight;
       font-size: $mainFontSize;
@@ -324,8 +318,8 @@
     &__input[type="checkbox"]+label {
       position: relative;
       font-size: 14px;
+      width: 195px;
       text-transform: uppercase;
-      width: 100%;
       text-transform: none;
       font-weight: $boldWeight;
       font-size: $mainFontSize;
@@ -378,25 +372,16 @@
       background-color: #f2f2f2;
     }
   }
-  .pick--checkbox {
-    width: 280px;
-    margin-top: 0;
-    padding-left: 0;
+  .group-fields-pick__label-margin {
+    margin-right: 0;
   }
-  .fields-pick--flex-jfy {
+  .group-fields-pick__radio--flex {
     justify-content: center;
-    padding: 22px 0 44px;
   }
-  .fields-pick--flex-jfy:after {
-    @include border_tab_and_desk_after(50px, 28.9%, 0);
+  .group-fields-pick:before {
+    @include border_tab_and_desk_before(35px, 28.5%);
   }
-  .fields-pick--flex-jfy:before {
-    @include border_tab_and_desk_before(50px, 28.9%, 0);
-  }
-  .fields-pick-title--desk {
-    padding: 0 275px;
-  }
-  .fields-pick-wrap--margin {
-    margin-left: 60px;
+  .group-fields-pick:after {
+    @include border_tab_and_desk_after(35px, 28.5%);
   }
 }

@@ -66,11 +66,11 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z" />
       <form method="get" class="form-review" name="review" novalidate>
         <div class="group-fields">
           <h2 class="group-fields__title">Представьтесь, пожалуйста:</h2>
-          <div class="group-fields__wrap group-fields--ferst-group">
+          <div class="group-fields__wrap group-fields--margin">
             <label class="group-fields__label" for="surname">Фамилия:</label>
             <input class="group-fields__input" type="text" id="surname" name="surname" placeholder="Иванов" required>
           </div>
-          <div class="group-fields__wrap fields-wrap--margin-long">
+          <div class="group-fields__wrap group-fields-wrap--margin-long">
             <label class="group-fields__label" for="name">Имя:</label>
             <input class="group-fields__input" type="text" id="name" name="name" placeholder="Петр" required>
           </div>
@@ -79,13 +79,13 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z" />
             <input class="group-fields__input" type="text" id="patronymic" name="patronymic" placeholder="Александрович" required>
           </div>
         </div>
-        <div class="group-fields-pick">
+        <div class="group-fields-pick group-fields-pick__radio--flex">
           <h2 class="group-fields-pick__title">Ваше общее впечатление:</h2>
-          <div class="group-fields-pick__wrap fields-pick-wrap--margin">
+          <div class="group-fields-pick__wrap">
             <input class="group-fields-pick__input" name="vote" type="radio" id="positive" checked>
             <label class="group-fields-pick__label" for="positive">Скорее положительное</label>
           </div>
-          <div class="group-fields-pick__wrap fields-pick-wrap--margin">
+          <div class="group-fields-pick__wrap">
             <input class="group-fields-pick__input" name="vote" type="radio" id="negative">
             <label class="group-fields-pick__label" for="negative">Скорее отрицательное</label>
           </div>
@@ -96,7 +96,7 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z" />
             <label class="group-fields__label" for="coming">Дата приезда:</label>
             <input class="group-fields__input" type="text" id="coming" name="coming" placeholder="4 июля 2015 год" value="4 июля 2015 год" required/>
           </div>
-          <div class="group-fields-controls fields-wrap--margin-long fields-controls--date fields-controls--border-none group-fields-controls--border-none">
+          <div class="group-fields-controls group-fields-wrap--margin-long fields-controls--date group-fields-controls--border-none">
             <label class="group-fields-controls__label" for="data">Дней пребывание:</label>
             <button type="button" class="group-fields-controls__minus"></button>
             <input class="group-fields-controls__input fields-controls--date" type="text" id="data" name="days" placeholder="14" required/>
@@ -110,33 +110,29 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z" />
         </div>
         <div class="group-fields-controls fields-controls--margin group-fields-controls--tab">
           <h2 class="group-fields__title group-fields-title--margin">Кол-во путешественников:</h2>
-          <div class="group-fields-controls fields-controls--traveler fields-controls--border-none group-fields-controls--border-none group-fields-controls--width-desk">
+          <div class="group-fields-controls fields-controls--traveler group-fields-controls--width-tab group-fields-controls--width-desk group-fields-controls--border-none">
             <label class="group-fields-controls__label" for="data-traveler">
               <span class="group-fields-controls__label-mob">Количество путешественников:</span>
               <span class="group-fields-controls__label-tab">Кол-во путешественников:</span>
             </label>
-            <button type="button" class="group-fields-controls__minus"></button>
-            <input class="group-fields-controls__input" type="text" id="data-traveler" name="travelers" placeholder="2" value="0" required>
+            <button type="button" class="group-fields-controls__minus group-fields-controls__minus-margin"></button>
+            <input class="group-fields-controls__input" type="text" id="data-traveler" name="travelers" placeholder="2" value="2" required>
             <span class="group-fields-controls__data">чел.</span>
-            <button type="button" class="group-fields-controls__plus"></button>
+            <button type="button" class="group-fields-controls__plus group-fields-controls__plus-margin"></button>
           </div>
         </div>
         <div class="traveler-group">
         </div>
-        <div class="group-fields-pick fields-pick--flex-jfy">
+        <div class="group-fields-pick group-fields-pick--flex-jfy">
           <h2 class="group-fields-pick__title fields-pick-title--desk">Посещенные достопримечательности:</h2>
-          <div class="group-fields-pick__wrap pick--checkbox">
             <input class="group-fields-pick__input" type="checkbox" id="evil-bridge" name="evil-bridge" checked>
-            <label class="group-fields-pick__label" for="evil-bridge">Мост дьявола</label>
+            <label class="group-fields-pick__label group-fields-pick__label-margin" for="evil-bridge">Мост дьявола</label>
             <input class="group-fields-pick__input" type="checkbox" id="slide-park" name="slide-park">
-            <label class="group-fields-pick__label" for="slide-park">Слайд-парк</label>
-          </div>
-          <div class="group-fields-pick__wrap pick--checkbox">
+            <label class="group-fields-pick__label group-fields-pick__label-margin" for="slide-park">Слайд-парк</label>
             <input class="group-fields-pick__input" type="checkbox" id="bell-rock" name="bell-rock" checked>
-            <label class="group-fields-pick__label" for="bell-rock">Гора-колокол</label>
+            <label class="group-fields-pick__label group-fields-pick__label-margin" for="bell-rock">Гора-колокол</label>
             <input class="group-fields-pick__input" type="checkbox" id="red-rocks" name="red-rocks" checked>
-            <label class="group-fields-pick__label" for="red-rocks">Красные скалы</label>
-          </div>
+            <label class="group-fields-pick__label group-fields-pick__label-margin" for="red-rocks">Красные скалы</label>
         </div>
         <div class="upload-img">
           <h2 class="upload-img__title">Загрузите фотографии</h2>
@@ -151,28 +147,6 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z" />
         </div>
         <div class="button button--send-review">
           <input type="submit" class="button__search" value="Отправить отзыв">
-          <div class="popup-incorrect">
-            <p class="popup-incorrect__title">
-              Что-то пошло не так!
-            </p>
-            <p class="popup-incorrect__desc">
-              Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-            </p>
-            <div class="popup-incorrect__btn-wrap">
-              <a class="popup-incorrect__btn" href="">ок</a>
-            </div>
-          </div>
-          <div class="popup-succes">
-            <p class="popup-succes__title">
-              Ваш отзыв отправлен!
-            </p>
-            <p class="popup-succes__desc">
-              Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-            </p>
-            <div class="popup-succes__btn-wrap">
-              <a class="popup-succes__btn" href="">ок</a>
-            </div>
-          </div>
         </div>
       </form>
     </main>
@@ -180,7 +154,7 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z" />
       <div class="footer-wrap">
         <span class="social-nav__hashtag">#Visitsedona</span>
         <div class="social-nav">
-          <div class="social-nav-block">
+          <div class="social-nav__block">
             <ul class="social-nav__list">
               <li class="social-nav__item">
                 <a class="social-nav__link" href="#">
@@ -232,23 +206,23 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z" />
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script-form.js"></script>
     <script type="text/html" id="image-template">
       <img class="upload-img__img" src="{{image}}" alt="{{name}}">
       <a class="upload-img__item-del" href="#" title="Удалить изображение"></a>
     </script>
     <script type="text/html" id="traveler-template">
-      <div class="group-fields fields-wrap--no-border group-fields--flex-dir">
+      <div class="group-fields group-fields--no-border group-fields--flex-dir">
         <div class="group-fields-card__num">
           <span class="group-fields-card__symbol">№</span>
           <span class="group-fields-card__numeric">1</span>
         </div>
-        <div class="group-fields__wrap wrap--fields">
+        <div class="group-fields__wrap group-fields__wrap--wrap">
           <div class="group-fields__wrap">
             <label class="group-fields__label" for="surname-traveler">Фамилия:</label>
             <input class="group-fields__input" type="text" id="surname-traveler" name="surname-traveler" placeholder="Иванов" required>
           </div>
-          <div class="group-fields__wrap fields-wrap--margin-long fields-wrap--margin-short">
+          <div class="group-fields__wrap group-fields-wrap--margin-long group-fields-wrap--margin-short">
             <label class="group-fields__label" for="name-traveler">Имя:</label>
             <input class="group-fields__input" type="text" id="name-traveler" name="name-traveler" placeholder="Петр" required>
           </div>
@@ -261,6 +235,28 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z" />
     </script>
     <script type="text/javascript" src="js/vendor/mustache.min.js"></script>
     <script type="text/javascript" src="js/vendor/moment.min.js"></script>
+  </div>
+  <div class="popup-incorrect">
+    <p class="popup-incorrect__title">
+      Что-то пошло не так!
+    </p>
+    <p class="popup-incorrect__desc">
+      Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+    </p>
+    <div class="popup-incorrect__btn-wrap">
+      <a class="popup-incorrect__btn" href="">ок</a>
+    </div>
+  </div>
+  <div class="popup-succes">
+    <p class="popup-succes__title">
+      Ваш отзыв отправлен!
+    </p>
+    <p class="popup-succes__desc">
+      Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+    </p>
+    <div class="popup-succes__btn-wrap">
+      <a class="popup-succes__btn" href="">ок</a>
+    </div>
   </div>
 </body>
 

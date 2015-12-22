@@ -1,21 +1,23 @@
 @media(min-width:320px) and (max-width: 766px) {
   .popup-succes {
     display: flex;
-    position: absolute;
-    top: -125px;
-    right: -20px;
+    position: fixed;
+    display: none;
+    top: 82px;
+    width: 320px;
     left: -20px;
     flex-direction: column;
     align-items: center;
-    height: 280px;
     background-color: #ffffff;
-    padding: 46px 48px 0;
-    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+    left: 50%;
+    margin-left: -160px;
     &__title {
       @include title_style;
       color: #000000;
       font-weight: $boldWeight;
       text-align: center;
+      margin-top: 46px;
     }
     &__desc {
       font-size: $thirdFontSize;
@@ -23,10 +25,13 @@
       text-transform: uppercase;
       margin: 25px 0 0;
       text-align: center;
+      padding: 0px 50px;
     }
     &__btn-wrap {
-      width: 320px;
+      width: 100%;
       margin-top: 30px;
+      background-color: #f2f2f2;
+      padding: 21px 22px 20px;
     }
     &__btn {
       display: block;
@@ -47,19 +52,22 @@
 @media(min-width:766px) and (max-width: 1198px) {
   .popup-succes {
     display: flex;
-    position: absolute;
-    top: -125px;
-    width: 100%;
+    position: fixed;
+    display: none;
+    top: 82px;
+    width: 630px;
     left: 0;
     flex-direction: column;
     align-items: center;
     height: 347px;
     background-color: #ffffff;
-    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+    left: 50%;
+    margin-left: -315px;
     &__title {
       @include title_style;
       color: #000000;
-      font-size: $secondFontSize;
+      font-size: 30px;
       font-weight: $boldWeight;
       text-align: center;
       margin-top: 46px;
@@ -70,7 +78,7 @@
       text-transform: uppercase;
       margin: 25px 0 0;
       text-align: center;
-      padding: 0 112px;
+      padding: 0 115px;
     }
     &__btn-wrap {
       width: 100%;
@@ -97,21 +105,25 @@
 @media(min-width:1198px) {
   .popup-succes {
     display: flex;
-    position: absolute;
-    top: -125px;
-    right: -20px;
-    left: -20px;
+    position: fixed;
+    display: none;
+    top: 150px;
+    width: 640px;
+    left: 0;
     flex-direction: column;
     align-items: center;
-    height: 280px;
+    height: 347px;
     background-color: #ffffff;
-    padding: 46px 48px 0;
-    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+    left: 50%;
+    margin-left: -315px;
     &__title {
       @include title_style;
       color: #000000;
+      font-size: 30px;
       font-weight: $boldWeight;
       text-align: center;
+      margin-top: 46px;
     }
     &__desc {
       font-size: $thirdFontSize;
@@ -119,10 +131,13 @@
       text-transform: uppercase;
       margin: 25px 0 0;
       text-align: center;
+      padding: 0 110px;
     }
     &__btn-wrap {
-      width: 320px;
+      width: 100%;
       margin-top: 30px;
+      background-color: #f2f2f2;
+      padding: 43px 22px 64px;
     }
     &__btn {
       display: block;
@@ -136,7 +151,7 @@
       background: $mainColor;
       padding: 15px 45px 12px;
       margin: 0 auto;
-      width: 280px;
+      width: 458px;
     }
   }
 }
