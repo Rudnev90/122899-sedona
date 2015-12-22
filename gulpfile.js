@@ -63,6 +63,12 @@ gulp.task("img", function() {
     .pipe(gulp.dest('build/img/'));
 });
 
+gulp.task('watch', function() {
+  gulp.watch("source/sass/style.{sass,scss}/**/*", ["css"])
+  gulp.watch("source/js/*.js", ["js"])
+  gulp.watch("source/img/", ["img"])
+})
+
 // =====================================================
 // Start task
 // =====================================================
