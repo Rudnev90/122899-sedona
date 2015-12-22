@@ -5,38 +5,38 @@
 // Управдение контролами
 // ===============================================
 
-(function(){
-  var dataTravelerInput = 0;
-  var card;
-  var areaTraveler = document.querySelector(".traveler-group");
 
-  function addTraveler() {
-    var template = document.querySelector("#traveler-template").innerHTML;
-    var html = Mustache.render(template);
-    var div = document.createElement("div");
-    div.classList.add("group-fields__card");
-    div.innerHTML = html;
-    areaTraveler.appendChild(div);
-    dataTravelerInput++;
-    dataTravelerInput = dataTravelerInput + "";
-    div.querySelector(".group-fields-card__numeric").innerHTML = dataTravelerInput;
-    card = areaTraveler;
-  };
+var dataTravelerInput = 0;
+var card;
+var areaTraveler = document.querySelector(".traveler-group");
 
-  // ===============================================
-  // Удаление карточки путешественника
-  // ===============================================
-  function delTraveler() {
-    if (!card.childNodes[1]) {
-      return;
-    }
-    card.removeChild(card.lastChild);
-    dataTravelerInput--;
-    if (dataTravelerInput < 0) {
-      i = 0;
-    }
+function addTraveler() {
+  var template = document.querySelector("#traveler-template").innerHTML;
+  var html = Mustache.render(template);
+  var div = document.createElement("div");
+  div.classList.add("group-fields__card");
+  div.innerHTML = html;
+  areaTraveler.appendChild(div);
+  dataTravelerInput++;
+  dataTravelerInput = dataTravelerInput + "";
+  div.querySelector(".group-fields-card__numeric").innerHTML = dataTravelerInput;
+  card = areaTraveler;
+};
+
+// ===============================================
+// Удаление карточки путешественника
+// ===============================================
+function delTraveler() {
+  if (!card.childNodes[1]) {
+    return;
   }
-
+  card.removeChild(card.lastChild);
+  dataTravelerInput--;
+  if (dataTravelerInput < 0) {
+    i = 0;
+  }
+}
+(function() {
   var elementsTraveler = document.querySelectorAll(".fields-controls--traveler");
   var elementsDate = document.querySelectorAll(".fields-controls--date");
 
