@@ -37,10 +37,13 @@ function delTraveler() {
 
 (function() {
   var elementsTraveler = document.querySelectorAll(".fields-controls--traveler");
+  var elementsDate = document.querySelectorAll(".fields-controls--date");
 
   for (var i = 0; i < elementsTraveler.length; i++) {
     initNumberField(elementsTraveler[i]);
+    initDay(elementsDate[i]);
   }
+
   function initNumberField(parent) {
     var input = parent.querySelector("input");
     var minus = parent.querySelector(".group-fields-controls__minus");
@@ -52,6 +55,7 @@ function delTraveler() {
     plus.addEventListener("click", function() {
       changeNumber(true);
     });
+
 
     input.addEventListener("change", function() {
       if (typeof(Number(input.value)) != 'number' || Number(input.value) > 50) {
@@ -94,6 +98,48 @@ function delTraveler() {
         }
         delTraveler();
         input.value = value - 1;
+      }
+    };
+  }
+
+  function initDay(parent) {
+    var inputDate = parent.querySelector("input");
+    var minusDate = parent.querySelector(".minus-date");
+    var plusDate = parent.querySelector(".plus-date");
+
+    minusDate.addEventListener("click", function() {
+      changeDay(false);
+    });
+    plusDate.addEventListener("click", function() {
+      changeDay(true);
+    });
+
+
+    inputDate.addEventListener("change", function() {
+      function changeDay(operation) {
+        var value = Number(inputDate.value);
+        console.log(inputDate.value);
+        if (isNaN(value)) {
+          value = 0;
+        }
+        if (operation) {
+          inputDate.value = value + 1;
+        } else {
+          inputDate.value = value - 1;
+        }
+      };
+
+    });
+
+    function changeDay(operation) {
+      var value = Number(inputDate.value);
+      if (isNaN(value)) {
+        value = 0;
+      }
+      if (operation) {
+        inputDate.value = value + 1;
+      } else {
+        inputDate.value = value - 1;
       }
     };
   }

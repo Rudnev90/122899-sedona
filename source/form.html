@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -22,7 +22,7 @@
           <li class="main-menu__item"><a class="main-menu__link" href="#">Гостиницы</a></li>
         </ul>
         <a class="main-menu__logo-link" href="index.html">
-          <img class="main-menu__logo" src="./img/logo-sedona@1x.png" widht="67" height="56" srcset="img/logo-sedona@2x.png" />
+          <img class="main-menu__logo" src="img/logo-sedona@1x.png" srcset="img/logo-sedona@2x.png 2x" width="67" height="56" alt="лого">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="main-menu__logo-sedona-wrap" width="138" height="70" viewBox="0 0 138 70">
             <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="138" height="70" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIoAAABGCAMAAAAkc/yZAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAACBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9IAAAAsYlKeAAAAEHRSTlMAv88Q3+8gMFBgcI+fr0CA35MrxgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAGNSURBVGjezdoJbsIwEIXhF1ITEsJy/9M2haKWGRIvs+Wd4Jcsf5Ilo7vvY4ce/SE64lUC9F/RGcvSET8bUnTIPQ3ATlpeJcApuGTE38bdlABTYMkZ75vDSmZgJy0X8MVQ96CNLoTdjyUh7P4iy+dOXRqAnbSsl3izO2Jrnuxul3iye0ZuXtTN2RKvlktBiQ+7K7TRObBbWOLA7iqyfMbUpaG4xLqlpsSW3RxtdHbs1pbYsZtHls+GuhJkfVrKkOXTp66YNjp1dptL1NmtQJZPlboqZG1bZCWa7NbTRqfFrrxEi90WZPk0qGtD1qKlFVk+KXUC2uiE7CqWCNkVIcsnoE6IrGaLdkk7uxq00bWxa1HSxq4Osnz11GkhK2/pzEpq2VWlja6KXdOSpaWcF3Xa6IqpMy8pb7mal5RSZ0NbS4tPCXDLltjRRpejzq8k12KJLNsmdca0VbQ4l2yw60Ab3Qp1ASVrLR7I8n2izou2fEtUCXB9P6N0CitZ7tF/62bvW0x2nJ7/trpJ/Bz9BpWIRF+IwjvsAAAAAElFTkSuQmCC"
             />
@@ -32,7 +32,7 @@
       </div>
       <div class="main-header-section main-header-section--form">
         <div class="main-header-section__title main-header-section__title--form">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="main-header-section__text-sedona-form" width="459.755px" height="79.804px" viewBox="0 0 459.755 79.804" enable-background="new 0 0 459.755 79.804"
+          <svg version="1.0" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="main-header-section__text-sedona-form" width="459.755px" height="79.804px" viewBox="0 0 459.755 79.804" enable-background="new 0 0 459.755 79.804"
           xml:space="preserve">
             <g>
               <path d="M44.468,21.737c-3.573-2.978-8.139-4.963-12.903-4.963c-3.573,0-8.338,2.084-8.338,6.253c0,4.368,5.261,6.055,8.636,7.146
@@ -98,10 +98,10 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z" />
           </div>
           <div class="group-fields-controls group-fields-wrap--margin-long fields-controls--date group-fields-controls--border-none">
             <label class="group-fields-controls__label" for="data">Дней пребывание:</label>
-            <button type="button" class="group-fields-controls__minus"></button>
+            <button type="button" class="group-fields-controls__minus minus-date"></button>
             <input class="group-fields-controls__input fields-controls--date" type="text" id="data" name="days" placeholder="14" required/>
             <span class="group-fields-controls__data">дн.</span>
-            <button type="button" class="group-fields-controls__plus"></button>
+            <button type="button" class="group-fields-controls__plus plus-date"></button>
           </div>
           <div class="group-fields__wrap">
             <label class="group-fields__label" for="checkout">Дата отъезда:</label>
@@ -116,7 +116,7 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z" />
               <span class="group-fields-controls__label-tab">Кол-во путешественников:</span>
             </label>
             <button type="button" class="group-fields-controls__minus group-fields-controls__minus-margin"></button>
-            <input class="group-fields-controls__input" type="text" id="data-traveler" name="travelers" placeholder="2" value="2" required>
+            <input class="group-fields-controls__input" type="text" id="data-traveler" name="travelers" placeholder="2" value="0" required>
             <span class="group-fields-controls__data">чел.</span>
             <button type="button" class="group-fields-controls__plus group-fields-controls__plus-margin"></button>
           </div>
@@ -154,11 +154,11 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z" />
       <div class="footer-wrap">
         <span class="social-nav__hashtag">#Visitsedona</span>
         <div class="social-nav">
-          <div class="social-nav__block">
+          <div class="footer-wrap__block">
             <ul class="social-nav__list">
               <li class="social-nav__item">
                 <a class="social-nav__link" href="#">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="social-nav__link-tw" x="0px" y="0px" width="18px" height="15px" fill="#ffffff" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
+                  <svg version="1.0" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="social-nav__link-tw" x="0px" y="0px" width="18px" height="15px" fill="#ffffff" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
                   xml:space="preserve">
                     <g id="W6EeEF_1_">
                       <g>
@@ -175,7 +175,7 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z" />
               </li>
               <li class="social-nav__item">
                 <a class="social-nav__link social-nav-link--padding" href="#">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="social-nav__link-fb" x="0px" y="0px" width="9px" height="19px" fill="#ffffff" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944"
+                  <svg version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="social-nav__link-fb" x="0px" y="0px" width="9px" height="19px" fill="#ffffff" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944"
                   xml:space="preserve">
                     <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114
                     H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787
@@ -185,7 +185,7 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z" />
               </li>
               <li class="social-nav__item">
                 <a class="social-nav__link" href="#">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="social-nav__link-yt" x="0px" y="0px" width="20px" height="14px" fill="#ffffff" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015"
+                  <svg version="1.0" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="social-nav__link-yt" x="0px" y="0px" width="20px" height="14px" fill="#ffffff" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015"
                   xml:space="preserve">
                     <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835
                     C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z" />
@@ -206,7 +206,7 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z" />
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="js/script-form.js"></script>
+    <script type="text/javascript" src="js/script.min.js"></script>
     <script type="text/html" id="image-template">
       <img class="upload-img__img" src="{{image}}" alt="{{name}}">
       <a class="upload-img__item-del" href="#" title="Удалить изображение"></a>

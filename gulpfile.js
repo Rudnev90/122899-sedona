@@ -34,9 +34,7 @@ gulp.task("css", function() {
 
 gulp.task("js", function() {
   gulp.src('source/js/**/*.js')
-  .pipe(gulp.dest("build/js/"))
   .pipe(concat('script.js'))
-    .pipe(gulp.dest('build/js/'))
     .pipe(jsmin())
     .pipe(rename({
       suffix: '.min'
@@ -63,7 +61,7 @@ gulp.task("img", function() {
     .pipe(gulp.dest('build/img/'));
 });
 gulp.task('watch', function() {
-  gulp.watch("source/sass/style.{sass,scss}/**/*", ["css"])
+  gulp.watch("source/sass/**/*", ["css"])
   gulp.watch("source/js/*.js", ["js"])
   gulp.watch("source/img/", ["img"])
 })
