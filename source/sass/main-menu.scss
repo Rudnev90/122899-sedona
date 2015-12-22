@@ -1,6 +1,7 @@
 @media(min-width:320px) and (max-width: 766px) {
   .main-menu {
     // Главное меню
+    position: relative;
     &__list {
       // Список пунктов главного меню
       display: none;
@@ -75,16 +76,14 @@
       height: 22px;
       top: 16px;
       right: 20px;
-      z-index: 150;
     }
     &__open-link {
       position: absolute;
       background: url(../img/main-menu-bar-icon.png);
       width: 23px;
       height: 22px;
-      top: 17px;
+      bottom: 17px;
       right: 20px;
-      z-index: 180;;
     }
     &__logo-link {
       position: relative;
@@ -101,6 +100,9 @@
        margin-left: -68px;
        z-index: -1;
     }
+  }
+  .main-menu-item--relative {
+    position: relative;
   }
 }
 @media(min-width:766px) and (max-width:1200px){

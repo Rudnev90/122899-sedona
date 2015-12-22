@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include image-2x('../img/photo-background@2x.jpg', 100%, auto);
     &:before {
       position: absolute;
       display: block;
@@ -78,6 +79,7 @@
     background-size: 100%;
     width: 100%;
     padding-bottom: 64px;
+    @include image-2x('../img/photo-background@2x.jpg', 100%, auto);
   }
   .main-header-section__title--form {
     display: block;
@@ -116,6 +118,7 @@
     width: 100%;
     padding: 82px 49px;
     margin: 0 auto;
+    @include image-2x('../img/photo-background@2x.jpg', 100%, auto);
     &:before {
       position: absolute;
       display: block;
@@ -182,6 +185,7 @@
     width: 100%;
     padding-bottom: 140px;
     padding-top: 100px;
+    @include image-2x('../img/photo-background@2x.jpg', 100%, auto);
   }
   .main-header-section__title--form {
     display: block;
@@ -208,6 +212,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include image-2x('../img/photo-background@2x.jpg', 100%, auto);
     &:before {
       position: absolute;
       display: block;
@@ -266,6 +271,7 @@
     width: 100%;
     padding-bottom: 140px;
     padding-top: 100px;
+    @include image-2x('../img/photo-background@2x.jpg', 100%, auto);
   }
   .main-header-section__title--form {
     display: block;
