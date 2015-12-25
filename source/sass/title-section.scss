@@ -1,4 +1,4 @@
-@media(min-width:320px) and (max-width: 766px) {
+@media(min-width:10px) and (max-width: 766px) {
   .title-section {
     // Блок с заголовком
     position: relative;
@@ -17,11 +17,11 @@
       font-size: $thirdFontSize;
       line-height: 26px;
       text-transform: uppercase;
-      margin: 25px 0 0;
+      margin: 23px 0 0;
     }
   }
   .title-section--form {
-    padding: 76px 25px 10px;
+    padding: 74px 15px 10px;
   }
   .title-section--form:before {
     display: none;
@@ -42,9 +42,9 @@
   .title-section {
     // Блок с заголовком
     text-align: center;
-    padding: 42px 10% 49px; //32px
+    padding: 56px 15.85% 50px;
     &--form {
-      padding-top: 76px;
+      padding-top: 68px;
       padding-bottom: 45px;
     }
     &--form:before {

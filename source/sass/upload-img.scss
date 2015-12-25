@@ -1,4 +1,4 @@
-@media(min-width:320px) and (max-width: 766px) {
+@media(min-width:10px) and (max-width: 766px) {
   .upload-img {
     position: relative;
     padding: 21px 0 0;
@@ -24,13 +24,14 @@
       color: #ffffff;
       background: #f2f2f2;
       border: none;
-      padding: 15px 25px 12px;
+      padding: 15px 23px 12px;
       margin: 0 auto;
       max-width: 280px;
     }
     &__input[type="file"]:hover+label {
       background: #e5e5e5;
       color: #8c8c8c;
+      font-weight: $boldWeight;
     }
     &__input[type="file"]:active+label {
       background: #d5d5d5;
@@ -110,14 +111,14 @@
 }
 @media(min-width:766px) and (max-width: 1198px) {
   .upload-img {
-    position: relative;
-    padding: 22px 20px 0;
+    padding: 34px 20px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     &__title {
       @include title_style;
+      position: relative;
       color: #000000;
       width: 100%;
       font-size: 21px;
@@ -138,6 +139,7 @@
       padding: 17px 26px 14px;
       margin: 0 auto;
       max-width: 458px;
+      font-weight: $boldWeight;
     }
     &__input[type="file"]:hover+label {
       background: #e5e5e5;
@@ -150,6 +152,7 @@
     &__wrap {
       width: 100%;
       padding-top: 58px;
+      padding-bottom: 26px;
     }
     &__item-wrap {
       display: flex;
@@ -157,14 +160,14 @@
       flex-wrap: wrap;
       margin-top: 55px;
       justify-content: flex-start;
-      max-width: 551px;
+      max-width: 578px;
     }
     &__item {
       position: relative;
       width: 140px;
       height: 140px;
       margin-right: 65px;
-      margin-bottom: 35px;
+      margin-bottom: 67px;
     }
     &__item:nth-child(3n) {
       margin-right: 0;
@@ -216,11 +219,11 @@
   .upload-img__label-desk {
     display: none;
   }
-  .upload-img:before {
-    @include border_tab_and_desk_before(35px);
+  .upload-img__title:before {
+    @include border_tab_and_desk_before(15px);
   }
-  .upload-img:after {
-    @include border_tab_and_desk_after(35px);
+  .upload-img__title:after {
+    @include border_tab_and_desk_after(15px);
   }
 }
 @media(min-width:1200px) {
@@ -253,6 +256,7 @@
       padding: 17px 26px 14px;
       margin: 0 auto;
       width: 100%;
+      font-weight: $boldWeight;
     }
     &__wrap {
       width: 100%;

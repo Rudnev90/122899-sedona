@@ -1,11 +1,10 @@
-@media(min-width:320px) and (max-width: 766px) {
+@media(min-width:10px) and (max-width: 766px) {
   .copyright {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 33px;
     justify-content: center;
-    padding-left: 10px;
     &__developed {
       font-size: $thirdFontSize;
       line-height: $mainLineHeight;

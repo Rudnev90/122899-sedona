@@ -1,15 +1,16 @@
-@media(min-width:320px) and (max-width: 766px) {
+@media(min-width:10px) and (max-width: 766px) {
   .features-list {
     //Вложенный список в блок features
     padding-top: 42px;
     padding-right: 12%;
-    padding-bottom: 32px;
+    padding-bottom: 36px;
     color: #000000;
     &__title {
       margin: 0;
       text-transform: uppercase;
       font-size: $mainFontSize;
       font-weight: $boldWeight;
+      padding-left: 7px;
     }
     &__item {
       //Пункт списка
@@ -21,7 +22,7 @@
     }
     &__desc {
       //Описание пункта списка
-      margin: 18px 0 0;
+      margin: 15px 1px 0 8px;
       font-size: $thirdFontSize;
       text-transform: uppercase;
       line-height: 21px;
@@ -34,8 +35,8 @@
       background-size: 100%;
       width: 37px;
       height: 37px;
-      left: 5%;
-      top: -13px;
+      left: 7%;
+      top: -11px;
     }
     &__item-food:before {
       //Иконка пункта "Еда"
@@ -45,19 +46,19 @@
       background-size: 100%;
       width: 37px;
       height: 37px;
-      left: 5%;
-      top: -9px;
+      left: 6.8%;
+      top: -8px;
     }
     &__item-souvenirs:before {
       //Иконка пункта "Сувениры"
       content: " ";
       position: absolute;
       background: url(../img/icon-gift.svg) no-repeat;
-      background-size: 100%;
+      background-size: 94%;
       width: 37px;
       height: 45px;
-      left: 5%;
-      top: -15px;
+      left: 8%;
+      top: -13px;
     }
   }
 }

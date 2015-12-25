@@ -1,4 +1,4 @@
-@media(min-width:320px) and (max-width: 766px) {
+@media(min-width:10px) and (max-width: 766px) {
   .popup-succes {
     display: flex;
     position: fixed;
@@ -47,6 +47,9 @@
       margin: 0 auto;
       width: 280px;
     }
+  }
+  .popup-succes--show {
+    display: flex;
   }
 }
 @media(min-width:766px) and (max-width: 1198px) {
@@ -101,6 +104,9 @@
       width: 458px;
     }
   }
+  .popup-succes--show {
+    display: flex;
+  }
 }
 @media(min-width:1198px) {
   .popup-succes {
@@ -153,5 +159,8 @@
       margin: 0 auto;
       width: 458px;
     }
+  }
+  .popup-succes--show {
+    display: flex;
   }
 }

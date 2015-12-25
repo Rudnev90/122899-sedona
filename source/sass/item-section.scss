@@ -1,29 +1,29 @@
-@media(min-width:320px) and (max-width: 766px) {
+@media(min-width:10px) and (max-width: 766px) {
   .item-section {
     position: relative;
-    padding: 26px 9% 37px; //32px
+    padding: 29px 9% 42px;
     width: 100%;
     &__title {
       // Заголовок блока features-item
-      font-size: $mainFontSize;
-      line-height: $mainLineHeight;
+      font-size: 18px;
+      line-height: 1.5;
       text-align: center;
       text-transform: uppercase;
-      margin: 56px 0 0;
+      margin: 52px 0 0;
     }
     &__num {
       // Номер блока features-item
-      font-size: $thirdFontSize;
+      font-size: 14px;
       line-height: 21px;
       display: block;
       text-align: center;
-      margin: 10px 0 0;
+      margin: 6px 0 0;
     }
     &__desc {
       // Описание блока features-item
       text-align: center;
-      margin: 8px 0 0;
-      font-size: $thirdFontSize;
+      margin: 15px 0 0;
+      font-size: 14px;
       line-height: 21px;
       text-transform: uppercase;
     }
@@ -56,6 +56,24 @@
   .item-section__desc--indent {
     display: none;
   }
+  .item-section--third-section {
+    padding: 5px 9% 28px;
+  }
+  .item-section--fourth-section {
+    padding: 9px 9% 28px;
+  }
+  .item-section--fifth-section {
+    padding: 29px 9% 28px;
+  }
+  .item-section-third--title {
+    margin-top: 20px;
+  }
+  .item-section-fourth--title {
+    margin-top: 20px;
+  }
+  .item-section-fifth--title {
+    margin-top: 0;
+  }
 }
 @media(min-width:322px) and (max-width: 766px) {
   .item-section:after {
@@ -67,12 +85,12 @@
 }
 @media(min-width:766px) and (max-width: 1200px) {
   .item-section {
-    padding: 38px 5.5% 40px; //32px
+    padding: 46px 5.5% 40px;
     width: 33.33%;
     &__title {
       // Заголовок блока features-item
       font-size: $secondFontSize;
-      line-height: $mainLineHeight;
+      line-height: 27px;
       text-align: center;
       text-transform: uppercase;
       margin: 0;
@@ -84,12 +102,12 @@
       line-height: 21px;
       display: block;
       text-align: center;
-      margin: 14px 0 0;
+      margin: 6px 0 0;
     }
     &__desc {
       // Описание блока features-item
       text-align: center;
-      margin: 18px 0 0;
+      margin: 23px 0 0;
       font-size: $thirdFontSize;
       line-height: 21px;
       text-transform: uppercase;

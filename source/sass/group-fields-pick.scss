@@ -1,12 +1,12 @@
-@media(min-width:320px) and (max-width: 766px) {
+@media(min-width:10px) and (max-width: 766px) {
   .group-fields-pick {
-    position: relative;
-    padding: 22px 0 38px;
+    padding: 16px 0 45px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     &__title {
+      position: relative;
       @include title_style;
       width: 100%;
       color: #000000;
@@ -66,7 +66,7 @@
       font-size: $mainFontSize;
       margin-top: 50px;
       display: block;
-      padding-left: 71px;
+      padding-left: 80px;
       outline: none;
     }
     &__input[type="checkbox"]+label:before {
@@ -240,17 +240,20 @@
       background-color: #f2f2f2;
     }
   }
-  .group-fields-pick:before {
-    @include border_tab_and_desk_before(35px);
+  .group-fields-pick__title:before {
+    @include border_tab_and_desk_before(36px);
   }
-  .group-fields-pick:after {
-    @include border_tab_and_desk_after(35px);
+  .group-fields-pick__title:after {
+    @include border_tab_and_desk_after(36px);
   }
   .group-fields-pick__label-margin {
     margin-left: 30px;
   }
   .group-fields-pick__radio--flex {
     justify-content: space-between;
+  }
+  .group-fields-pick--padding {
+    padding-top: 35px;
   }
 }
 @media(min-width:1198px) {
@@ -301,10 +304,10 @@
       top: -16px;
       left: 0;
     }
-    &__input[type="radio"]:hover+label:before {
+    &__input[type="radio"]+label:hover:before {
       border: 17px solid #e5e5e5;
     }
-    &__input[type="radio"]:active+label:before {
+    &__input[type="radio"]+label:active:before {
       border: 17px solid #e5e5e5;
       background-color: #d5d5d5;
     }

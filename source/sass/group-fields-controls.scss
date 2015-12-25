@@ -1,4 +1,4 @@
-@media(min-width:320px) and (max-width: 766px) {
+@media(min-width:10px) and (max-width: 766px) {
   .group-fields-controls {
     position: relative;
     display: flex;
@@ -21,6 +21,7 @@
       background-color: #f2f2f2;
       padding: 17px 6.43% 16px;
       margin: 0 0 0 6px;
+      font-weight: $boldWeight;
       flex-grow: 1;
       border: none;
       outline: none;
@@ -126,14 +127,14 @@
   .group-fields-controls__label-tab {
     display: none;
   }
-  .fields-controls--margin {
-    margin-bottom: 21px;
-    margin-top: 0;
+  .group-fields-controls--margin {
+    margin-bottom: 6px;
+    margin-top: 4px;
+    padding-top: 20px;
   }
 }
 @media(min-width:766px) and (max-width: 1198px) {
   .group-fields-controls {
-    position: relative;
     display: flex;
     flex-direction: row;
     margin-top: 21px;
@@ -142,6 +143,7 @@
     flex-grow: 1;
     &__title {
       @include title_style;
+      position: relative;
       width: 100%;
       color: #000000;
     }
@@ -154,6 +156,7 @@
       height: 58px;
       background-color: #f2f2f2;
       padding: 17px 7.87% 16px;
+      font-weight: $boldWeight;
       margin: 0;
       flex-grow: 1;
       border: none;
@@ -284,10 +287,10 @@
   .group-fields-controls__plus-margin {
     margin-right: 28px;
   }
-  .group-fields-controls:before {
+  .group-fields-controls__title:before {
     @include border_tab_and_desk_before(14px);
   }
-  .group-fields-controls:after {
+  .group-fields-controls__title:after {
     @include border_tab_and_desk_after(14px);
   }
   .group-fields-controls--border-none:after {
@@ -295,6 +298,9 @@
   }
   .group-fields-controls--border-none:before {
     border-top: none;
+  }
+  .group-fields-controls--margin {
+    padding-top: 25px;
   }
 }
 @media (min-width: 1198px) {
@@ -320,6 +326,7 @@
       height: 58px;
       background-color: #f2f2f2;
       padding: 17px 7.87% 16px;
+      font-weight: $boldWeight;
       margin: 0;
       margin-left: 6px;
       flex-grow: 1;

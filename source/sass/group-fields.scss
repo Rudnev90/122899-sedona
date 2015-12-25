@@ -1,4 +1,4 @@
-@media(min-width:320px) and (max-width: 766px) {
+@media(min-width:10px) and (max-width: 766px) {
   .group-fields {
     position: relative;
     padding-top: 21px;
@@ -37,7 +37,10 @@
     &__label {
       @include title_section_item;
       width: 93%;
-      margin: 0 0 0 6.56%;
+      margin: 0 0 0 7.56%;
+    }
+    &__card:last-child {
+      padding-bottom: 24px;
     }
   }
   .group-fields--margin {
@@ -49,10 +52,6 @@
     width: 61px;
     margin-right: 6px;
     margin-top: 18px;
-  }
-  .group-fields-card__symbol {
-    margin-bottom: 7px;
-    text-align: center;
   }
   .group-fields-card__numeric {
     width: 61px;
@@ -71,7 +70,7 @@
   .group-fields--flex-dir {
     flex-direction: row;
   }
-  .group-fields:before {
+  .group-fields__title:before {
     @include border_mobile;
   }
   .group-fields--no-border:before {
@@ -80,25 +79,28 @@
   .group-fields--no-border:after {
     border-top: none;
   }
+  .group-fields--no-padding {
+    padding-bottom: 0;
+  }
 }
 @media(min-width:766px) and (max-width: 1198px) {
   .group-fields {
-    padding-top: 15px;
+    padding-top: 12px;
     padding-bottom: 20px;
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     &__title {
       @include title_style;
+      position: relative;
       color: #000000;
       width: 100%;
       font-size: 21px;
     }
     &__wrap {
       width: 26.9%;
-      margin-top: 18px;
+      margin-top: 21px;
       flex-grow: 1;
     }
     &__input {
@@ -132,10 +134,6 @@
     margin-right: 6px;
     margin-top: 22px;
   }
-  .group-fields-card__symbol {
-    margin-bottom: 7px;
-    text-align: center;
-  }
   .group-fields-card__numeric {
     width: 61px;
     height: 58px;
@@ -161,11 +159,17 @@
     margin-right: 6px;
     margin-left: 6px;
   }
-  .group-fields:before {
-    @include border_tab_and_desk_before;
+  .group-fields__title:before {
+    @include border_tab_and_desk_before(14px);
   }
-  .group-fields:after {
-    @include border_tab_and_desk_after;
+  .group-fields__title:after {
+    @include border_tab_and_desk_after(14px);
+  }
+  .group-fields--no-border:before {
+    border-top: none;
+  }
+  .group-fields--no-border:after {
+    border-top: none;
   }
   .group-fields--no-border:before {
     border-top: none;
@@ -173,11 +177,9 @@
   .group-fields--no-border:after {
     border-top: none;
   }
-  .group-fields--no-border:before {
-    border-top: none;
-  }
-  .group-fields--no-border:after {
-    border-top: none;
+  .group-fields--no-padding {
+    padding-bottom: 0;
+    padding-top: 10px;
   }
 }
 @media(min-width:1198px) {
@@ -200,7 +202,7 @@
       flex-grow: 1;
     }
     &__wrap:nth-child(1) {
-      width: 19.7%;
+      width: 13.2%;
     }
     &__input {
       width: 100%;

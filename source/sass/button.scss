@@ -1,8 +1,8 @@
-@media(min-width:320px) and (max-width: 766px) {
+@media(min-width:10px) and (max-width: 766px) {
   .button {
     //Блок с кнопкой
     position: relative;
-    padding: 35px 0 49px;
+    padding: 32px 0 49px;
     &__search {
       //Кнопка "Найти гостиницу"
       display: block;
@@ -11,6 +11,7 @@
       text-transform: uppercase;
       text-decoration: none;
       text-align: center;
+      font-weight: $boldWeight;
       color: #ffffff;
       border: none;
       background: $mainColor;
@@ -36,7 +37,7 @@
   .button {
     //Блок с кнопкой
     position: relative;
-    padding: 35px 18px 49px;
+    padding: 39px 18px 49px;
     &__search {
       //Кнопка "Найти гостиницу"
       display: block;
@@ -48,6 +49,7 @@
       color: #ffffff;
       border: none;
       background: $mainColor;
+      font-weight: $boldWeight;
       padding: 15px 45px 12px;
       margin: 0 auto;
       width: 458px;
@@ -79,6 +81,7 @@
       text-transform: uppercase;
       text-decoration: none;
       text-align: center;
+      font-weight: $boldWeight;
       color: #ffffff;
       border: none;
       background: $mainColor;

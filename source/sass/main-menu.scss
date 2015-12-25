@@ -1,4 +1,4 @@
-@media(min-width:320px) and (max-width: 766px) {
+@media(min-width:10px) and (max-width: 766px) {
   .main-menu {
     // Главное меню
     background-color: #ffffff;
@@ -130,6 +130,12 @@
       text-decoration: none;
       margin-left: 15px;
     }
+    &__close {
+      display: none;
+    }
+    &__open-link {
+      display: none;
+    }
     &__link {
       // Ссылки главного меню
       width: 100%;
@@ -200,6 +206,12 @@
       text-decoration: none;
       margin-left: 15px;
       margin-right: 15px;
+    }
+    &__close {
+      display: none;
+    }
+    &__open-link {
+      display: none;
     }
     &__link {
       // Ссылки главного меню
