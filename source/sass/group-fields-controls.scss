@@ -19,7 +19,7 @@
     &__input {
       width: 61px;
       background-color: #f2f2f2;
-      padding: 17px 6.7% 16px;
+      padding: 17px 6.75% 16px;
       margin: 0 0 0 6px;
       font-weight: $boldWeight;
       flex-grow: 1;
@@ -175,7 +175,6 @@
       background-color: #f2f2f2;
       height: 58px;
       width: 61px;
-      margin-right: 6px;
       text-align: center;
       padding-top: 16px;
       color: #b8b8b8;
@@ -348,11 +347,9 @@
       border: 4px solid #e5e5e5;
     }
     &__data {
-      display: none;
       background-color: #f2f2f2;
       height: 58px;
       width: 61px;
-      margin-right: 6px;
       text-align: center;
       padding-top: 16px;
       color: #b8b8b8;

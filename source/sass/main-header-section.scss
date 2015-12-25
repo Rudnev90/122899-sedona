@@ -125,11 +125,11 @@
       position: absolute;
       display: block;
       content: "";
-      bottom: -12px;
+      bottom: -14px;
       left: 0;
       width: 100%;
       height: 60px;
-      background-image: url(../img/header-border-x1200.png);
+      background-image: url(../img/header-border-x768.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100%;
@@ -202,90 +202,97 @@
     height: auto;
   }
 }
-@media(min-width:1200px) {
-  .main-header-section {
-    // Блок в шапке
-    position: relative;
-    background-image: url(../img/photo-background@1x.jpg);
-    background-color: #986b6c;
-    background-repeat: no-repeat;
-    background-position: 51% 28%;
-    width: 100%;
-    padding: 82px 49px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @include image-2x('../img/photo-background@2x.jpg', 200%, auto);
-    &:before {
-      position: absolute;
-      display: block;
-      content: "";
-      bottom: -2px;
-      left: 0;
-      width: 100%;
-      height: 60px;
-      background-image: url(../img/header-border-x1200.png);
+@media(min-width:769px) and (max-width: 1200px) {
+  .main-header-section:before {
+    background-image: url(../img/header-border-x1200.png);
+    bottom: -2px;
+    background-size: auto;
+  }
+}
+  @media(min-width:1200px) {
+    .main-header-section {
+      // Блок в шапке
+      position: relative;
+      background-image: url(../img/photo-background@1x.jpg);
+      background-color: #986b6c;
       background-repeat: no-repeat;
-      background-position: center;
-    }
-    &__item {
-      // Блок с надписью Welcome
-      width: 260px;
+      background-position: 51% 28%;
+      width: 100%;
+      padding: 82px 49px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      @include image-2x('../img/photo-background@2x.jpg', 200%, auto);
+      &:before {
+        position: absolute;
+        display: block;
+        content: "";
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background-image: url(../img/header-border-x1200.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &__item {
+        // Блок с надписью Welcome
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &__text-welcome {
+        // Текст с надписью Welcome
+        margin-bottom: 8px;
+      }
+      &__text-tothegeorge {
+        // Текст под надписью Welcome
+      }
+      &__title {
+        // Блок с надписью Sedona
+        width: 457px;
+        margin-top: 52px;
+      }
+      &__text-sedona {
+        // Картинка с надписью Sedona
+        fill: #ffffff;
+        width: 457px;
+        height: auto;
+      }
+      &__slogan {
+        // Блок с надписью слогана(Because .....)
+        width: 297px;
+        margin: 40px auto 0;
+      }
+      &__text-because {
+        // Картинка с надписью слогана(Because .....)
+        fill: #ffffff;
+        width: 297px;
+        height: auto;
+      }
     }
-    &__text-welcome {
-      // Текст с надписью Welcome
-      margin-bottom: 8px;
+    .main-header-section--form {
+      //Картинка хедера формы
+      background-image: url(../img/photo-background@1x.jpg);
+      background-repeat: no-repeat;
+      background-position: 51% 63%;
+      background-size: 100%;
+      width: 100%;
+      padding-bottom: 151px;
+      padding-top: 100px;
+      @include image-2x('../img/photo-background@2x.jpg', 100%, auto);
     }
-    &__text-tothegeorge {
-      // Текст под надписью Welcome
-    }
-    &__title {
-      // Блок с надписью Sedona
+    .main-header-section__title--form {
+      display: block;
       width: 457px;
-      margin-top: 52px;
+      height: 48px;
+      margin: 0 auto;
     }
-    &__text-sedona {
+    .main-header-section__text-sedona-form {
       // Картинка с надписью Sedona
       fill: #ffffff;
       width: 457px;
       height: auto;
     }
-    &__slogan {
-      // Блок с надписью слогана(Because .....)
-      width: 297px;
-      margin: 40px auto 0;
-    }
-    &__text-because {
-      // Картинка с надписью слогана(Because .....)
-      fill: #ffffff;
-      width: 297px;
-      height: auto;
-    }
   }
-  .main-header-section--form {
-    //Картинка хедера формы
-    background-image: url(../img/photo-background@1x.jpg);
-    background-repeat: no-repeat;
-    background-position: 51% 63%;
-    background-size: 100%;
-    width: 100%;
-    padding-bottom: 151px;
-    padding-top: 100px;
-    @include image-2x('../img/photo-background@2x.jpg', 100%, auto);
-}
-  .main-header-section__title--form {
-    display: block;
-    width: 457px;
-    height: 48px;
-    margin: 0 auto;
-  }
-  .main-header-section__text-sedona-form {
-    // Картинка с надписью Sedona
-    fill: #ffffff;
-    width: 457px;
-    height: auto;
-  }
-}

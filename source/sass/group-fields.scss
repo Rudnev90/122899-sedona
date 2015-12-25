@@ -87,7 +87,7 @@
     top: -17px;
   }
   .group-fields__input--padding {
-    padding: 18px 6.91% 17px;
+    padding: 18px 7% 17px;
   }
   .group-fields__input--disabled {
     border: 2px solid #b8b8b8;
@@ -165,13 +165,13 @@
     margin-right: 60px;
     margin-left: 60px;
   }
-  .group-fields-wrap--margin-short {
-    margin-right: 6px;
-    margin-left: 6px;
-  }
   .group-fields-wrap--margin-long {
     margin-right: 60px;
     margin-left: 60px;
+  }
+  .group-fields-wrap--margin-short {
+    margin-right: 6px;
+    margin-left: 6px;
   }
   .group-fields__title:before {
     @include border_tab_and_desk_before(14px);
@@ -253,8 +253,9 @@
     margin-top: 22px;
   }
   .group-fields-card__symbol {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     text-align: center;
+    font-size: 14px;
   }
   .group-fields-card__numeric {
     width: 61px;

@@ -107,6 +107,9 @@
   .main-menu-item--relative {
     position: relative;
   }
+  .main-menu__link--active {
+    color: #94b9d2;;
+  }
 }
 @media(min-width:766px) and (max-width:1200px){
   .main-menu {
@@ -182,6 +185,9 @@
   }
   .main-menu__item--margin {
     margin-right: 21.57%;
+  }
+  .main-menu__link--active {
+    color: #cacaca 
   }
 }
 @media(min-width:1200px) {
@@ -259,5 +265,8 @@
   }
   .main-menu__item--margin {
     margin-right: 21.57%;
+  }
+  .main-menu__link--active {
+    color: #cacaca;
   }
 }
