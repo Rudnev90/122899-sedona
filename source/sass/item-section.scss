@@ -1,4 +1,4 @@
-@media(min-width:10px) and (max-width: 766px) {
+@media(max-width: 766px) {
   .item-section {
     position: relative;
     padding: 29px 9% 42px;
@@ -132,7 +132,7 @@
 }
 @media(min-width:1200px) {
   .item-section {
-    padding: 38px 5.5% 60px; //32px
+    padding: 47px 5.5% 61px;
     width: 33.33%;
     &__title {
       // Заголовок блока features-item
@@ -149,7 +149,7 @@
       line-height: 21px;
       display: block;
       text-align: center;
-      margin: 14px 0 0;
+      margin: 5px 0 0;
     }
     &__desc {
       // Описание блока features-item

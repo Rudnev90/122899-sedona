@@ -1,4 +1,4 @@
-@media(min-width:10px) and (max-width: 766px) {
+@media(max-width: 766px) {
   .features-item {
     position: relative;
     display: flex;
@@ -84,7 +84,7 @@
   .features-item--img-town {
     background-image: url(../img/photo-city@1x.jpg);
     background-color: #b49060;
-    height: 256px;
+    height: auto;
     background-position: 57% 50%;
     background-size: 102%;
     @include image-2x('../img/photo-city@2x.jpg', 153%, auto);
@@ -92,7 +92,7 @@
   .features-item--img-bridge {
     background-image: url("../img/photo-bridge@1x.jpg");
     background-color: #e4ad95;
-    height: 256px;
+    height: auto;
     background-position: 8% 50%;
     background-size: 102%;
     @include image-2x('../img/photo-bridge@2x.jpg', 143%, auto);
@@ -131,7 +131,7 @@
   .features-item--img-town {
     background-image: url(../img/photo-city@1x.jpg);
     background-color: #b49060;
-    height: 256px;
+    height: auto;
     background-position: 57% 50%;
     background-size: 100%;
     @include image-2x('../img/photo-city@2x.jpg', 153%, auto);
@@ -139,7 +139,7 @@
   .features-item--img-bridge {
     background-image: url("../img/photo-bridge@1x.jpg");
     background-color: #e4ad95;
-    height: 256px;
+    height: auto;
     background-position: 8% 50%;
     background-size: 100%;
     @include image-2x('../img/photo-bridge@2x.jpg', 143%, auto);

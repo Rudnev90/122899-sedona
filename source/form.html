@@ -79,7 +79,7 @@
           </div>
         </div>
         <div class="group-fields-pick group-fields-pick__radio--flex">
-          <h2 class="group-fields-pick__title">Ваше общее впечатление:</h2>
+          <h2 class="group-fields-pick__title group-fields-pick__title--before">Ваше общее впечатление:</h2>
           <div class="group-fields-pick__wrap">
             <input class="group-fields-pick__input" name="vote" type="radio" id="positive" checked>
             <label class="group-fields-pick__label" for="positive">Скорее положительное</label>
@@ -95,20 +95,20 @@
             <label class="group-fields__label" for="coming">Дата приезда:</label>
             <input class="group-fields__input" type="text" id="coming" name="coming" placeholder="4 июля 2015 год" value="4 июля 2015 год" required/>
           </div>
-          <div class="group-fields-controls group-fields-wrap--margin-long fields-controls--date group-fields-controls--border-none">
-            <label class="group-fields-controls__label" for="data">Дней пребывание:</label>
+          <div class="group-fields-controls group-fields-wrap--margin-long-data fields-controls--date group-fields-controls--border-none group-fields-controls--margin">
+            <label class="group-fields-controls__label" for="data">Дней пребывания:</label>
             <button type="button" class="group-fields-controls__minus minus-date"></button>
-            <input class="group-fields-controls__input fields-controls--date" type="text" id="data" name="days" placeholder="14" required/>
+            <input class="group-fields-controls__input group-fields-controls__input-day" type="text" id="data" name="days" placeholder="14" required/>
             <span class="group-fields-controls__data">дн.</span>
             <button type="button" class="group-fields-controls__plus plus-date"></button>
           </div>
           <div class="group-fields__wrap">
             <label class="group-fields__label" for="checkout">Дата отъезда:</label>
-            <input class="group-fields__input" type="text" id="checkout" name="checkout" placeholder="29 июля 2015 год" required/>
+            <input class="group-fields__input group-fields__input--disabled" type="text" id="checkout" name="checkout" placeholder="29 июля 2015 год" disabled="disabled"/>
           </div>
         </div>
-        <div class="group-fields-controls group-fields-controls--margin group-fields-controls--tab">
-          <h2 class="group-fields__title group-fields-title--margin">Кол-во путешественников:</h2>
+        <div class="group-fields-controls group-fields-controls--tab">
+          <h2 class="group-fields__title group-fields-title--margin group-fields-title--before">Кол-во путешественников:</h2>
           <div class="group-fields-controls fields-controls--traveler group-fields-controls--width-tab group-fields-controls--width-desk group-fields-controls--border-none">
             <label class="group-fields-controls__label" for="data-traveler">
               <span class="group-fields-controls__label-mob">Количество путешественников:</span>
@@ -203,8 +203,6 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="js/script-form.js"></script>
-    <script type="text/javascript" src="js/script-menu.js"></script>
     <script type="text/html" id="image-template">
       <img class="upload-img__img" src="{{image}}" alt="{{name}}">
       <a class="upload-img__item-del" href="#" title="Удалить изображение"></a>
@@ -218,19 +216,20 @@
         <div class="group-fields__wrap group-fields__wrap--wrap">
           <div class="group-fields__wrap">
             <label class="group-fields__label" for="surname-traveler">Фамилия:</label>
-            <input class="group-fields__input" type="text" id="surname-traveler" name="surname-traveler" placeholder="Иванов" required>
+            <input class="group-fields__input group-fields__input--padding" type="text" id="surname-traveler" name="surname-traveler" placeholder="Иванов" required>
           </div>
           <div class="group-fields__wrap group-fields-wrap--margin-long group-fields-wrap--margin-short">
             <label class="group-fields__label" for="name-traveler">Имя:</label>
-            <input class="group-fields__input" type="text" id="name-traveler" name="name-traveler" placeholder="Петр" required>
+            <input class="group-fields__input group-fields__input--padding" type="text" id="name-traveler" name="name-traveler" placeholder="Петр" required>
           </div>
           <div class="group-fields__wrap">
             <label class="group-fields__label" for="patronymic-traveler">Отчество:</label>
-            <input class="group-fields__input" type="text" id="patronymic-traveler" name="patronymic-traveler" placeholder="Петр" required>
+            <input class="group-fields__input group-fields__input--padding" type="text" id="patronymic-traveler" name="patronymic-traveler" placeholder="Петр" required>
           </div>
         </div>
       </div>
     </script>
+    <script type="text/javascript" src="js/script.min.js"></script>
     <script type="text/javascript" src="js/vendor/mustache.min.js"></script>
   </div>
   <div class="popup-incorrect">

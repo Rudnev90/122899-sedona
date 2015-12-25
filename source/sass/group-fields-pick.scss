@@ -1,4 +1,4 @@
-@media(min-width:10px) and (max-width: 766px) {
+@media(max-width: 766px) {
   .group-fields-pick {
     padding: 16px 0 45px;
     display: flex;
@@ -118,8 +118,9 @@
     margin-top: 0;
     padding-left: 0;
   }
-  .group-fields-pick:before {
+  .group-fields-pick__title:before {
     @include border_mobile;
+    top: -17px;
   }
 }
 @media(min-width:766px) and (max-width: 1200px) {
@@ -241,10 +242,10 @@
     }
   }
   .group-fields-pick__title:before {
-    @include border_tab_and_desk_before(36px);
+    @include border_tab_and_desk_before(57px);
   }
   .group-fields-pick__title:after {
-    @include border_tab_and_desk_after(36px);
+    @include border_tab_and_desk_after(57px);
   }
   .group-fields-pick__label-margin {
     margin-left: 30px;
@@ -255,11 +256,16 @@
   .group-fields-pick--padding {
     padding-top: 35px;
   }
+  .group-fields-pick__title--before:before {
+    @include border_tab_and_desk_before(35px);
+  }
+  .group-fields-pick__title--before:after {
+    @include border_tab_and_desk_after(35px);
+  }
 }
 @media(min-width:1198px) {
   .group-fields-pick {
-    position: relative;
-    padding: 22px 0 44px;
+    padding: 16px 0 44px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -267,6 +273,7 @@
     margin-top: 26px;
     &__title {
       @include title_style;
+      position: relative;
       width: 100%;
       color: #000000;
       padding: 0 200px;
@@ -381,10 +388,13 @@
   .group-fields-pick__radio--flex {
     justify-content: center;
   }
-  .group-fields-pick:before {
-    @include border_tab_and_desk_before(35px, 28.5%);
+  .group-fields-pick__title:before {
+    @include border_tab_and_desk_before(15px, 28.8%);
   }
-  .group-fields-pick:after {
-    @include border_tab_and_desk_after(35px, 28.5%);
+  .group-fields-pick__title:after {
+    @include border_tab_and_desk_after(15px, 28.8%);
+  }
+  .group-fields-pick--padding {
+    padding-top: 42px;
   }
 }

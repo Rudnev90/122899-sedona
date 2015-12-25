@@ -1,4 +1,4 @@
-@media(min-width:10px) and (max-width: 766px) {
+@media(max-width: 766px) {
   .footer-wrap {
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
 @media(min-width:1200px) {
   .footer-wrap {
     display: flex;
-    padding: 36px 0;
+    padding: 22px 0;
     background-color: #ffffff;
   }
 }

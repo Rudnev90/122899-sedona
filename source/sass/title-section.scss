@@ -1,4 +1,4 @@
-@media(min-width:10px) and (max-width: 766px) {
+@media(max-width: 766px) {
   .title-section {
     // Блок с заголовком
     position: relative;
@@ -75,10 +75,10 @@
   .title-section {
     // Блок с заголовком
     text-align: center;
-    padding: 42px 28% 49px; //32px
+    padding: 55px 28% 36px;
     &--form {
-      padding-top: 76px;
-      padding-bottom: 21px;
+      padding-top: 105px;
+      padding-bottom: 42px;
     }
     &--form:before {
       display: none;
@@ -95,6 +95,7 @@
     }
     &__item {
       @include title_section_item;
+      margin: 24px 0 0;
       padding: 0 40px;
     }
   }

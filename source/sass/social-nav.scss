@@ -1,4 +1,4 @@
-@media(min-width:10px) and (max-width: 766px) {
+@media(max-width: 766px) {
   .social-nav {
     padding: 0 70px;
     text-align: center;
@@ -76,6 +76,7 @@
       flex-grow: 1;
       align-self: center;
       padding-left: 14px;
+      max-width: 243px;
     }
     &__list {
       margin: 0;
@@ -142,6 +143,7 @@
       flex-grow: 1;
       align-self: center;
       padding-left: 20px;
+      max-width: 387px;
     }
     &__list {
       margin: 0;

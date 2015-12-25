@@ -1,4 +1,4 @@
-@media(min-width:10px) and (max-width: 766px) {
+@media(max-width: 766px) {
   .features-list {
     //Вложенный список в блок features
     padding-top: 42px;
@@ -132,7 +132,7 @@
   .features-list {
     display: flex;
     flex-direction: row;
-    padding: 177px 0 63px;
+    padding: 155px 0 82px;
     color: #000000;
     //Вложенный список в блок features
     &__title {
@@ -176,7 +176,7 @@
       width: 75px;
       height: 75px;
       left: 40%;
-      top: -95px;
+      top: -94px;
     }
     &__item-souvenirs:before {
       //Иконка пункта "Сувениры"
@@ -187,7 +187,7 @@
       width: 75px;
       height: 75px;
       left: 42%;
-      top: -102px;
+      top: -99px;
     }
   }
 }

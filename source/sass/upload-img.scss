@@ -1,4 +1,4 @@
-@media(min-width:10px) and (max-width: 766px) {
+@media(max-width: 766px) {
   .upload-img {
     position: relative;
     padding: 21px 0 0;
@@ -228,14 +228,14 @@
 }
 @media(min-width:1200px) {
   .upload-img {
-    position: relative;
-    padding: 22px 0 0;
+    padding: 38px 0 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     &__title {
       @include title_style;
+      position: relative;
       color: #000000;
       width: 100%;
       font-size: 21px;
@@ -260,13 +260,13 @@
     }
     &__wrap {
       width: 100%;
-      padding-top: 58px;
+      padding-top: 52px;
     }
     &__item-wrap {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      margin-top: 55px;
+      margin-top: 83px;
       justify-content: flex-start;
       max-width: 960px;
     }
@@ -275,7 +275,7 @@
       width: 140px;
       height: 140px;
       margin-right: 65px;
-      margin-bottom: 35px;
+      margin-bottom: 68px;
     }
     &__item:nth-child(5n) {
       margin-right: 0;
@@ -327,10 +327,10 @@
   .upload-img__label-desk {
     display: inline;
   }
-  .upload-img:before {
-    @include border_tab_and_desk_before(35px, 28.5%);
+  .upload-img__title:before {
+    @include border_tab_and_desk_before(15px, 28.8%);
   }
-  .upload-img:after {
-    @include border_tab_and_desk_after(35px, 28.5%);
+  .upload-img__title:after {
+    @include border_tab_and_desk_after(15px, 28.8%);
   }
 }

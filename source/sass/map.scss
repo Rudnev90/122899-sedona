@@ -1,4 +1,30 @@
-.map {
-  height: 350px;
-  width: 100%;
+@media(max-width: 766px) {
+  .map {
+    &__my-map {
+      height: 350px;
+      width: 100%;
+      background-image: url(../img/map-mob.png);
+      background-color: #FEFFE8;
+    }
+  }
+}
+@media(min-width: 766px) and (max-width: 1198px) {
+  .map {
+    &__my-map {
+      height: 350px;
+      width: 100%;
+      background-image: url(../img/map-tab.png);
+      background-color: #FEFFE8;
+    }
+  }
+}
+@media(min-width: 1200px) {
+  .map {
+    &__my-map {
+      height: 350px;
+      width: 100%;
+      background-image: url(../img/map-desk.png);
+      background-color: #FEFFE8;
+    }
+  }
 }

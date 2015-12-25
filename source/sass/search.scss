@@ -1,4 +1,4 @@
-@media(min-width:10px) and (max-width: 766px) {
+@media(max-width: 766px) {
   .search {
     //Блок поиска гостиницы
     margin-top: 25px;
@@ -44,7 +44,7 @@
 @media(min-width:1200px) {
   .search {
     //Блок поиска гостиницы
-    margin-top: 45px;
+    margin-top: 48px;
     &__title {
       text-align: center;
       font-size: $fourthFontSize;
@@ -58,7 +58,7 @@
       font-size: $thirdFontSize;
       line-height: 24px;
       text-transform: uppercase;
-      padding: 27px 370px 0;
+      padding: 21px 370px 0;
       margin: 0;
     }
   }

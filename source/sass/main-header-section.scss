@@ -1,4 +1,4 @@
-@media(min-width:10px) and (max-width: 766px) {
+@media(max-width: 766px) {
   .main-header-section {
     // Блок в шапке
     @include image-2x('../img/photo-background@2x.jpg', 200%, auto);
@@ -256,7 +256,7 @@
     &__slogan {
       // Блок с надписью слогана(Because .....)
       width: 297px;
-      margin: 69px auto 0;
+      margin: 40px auto 0;
     }
     &__text-because {
       // Картинка с надписью слогана(Because .....)
@@ -272,10 +272,10 @@
     background-position: 51% 63%;
     background-size: 100%;
     width: 100%;
-    padding-bottom: 140px;
+    padding-bottom: 151px;
     padding-top: 100px;
     @include image-2x('../img/photo-background@2x.jpg', 100%, auto);
-  }
+}
   .main-header-section__title--form {
     display: block;
     width: 457px;

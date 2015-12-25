@@ -1,4 +1,4 @@
-@media(min-width:10px) and (max-width: 766px) {
+@media(max-width: 766px) {
   .group-fields-controls {
     position: relative;
     display: flex;
@@ -19,7 +19,7 @@
     &__input {
       width: 61px;
       background-color: #f2f2f2;
-      padding: 17px 6.43% 16px;
+      padding: 17px 6.7% 16px;
       margin: 0 0 0 6px;
       font-weight: $boldWeight;
       flex-grow: 1;
@@ -300,20 +300,26 @@
     border-top: none;
   }
   .group-fields-controls--margin {
-    padding-top: 25px;
+    margin-top: 23px;
+  }
+  .group-fields-controls--tab {
+    margin-top: 45px;
+  }
+  .group-fields-controls__input-day {
+    padding: 17px 8.87% 16px;
   }
 }
 @media (min-width: 1198px) {
   .group-fields-controls {
-    position: relative;
     display: flex;
     flex-direction: row;
-    margin-top: 25px;
+    margin-top: 32px;
     flex-wrap: wrap;
     width: 27.1%;
     flex-grow: 1;
     &__title {
       @include title_style;
+      position: relative;
       width: 100%;
       color: #000000;
     }
@@ -449,20 +455,24 @@
     align-items: flex-start;
     flex-grow: 0;
     width: 100%;
+    margin-top: 42px;
   }
   .group-fields-controls--width-desk {
     width: 29.1%;
   }
-  .group-fields-controls:before {
-    @include border_tab_and_desk_before(14px, 28.5%);
+  .group-fields-controls__title:before {
+    @include border_tab_and_desk_before(14px);
   }
-  .group-fields-controls:after {
-    @include border_tab_and_desk_after(14px, 28.5%);
+  .group-fields-controls__title:after {
+    @include border_tab_and_desk_after(14px);
   }
   .group-fields-controls--border-none:after {
     border-top: none;
   }
   .group-fields-controls--border-none:before {
     border-top: none;
+  }
+  .group-fields-controls--margin {
+    margin-top: 23px;
   }
 }
