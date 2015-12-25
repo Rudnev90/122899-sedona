@@ -31,7 +31,7 @@ gulp.task("css", function() {
 });
 
 gulp.task("js", function() {
-  gulp.src('source/js/*.js')
+  gulp.src('source/js/**/*.js')
     .pipe(concat('script.js'))
     .pipe(gulp.dest('build/js/'))
     .pipe(jsmin())
@@ -39,8 +39,6 @@ gulp.task("js", function() {
       suffix: '.min'
     }))
     .pipe(gulp.dest('build/js/'))
-  return gulp.src('source/js/vendor/*.js')
-    .pipe(gulp.dest('build/js/vendor/'));
 });
 
 gulp.task("html", function() {
