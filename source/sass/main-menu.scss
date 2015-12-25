@@ -5,12 +5,14 @@
     position: relative;
     &__list {
       // Список пунктов главного меню
-      display: none;
       flex-direction: column;
       list-style: none;
       margin: 0;
       padding: 0;
       background-color: #ffffff;
+    }
+    &--close {
+      display: none;
     }
     &--show {
       display: flex;
